@@ -9,6 +9,7 @@ header #user {
     width: 60px;
     height: 60px;
     background-color: orange;
+    border-radius: 50%;
 }
 
 header #shopping-cart {
