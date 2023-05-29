@@ -6,14 +6,16 @@ header {
 }
 
 header #user {
-    width: 60px;
-    height: 60px;
-    background-color: orange;
-    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 header #shopping-cart {
     width: 150px;
     height: 50px;
     background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
 }
