@@ -6,13 +6,13 @@ header {
 }
 
 header #user {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: orange;
 }
 
 header #shopping-cart {
-    width: 100px;
+    width: 150px;
     height: 50px;
     background-color: red;
 }
