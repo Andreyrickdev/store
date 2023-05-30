@@ -6,6 +6,10 @@
     place-items: center;
 }
 
+#article h1 {
+    font-size: 2rem;
+}
+
 #categories {
     display: flex;
     gap: 20px;
