@@ -6,3 +6,8 @@
     font-family: 'Fira Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
+
+li {
+    list-style: none;
+}
+
