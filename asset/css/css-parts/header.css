@@ -30,3 +30,8 @@ header #shopping-bag {
     align-items: center;
     gap: 20px;
 }
+
+header #shopping-bag #price {
+    font-size: 1.2rem;
+    color: #fff;
+}
