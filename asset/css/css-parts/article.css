@@ -4,6 +4,7 @@
     margin: 0 auto;
     display: grid;
     place-items: center;
+    gap: 10px;
 }
 
 #article h1 {
