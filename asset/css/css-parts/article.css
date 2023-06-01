@@ -25,3 +25,7 @@
     gap: 10px;
     cursor: pointer;
 }
+
+#food-items li p {
+    height: 90px;
+}
