@@ -26,6 +26,6 @@
     cursor: pointer;
 }
 
-#food-items li p {
+#food-items li p, #dessert-items li p {
     height: 90px;
 }
