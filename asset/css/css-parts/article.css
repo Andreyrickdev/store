@@ -13,14 +13,13 @@
 #food-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: orange;
 
 }
 
 #food-items li {
     margin: 10px;
     padding: 20px;
-    border: 1px solid rgb(211, 211, 211);
+    border: 1px solid rgb(139, 139, 139);
     display: grid;
     place-items: center;
     gap: 10px;
