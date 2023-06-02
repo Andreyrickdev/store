@@ -16,7 +16,7 @@
 
 }
 
-#food-items li, #dessert-items li {
+#food-items li, #dessert-items li, #drinks-items li {
     margin: 10px;
     padding: 20px;
     border: 1px solid rgb(139, 139, 139);
