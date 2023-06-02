@@ -10,7 +10,7 @@
     font-size: 2rem;
 }
 
-#food-items, #dessert-items {
+#food-items, #dessert-items, #drinks-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
