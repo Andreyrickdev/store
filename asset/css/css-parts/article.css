@@ -2,7 +2,7 @@
     display: grid;
     gap: 10px;
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 #article > h1 {
