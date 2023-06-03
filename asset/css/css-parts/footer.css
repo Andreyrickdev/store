@@ -6,7 +6,7 @@
 
 #footer {
     display: flex;
-    align-items: baseline;
+    align-items: end;
     background-color: #fff;
     width: 100%;
     justify-content: space-between;
