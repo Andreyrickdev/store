@@ -3,3 +3,9 @@
     height: 40px;
     background-color: orange;
 }
+
+#footer #search {
+    width: 70px;
+    height: 70px;
+    background-color: tomato;
+}
