@@ -13,6 +13,7 @@
     padding: 10px 20px;
     position: fixed;
     bottom: 0;
+
 }
 
 #footer #others {
@@ -25,6 +26,8 @@
     width: 70px;
     height: 70px;
     background-color: tomato;
+    display: grid;
+    place-items: center;
 }
 
 #footer #favorites {
