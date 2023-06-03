@@ -50,3 +50,12 @@
     cursor: pointer;
     position: relative;
 }
+
+#footer #favorites:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background-color: red;
+}
