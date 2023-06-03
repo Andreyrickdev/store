@@ -20,6 +20,7 @@
     width: 40px;
     height: 40px;
     background-color: orange;
+    cursor: pointer;
 }
 
 #footer #search {
@@ -29,10 +30,12 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #footer #favorites {
     width: 40px;
     height: 40px;
     background-color: greenyellow;
+    cursor: pointer;
 }
