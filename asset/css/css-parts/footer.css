@@ -2,8 +2,13 @@
     height: 90px;
     background-color: red;
     width: 100%;
+}
+
+#menu-app-footer {
     position: fixed;
     bottom: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 #footer {
