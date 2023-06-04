@@ -62,10 +62,11 @@
     padding: 10px 20px;
     font-size: 1.2rem;
     transition: 0.5s;
+    top: 1000px;
 }
 
 #footer #search #search-now.active {
-    top:-35px;
+    top: -40px;
 }
 
 #footer #favorites {
