@@ -1,6 +1,6 @@
 function functSearch () {
 
-    const search = document.getElementById('search');
+    const search = document.getElementById('search-img');
     const inputSearch = document.getElementById('search-now');
 
     search.addEventListener('click', () => {
