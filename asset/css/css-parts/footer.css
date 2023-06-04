@@ -42,6 +42,7 @@
 
 #footer #others:hover #others-icon {
     fill: red;
+    transition: 0.5s;
 }
 
 #footer #search {
@@ -91,4 +92,5 @@
 
 #footer #favorites:hover #favorites-icon {
     fill: red;
+    transition: 0.5s;
 }
