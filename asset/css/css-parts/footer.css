@@ -30,6 +30,15 @@
     cursor: pointer;
 }
 
+#footer #others:hover::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background-color: red;
+}
+
 #footer #search {
     width: 70px;
     height: 70px;
