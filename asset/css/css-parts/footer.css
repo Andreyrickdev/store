@@ -48,7 +48,7 @@
 #footer #search {
     width: 70px;
     height: 70px;
-    background-color: tomato;
+    background-color: red;
     display: grid;
     place-items: center;
     border-radius: 50%;
