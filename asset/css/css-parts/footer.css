@@ -61,7 +61,7 @@
     width: 50%;
     padding: 10px 20px;
     font-size: 1.2rem;
-    top: 5000px;
+    transition: 0.5s;
 }
 
 #footer #search #search-now.active {
