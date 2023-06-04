@@ -28,6 +28,7 @@
     place-items: center;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
 }
 
 #footer #others:hover::after {
