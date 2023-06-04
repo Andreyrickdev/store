@@ -58,10 +58,10 @@
     background-color: fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top:-35px;
     width: 50%;
     padding: 10px 20px;
     font-size: 1.2rem;
+    top: 5000px;
 }
 
 #footer #favorites {
