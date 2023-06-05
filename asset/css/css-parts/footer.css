@@ -38,18 +38,18 @@
     bottom: 0;
     width: 50%;
     height: 4px;
-    background-color: red;
+    background-color: #FF214F;
 }
 
 #footer #others:hover #others-icon {
-    fill: red;
+    fill: #FF214F;
     transition: 0.5s;
 }
 
 #footer #search {
     width: 70px;
     height: 70px;
-    background-color: red;
+    background-color: #FF214F;
     display: grid;
     place-items: center;
     border-radius: 50%;
@@ -92,10 +92,10 @@
     bottom: 0;
     width: 50%;
     height: 4px;
-    background-color: red;
+    background-color: #FF214F;
 }
 
 #footer #favorites:hover #favorites-icon {
-    fill: red;
+    fill: #FF214F;
     transition: 0.5s;
 }
