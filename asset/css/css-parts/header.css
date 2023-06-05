@@ -32,13 +32,14 @@ header #user {
 
 header #user-box {
     position: absolute;
-    background-color: orange;
     display: grid;
     grid-template-columns: auto 1fr;
     top:60px;
     align-items: center;
     gap: 20px;
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
 }
 
 header #user-box #img-user-box {
