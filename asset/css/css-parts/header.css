@@ -59,6 +59,11 @@ header #user-box #infs .user-buttons {
     border-radius: 2px;
 }
 
+header #user-box #infs #exit-button {
+    background-color: #FF214F;
+    color: #fff;
+}
+
 header #shopping-bag {
     width: 150px;
     height: 50px;
