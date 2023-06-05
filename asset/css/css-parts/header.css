@@ -36,6 +36,13 @@ header #user-box {
     display: grid;
     grid-template-columns: auto 1fr;
     top:60px;
+    align-items: center;
+}
+
+header #user-box #img-user-box {
+    background-color: rgb(219, 219, 219);
+    padding: 20px;
+    border-radius: 50%;
 }
 
 header #shopping-bag {
