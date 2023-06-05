@@ -21,6 +21,7 @@ header {
     height: 60px;
     width: 100%;
     padding: 0px 20px;
+    position: relative;
 }
 
 header #user {
@@ -42,6 +43,10 @@ header #user-box {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     transition: 0.5s;
+}
+
+header #user-box.active {
+    left: 10px;
 }
 
 header #user-box #img-user-box {
