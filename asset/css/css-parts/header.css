@@ -41,6 +41,7 @@ header #user-box {
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+    transition: 0.5s;
 }
 
 header #user-box #img-user-box {
