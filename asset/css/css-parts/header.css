@@ -46,6 +46,11 @@ header #user-box #img-user-box {
     border-radius: 50%;
 }
 
+header #user-box #infs .user-buttons {
+    padding: 10px;
+    position: absolute;
+}
+
 header #shopping-bag {
     width: 150px;
     height: 50px;
