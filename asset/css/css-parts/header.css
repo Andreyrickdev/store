@@ -35,6 +35,7 @@ header #user-box {
     background-color: orange;
     display: grid;
     grid-template-columns: auto 1fr;
+    top:0;
 }
 
 header #shopping-bag {
