@@ -84,6 +84,12 @@ header #shopping-bag {
     gap: 10px;
 }
 
+header #shopping-bag-box {
+    background-color: orange;
+    position: absolute;
+    top: 0;
+}
+
 header #shopping-bag #price {
     font-size: 1.2rem;
     color: #fff;
