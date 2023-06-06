@@ -92,6 +92,7 @@ header #shopping-bag-box {
 
 header #shopping-bag-box li {
     display: grid;
+    grid-template-columns: auto 1fr;
 }
 
 header #shopping-bag #price {
