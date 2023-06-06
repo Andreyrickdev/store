@@ -90,6 +90,10 @@ header #shopping-bag-box {
     top: 0;
 }
 
+header #shopping-bag-box li {
+    display: grid;
+}
+
 header #shopping-bag #price {
     font-size: 1.2rem;
     color: #fff;
