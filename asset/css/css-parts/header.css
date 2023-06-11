@@ -90,6 +90,8 @@ header #shopping-bag-box {
     top: 92px;
     right: 0;
     padding: 10px;
+    max-width: 500px;
+    background-color: orange;
 }
 
 header #shopping-bag-box li {
