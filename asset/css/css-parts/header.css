@@ -94,6 +94,11 @@ header #shopping-bag-box {
     background-color: orange;
 }
 
+header #shopping-bag-box ul {
+    display: grid;
+    gap: 10px;
+}
+
 header #shopping-bag-box li {
     display: grid;
     grid-template-columns: auto 1fr;
