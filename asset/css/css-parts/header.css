@@ -124,6 +124,7 @@ header #shopping-bag-box li {
     gap: 10px;
     border: 1px solid rgb(139, 139, 139);
     padding: 10px;
+    user-select: none;
 }
 
 header #shopping-bag-box li img {
