@@ -7,7 +7,7 @@ function shoppingBag () {
     buttonOpenAndClose.addEventListener('click', openOrClose);
 
     function openOrClose () {
-        
+        box.classList.toggle('active');
     }
 }
 
