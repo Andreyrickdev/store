@@ -4,6 +4,11 @@ function shoppingBag () {
     const buttonClose = document.getElementById('close-button');
     const box = document.getElementById('shopping-bag-box');
 
+    buttonOpenAndClose.addEventListener('click', openOrClose);
+
+    function openOrClose () {
+        
+    }
 }
 
 shoppingBag();
