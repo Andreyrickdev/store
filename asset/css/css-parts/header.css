@@ -104,6 +104,7 @@ header #shopping-bag-box #close-button {
     position: absolute;
     border-radius: 50%;
     right: 0;
+    cursor: pointer;
 }
 
 header #shopping-bag-box ul {
