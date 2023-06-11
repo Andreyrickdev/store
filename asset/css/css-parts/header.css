@@ -95,6 +95,10 @@ header #shopping-bag-box {
     transition: 0.5s;
 }
 
+header #shopping-bag-box.active {
+    right: 0;
+}
+
 header #shopping-bag-box div {
     position: relative;
 }
