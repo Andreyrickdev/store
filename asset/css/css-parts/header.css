@@ -102,6 +102,10 @@ header #shopping-bag-box li {
     padding: 10px;
 }
 
+header #shopping-bag-box li img {
+    object-fit: cover;
+}
+
 header #shopping-bag #price {
     font-size: 1.2rem;
     color: #fff;
