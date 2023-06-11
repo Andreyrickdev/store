@@ -103,6 +103,7 @@ header #shopping-bag-box li {
 }
 
 header #shopping-bag-box li img {
+    height: 91px;
     object-fit: cover;
 }
 
