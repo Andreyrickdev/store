@@ -5,6 +5,7 @@ function shoppingBag () {
     const box = document.getElementById('shopping-bag-box');
 
     buttonOpenAndClose.addEventListener('click', openOrClose);
+    buttonClose.addEventListener('click', openOrClose);
 
     function openOrClose () {
         box.classList.toggle('active');
