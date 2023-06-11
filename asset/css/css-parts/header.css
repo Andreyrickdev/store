@@ -87,7 +87,8 @@ header #shopping-bag {
 header #shopping-bag-box {
     background-color: #fff;
     position: absolute;
-    top: 0;
+    top: 92px;
+    right: 0;
     padding: 10px;
 }
 
