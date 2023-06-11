@@ -103,7 +103,7 @@ header #shopping-bag-box #close-button {
     padding: 10px;
     position: absolute;
     border-radius: 50%;
-    right: 0;
+    right: 20px;
     cursor: pointer;
 }
 
