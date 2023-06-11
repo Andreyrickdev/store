@@ -91,6 +91,7 @@ header #shopping-bag-box {
     right: 0;
     padding: 10px;
     max-width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header #shopping-bag-box ul {
