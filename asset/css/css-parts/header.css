@@ -94,6 +94,11 @@ header #shopping-bag-box {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+header #shopping-bag-box #close-button {
+    background-color: #FF214F;
+    width: 100%;
+}
+
 header #shopping-bag-box ul {
     display: grid;
     gap: 10px;
