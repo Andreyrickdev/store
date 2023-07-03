@@ -33,3 +33,9 @@
 #food-items li p, #dessert-items li p, #drinks-items li p {
     height: 90px;
 }
+
+@media (max-width: 500px) {
+    #food-items li p, #dessert-items li p, #drinks-items li p {
+        height: 150px;
+    }    
+}
