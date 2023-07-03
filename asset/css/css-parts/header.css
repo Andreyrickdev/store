@@ -136,3 +136,13 @@ header #shopping-bag #price {
     font-size: 1.2rem;
     color: #fff;
 }
+
+header .button-shopping-bag {
+    background-color:#FF214F;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
