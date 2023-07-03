@@ -11,6 +11,8 @@ function shoppingBag () {
     const userBox = document.getElementById('user-box');
 
     function openOrClose () {
+        searchBox.classList.remove('active');
+        userBox.classList.remove('active');
         box.classList.toggle('active');
     }
 }
