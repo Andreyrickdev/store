@@ -35,7 +35,7 @@ header #user-box {
     position: absolute;
     display: grid;
     grid-template-columns: auto 1fr;
-    top:60px;
+    top: 92px;
     left:-1000px;
     align-items: center;
     gap: 20px;
