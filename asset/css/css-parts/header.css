@@ -146,4 +146,5 @@ header .button-shopping-bag {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 2px;
 }
