@@ -108,7 +108,7 @@ header #shopping-bag-box #close-button {
     background-color: #FF214F;
     padding: 10px;
     position: absolute;
-    border-radius: 50%;
+    border-radius: 2px;
     right: 20px;
     cursor: pointer;
 }
