@@ -8,6 +8,8 @@ function functSearch () {
 
 
     search.addEventListener('click', () => {
+        shoppingBagBox.classList.remove('active');
+        userBox.classList.remove('active');
         inputSearch.classList.toggle('active');
     })
 
