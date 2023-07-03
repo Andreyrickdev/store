@@ -30,3 +30,9 @@
     font-size: 1.2rem;
     color: #fff;
 }
+
+@media (max-width: 400px) {
+    #categories {
+        gap: 10px;
+    }
+}
