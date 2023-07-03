@@ -2,7 +2,8 @@ function functSearch () {
 
     const search = document.getElementById('search');
     const inputSearch = document.getElementById('search-now');
-    const boxs = document.getElementsByClassName('boxs');
+    const shoppingBagBox = document.getElementById('shopping-bag-box');
+
 
     search.addEventListener('click', () => {
         inputSearch.classList.toggle('active');
