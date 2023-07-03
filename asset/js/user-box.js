@@ -7,6 +7,8 @@ function userBox () {
     const shoppingBagBox = document.getElementById('shopping-bag-box');
 
     button.addEventListener('click', () => {
+        searchBox.classList.remove('active');
+        shoppingBagBox.classList.remove('active');
         box.classList.toggle('active');
     });
 
