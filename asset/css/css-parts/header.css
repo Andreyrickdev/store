@@ -73,6 +73,7 @@ header #user-box #infs #exit-button {
 }
 
 header #shopping-bag {
+    padding: 10px;
     background-color: #FF214F;
     border-radius: 2px;
     cursor: pointer;
