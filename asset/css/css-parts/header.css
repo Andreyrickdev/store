@@ -117,7 +117,7 @@ header #shopping-bag-box #close-button {
 header #shopping-bag-box ul {
     display: grid;
     gap: 10px;
-    max-height: 605px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
