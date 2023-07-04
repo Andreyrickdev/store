@@ -105,7 +105,7 @@ header #shopping-bag-box div {
 }
 
 header #shopping-bag-box #close-button {
-    background-color: #FF214F;
+    /* background-color: #FF214F; */
     padding: 10px;
     position: absolute;
     border-radius: 2px;
