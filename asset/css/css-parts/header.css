@@ -134,6 +134,17 @@ header #shopping-bag-box ul li .add-or-remove-item {
     display: flex;
     position: absolute;
     right: 0;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+header #shopping-bag-box ul li .add-or-remove-item p{
+    padding: 5px 20px;
+}
+
+header #shopping-bag-box ul li .add-or-remove-item input{
+    padding: 10px;
+    cursor: pointer;
 }
 
 header #shopping-bag-box li img {
