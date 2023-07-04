@@ -129,6 +129,13 @@ header #shopping-bag-box li {
     user-select: none;
 }
 
+header #shopping-bag-box ul li .add-or-remove-item {
+    background-color: orange;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
 header #shopping-bag-box li img {
     height: 91px;
     object-fit: cover;
