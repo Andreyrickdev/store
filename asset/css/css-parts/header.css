@@ -130,7 +130,6 @@ header #shopping-bag-box li {
 }
 
 header #shopping-bag-box ul li .add-or-remove-item {
-    background-color: orange;
     display: flex;
     position: absolute;
     right: 0;
@@ -145,6 +144,8 @@ header #shopping-bag-box ul li .add-or-remove-item p{
 header #shopping-bag-box ul li .add-or-remove-item input{
     padding: 10px;
     cursor: pointer;
+    background-color: #FF214F;
+    color: #fff;
 }
 
 header #shopping-bag-box li img {
