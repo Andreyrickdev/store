@@ -11,6 +11,11 @@ function putBag () {
                 return li;
             }
 
+            function getH1 () {
+                const h1 = item.getElementsByTagName('h1')[0].textContent;
+                return h1;
+            }
+
         })
     }
 }
