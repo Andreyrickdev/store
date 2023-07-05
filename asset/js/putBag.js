@@ -16,6 +16,11 @@ function putBag () {
                 return h1;
             }
 
+            function getP () {
+                const p = item.getElementsByTagName('p')[0].textContent;
+                return p;
+            }
+
         })
     }
 }
