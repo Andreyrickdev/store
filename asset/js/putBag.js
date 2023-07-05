@@ -8,6 +8,7 @@ function putBag () {
             
             function createLi () {
                 const li = document.createElement('li');
+                return li;
             }
 
         })
