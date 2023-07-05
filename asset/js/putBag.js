@@ -6,6 +6,10 @@ function putBag () {
     for(let item of items) {
         item.addEventListener('click', () => {
             
+            function createLi () {
+                const li = document.createElement('li');
+            }
+
         })
     }
 }
