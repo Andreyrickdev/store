@@ -87,6 +87,7 @@ function putBag () {
                 const img = getImg();
                 const addOrRemove = buttonsAddOrRemove();
                 const h1 = getH1();
+                const p = getP();
             }
 
         })
