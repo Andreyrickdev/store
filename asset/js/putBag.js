@@ -26,6 +26,13 @@ function putBag () {
 
                 }
 
+                function buttonRemove () {
+
+                    const button = document.createElement('input')
+                    button.setAttribute("type", "button");
+                    button.setAttribute("value","-");
+
+                }
             }
 
             function getImg () {
