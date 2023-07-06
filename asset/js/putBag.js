@@ -11,6 +11,11 @@ function putBag () {
                 return li;
             }
 
+            function createDiv () {
+                const div = document.createElement('div');
+                return div;
+            }
+
             function getImg () {
                 const img = item.getElementsByTagName('img')[0];
 
