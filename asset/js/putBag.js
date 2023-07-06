@@ -16,6 +16,12 @@ function putBag () {
                 return div;
             }
 
+            function buttonsAddOrRemove () {
+
+
+
+            }
+
             function getImg () {
                 const img = item.getElementsByTagName('img')[0];
 
