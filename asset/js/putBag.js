@@ -49,6 +49,8 @@ function putBag () {
                     const remove = buttonRemove();
 
                     paragraph.innerText = 1;
+
+                    div.appendChild(remove);
                 }
             }
 
