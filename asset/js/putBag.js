@@ -75,6 +75,11 @@ function putBag () {
                     const tagImg = createImg();
 
                     tagImg.setAttribute('src',imgSrc);
+
+                        if(imgSrc.includes('hamburger')){
+                            tagImg.setAttribute('alt','hamburger');
+                        }
+
                     return imgSrc;
                 }
             }
