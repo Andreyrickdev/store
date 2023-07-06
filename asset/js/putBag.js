@@ -65,7 +65,8 @@ function putBag () {
 
                 function createImg () {
 
-                    
+                    const tagImg = document.createElement('img');
+                    return tagImg;
 
                 }
 
