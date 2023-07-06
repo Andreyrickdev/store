@@ -23,6 +23,7 @@ function putBag () {
                     const button = document.createElement('input')
                     button.setAttribute("type", "button");
                     button.setAttribute("value","+");
+                    return button;
 
                 }
 
@@ -31,6 +32,7 @@ function putBag () {
                     const button = document.createElement('input')
                     button.setAttribute("type", "button");
                     button.setAttribute("value","-");
+                    return button;
 
                 }
 
@@ -41,7 +43,7 @@ function putBag () {
 
                 function mix () {
 
-
+                    const div = createDiv();
 
                 }
             }
