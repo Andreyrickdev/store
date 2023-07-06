@@ -45,7 +45,7 @@ function putBag () {
 
                     const div = createDiv();
                     const add = buttonAdd();
-                    const p = p();
+                    const paragraph = p();
                     const remove = buttonRemove();
 
                 }
