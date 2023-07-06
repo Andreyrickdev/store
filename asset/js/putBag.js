@@ -82,7 +82,7 @@ function putBag () {
                 const li = createLi();
                 const div1 = createDiv();
                 const div2 = createDiv();
-
+                const img = getImg();
             }
 
         })
