@@ -50,6 +50,7 @@ function putBag () {
 
                     paragraph.innerText = 1;
 
+                    div.classList.add('add-or-remove-item');
                     div.appendChild(remove);
                     div.appendChild(paragraph);
                     div.appendChild(add);
