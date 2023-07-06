@@ -83,6 +83,7 @@ function putBag () {
                 const div1 = createDiv();
                 const div2 = createDiv();
                 const img = getImg();
+                const addOrRemove = buttonsAddOrRemove();
             }
 
         })
