@@ -48,6 +48,7 @@ function putBag () {
                     const paragraph = p();
                     const remove = buttonRemove();
 
+                    paragraph.innerText = 1;
                 }
             }
 
