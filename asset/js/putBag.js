@@ -73,6 +73,8 @@ function putBag () {
                 if (img) {
                     const imgSrc = img.src || img.getAttribute('src');
                     const tagImg = createImg();
+
+                    tagImg.setAttribute('src',imgSrc);
                     return imgSrc;
                 }
             }
