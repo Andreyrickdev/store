@@ -56,6 +56,8 @@ function putBag () {
                     div.appendChild(add);
                     return div;
                 }
+
+                return mix;
             }
 
             function getImg () {
