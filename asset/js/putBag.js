@@ -63,6 +63,12 @@ function putBag () {
             function getImg () {
                 const img = item.getElementsByTagName('img')[0];
 
+                function createImg () {
+
+                    
+
+                }
+
                 if (img) {
                     const imgSrc = img.src || img.getAttribute('src');
                     return imgSrc;
