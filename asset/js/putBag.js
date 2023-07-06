@@ -44,6 +44,7 @@ function putBag () {
                 function mix () {
 
                     const div = createDiv();
+                    const add = buttonAdd();
 
                 }
             }
