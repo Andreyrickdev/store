@@ -79,7 +79,7 @@ function putBag () {
 
             function createYourOrder () {
 
-                
+                const li = createLi();
 
             }
 
