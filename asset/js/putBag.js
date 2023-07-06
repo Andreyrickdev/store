@@ -38,6 +38,12 @@ function putBag () {
                     const p = document.createElement('p');
                     return p;
                 }
+
+                function mix () {
+
+
+
+                }
             }
 
             function getImg () {
