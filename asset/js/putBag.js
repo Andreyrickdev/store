@@ -80,6 +80,10 @@ function putBag () {
                             tagImg.setAttribute('alt','hamburger');
                         }
 
+                        if(imgSrc.includes('dessert')){
+                            tagImg.setAttribute('alt','dessert');
+                        }
+                        
                     return imgSrc;
                 }
             }
