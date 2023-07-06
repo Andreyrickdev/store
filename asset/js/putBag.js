@@ -11,6 +11,15 @@ function putBag () {
                 return li;
             }
 
+            function getImg () {
+                const img = item.getElementsByTagName('img')[0];
+
+                if (img) {
+                    const imgSrc = img.src || img.getAttribute('src');
+                    return imgSrc;
+                }
+            }
+
             function getH1 () {
                 const h1 = item.getElementsByTagName('h1')[0].textContent;
                 return h1;
