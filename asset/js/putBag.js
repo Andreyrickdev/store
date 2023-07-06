@@ -33,6 +33,11 @@ function putBag () {
                     button.setAttribute("value","-");
 
                 }
+
+                function p () {
+                    const p = document.createElement('p');
+                    return p;
+                }
             }
 
             function getImg () {
