@@ -84,6 +84,9 @@ function putBag () {
                             tagImg.setAttribute('alt','dessert');
                         }
                         
+                        if(imgSrc.includes('soda')){
+                            tagImg.setAttribute('alt','soda');
+                        }
                     return imgSrc;
                 }
             }
