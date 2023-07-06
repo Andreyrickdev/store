@@ -51,6 +51,7 @@ function putBag () {
                     paragraph.innerText = 1;
 
                     div.appendChild(remove);
+                    div.appendChild(paragraph);
                 }
             }
 
