@@ -18,7 +18,14 @@ function putBag () {
 
             function buttonsAddOrRemove () {
 
+                function buttonAdd () {
 
+                    const button = document.createElement('input')
+                    button.setAttribute("type", "button");
+                    button.setAttribute("value","+");
+                    console.log(button);
+
+                }
 
             }
 
