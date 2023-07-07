@@ -72,9 +72,13 @@ function putBag () {
 
                 if (img) {
                     const imgSrc = img.src || img.getAttribute('src');
-                    const tagImg = createImg();
 
-                    tagImg.setAttribute('src',imgSrc);
+                    let tagImg = createImg();
+
+                    if (imgSrc.startsWith('http://127.0.0.1:5500/')) {
+                        const relativeSrc = imgSrc.replace('http://127.0.0.1:5500/', './');
+                        tagImg.setAttribute('src',relativeSrc);
+                    }
 
                         if(imgSrc.includes('hamburger')){
                             tagImg.setAttribute('alt','hamburger');
@@ -90,6 +94,7 @@ function putBag () {
                     
                     tagImg.setAttribute('width',100);
                     tagImg.setAttribute('height',100);
+                    console.log(tagImg);
                     return tagImg;
                 }
             }
