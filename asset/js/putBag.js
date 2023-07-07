@@ -94,7 +94,6 @@ function putBag () {
                     
                     tagImg.setAttribute('width',100);
                     tagImg.setAttribute('height',100);
-                    console.log(tagImg);
                     return tagImg;
                 }
             }
