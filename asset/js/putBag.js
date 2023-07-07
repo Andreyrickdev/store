@@ -87,6 +87,8 @@ function putBag () {
                         if(imgSrc.includes('soda')){
                             tagImg.setAttribute('alt','soda');
                         }
+                    
+                    tagImg.setAttribute('width',100);
                     return imgSrc;
                 }
             }
