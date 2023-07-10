@@ -136,7 +136,7 @@ function putBag () {
                 li.appendChild(div1);
                 li.appendChild(div2);
 
-                console.log(li);
+                // console.log(li); just see
             }
 
             createYourOrder();
