@@ -114,7 +114,7 @@ function putBag () {
                 const p = item.getElementsByTagName('p')[0].textContent;
                 const createP = createP();
                 createP.appendChild(p);
-                return p;
+                return createP;
             }
 
             function createYourOrder () {
