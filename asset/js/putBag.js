@@ -57,7 +57,7 @@ function putBag () {
                     return div;
                 }
 
-                return mix;
+                return mix();
             }
 
             function getImg () {
@@ -114,10 +114,21 @@ function putBag () {
                 const div1 = createDiv();
                 const div2 = createDiv();
                 const img = getImg();
-                const addOrRemove = buttonsAddOrRemove();
+                const fffd = buttonsAddOrRemove();
                 const h1 = getH1();
                 const p = getP();
+
+                div1.appendChild(img);
+                div2.appendChild(fffd);
+                div2.appendChild(h1);
+                div2.appendChild(p);
+                li.appendChild(div1);
+                li.appendChild(div2);
+
+                console.log(li);
             }
+
+            createYourOrder();
 
         })
     }
