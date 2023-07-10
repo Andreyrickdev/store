@@ -105,16 +105,16 @@ function putBag () {
 
             function getH1 () {
                 const h1 = item.getElementsByTagName('h1')[0].textContent;
-                const createH1 = createH1();
-                createH1.appendChild(h1);
-                return createH1;
+                const newH1 = createH1();
+                newH1.appendChild(h1);
+                return newH1;
             }
 
             function getP () {
                 const p = item.getElementsByTagName('p')[0].textContent;
-                const createP = createP();
-                createP.appendChild(p);
-                return createP;
+                const newP = createP();
+                newP.appendChild(p);
+                return newP;
             }
 
             function createYourOrder () {
