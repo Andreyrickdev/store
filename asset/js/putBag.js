@@ -140,11 +140,10 @@ function putBag () {
                 // console.log(li); just see
             }
 
-            createYourOrder();
-
             function putInBag () {
 
                 const bag = document.getElementById('items-in-bag');
+                const product = createYourOrder();
 
             }
 
