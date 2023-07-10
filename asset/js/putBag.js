@@ -106,6 +106,7 @@ function putBag () {
             function getH1 () {
                 const h1 = item.getElementsByTagName('h1')[0].textContent;
                 const newH1 = createH1();
+                const textNode = document.createTextNode(h1);
                 newH1.appendChild(h1);
                 return newH1;
             }
