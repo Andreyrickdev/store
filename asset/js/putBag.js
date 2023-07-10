@@ -115,7 +115,7 @@ function putBag () {
                 const p = item.getElementsByTagName('p')[0].textContent;
                 const newP = createP();
                 const textNode = document.createTextNode(p);
-                newP.appendChild(p);
+                newP.appendChild(textNode);
                 return newP;
             }
 
