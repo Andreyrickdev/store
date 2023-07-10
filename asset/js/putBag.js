@@ -16,6 +16,11 @@ function putBag () {
                 return div;
             }
 
+            function p () {
+                const p = document.createElement('p');
+                return p;
+            }
+
             function buttonsAddOrRemove () {
 
                 function buttonAdd () {
@@ -34,11 +39,6 @@ function putBag () {
                     button.setAttribute("value","-");
                     return button;
 
-                }
-
-                function p () {
-                    const p = document.createElement('p');
-                    return p;
                 }
 
                 function mix () {
