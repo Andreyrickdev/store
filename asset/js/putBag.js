@@ -144,6 +144,7 @@ function putBag () {
 
                 const bag = document.getElementById('items-in-bag');
                 const product = createYourOrder();
+                bag.appendChild(product);
 
             }
 
