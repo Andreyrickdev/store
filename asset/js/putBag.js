@@ -144,7 +144,7 @@ function putBag () {
 
             function putInBag () {
 
-                
+                const bag = document.getElementById('items-in-bag');
 
             }
 
