@@ -16,7 +16,7 @@ function putBag () {
                 return div;
             }
 
-            function p () {
+            function createP () {
                 const p = document.createElement('p');
                 return p;
             }
@@ -45,7 +45,7 @@ function putBag () {
 
                     const div = createDiv();
                     const add = buttonAdd();
-                    const paragraph = p();
+                    const paragraph = createP();
                     const remove = buttonRemove();
 
                     paragraph.innerText = 1;
