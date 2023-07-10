@@ -142,6 +142,12 @@ function putBag () {
 
             createYourOrder();
 
+            function putInBag () {
+
+                
+
+            }
+
         })
     }
 }
