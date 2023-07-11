@@ -81,7 +81,7 @@ function putBag () {
                     let tagImg = createImg();
 
                     if (imgSrc.startsWith('http://127.0.0.1:5500/')) {
-                        const relativeSrc = imgSrc.replace('http://127.0.0.1:5500/', './');
+                        const relativeSrc = imgSrc.replace('http://127.0.0.1:5500/', '')//removed ./
                         tagImg.setAttribute('src',relativeSrc);
                     }
 
