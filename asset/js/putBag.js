@@ -1,5 +1,7 @@
 function putBag () {
 
+    alert('show de bola');
+
     const items = document.getElementsByClassName('item-food');
     const bag = document.getElementById('items-in-bag');
 
