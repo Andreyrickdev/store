@@ -67,43 +67,43 @@ function putBag () {
                 return mix();
             }
 
-            function getImg () {
-                const img = item.getElementsByTagName('img')[0];
+            // function getImg () {
+            //     const img = item.getElementsByTagName('img')[0];
 
-                function createImg () {
+            //     function createImg () {
 
-                    const tagImg = document.createElement('img');
-                    return tagImg;
+            //         const tagImg = document.createElement('img');
+            //         return tagImg;
 
-                }
+            //     }
 
-                if (img) {
-                    const imgSrc = img.src || img.getAttribute('src');
+            //     if (img) {
+            //         const imgSrc = img.src || img.getAttribute('src');
 
-                    let tagImg = createImg();
+            //         let tagImg = createImg();
 
-                    if (imgSrc.startsWith('http://127.0.0.1:5500/')) {
-                        const relativeSrc = imgSrc.replace('http://127.0.0.1:5500/', '')//removed ./
-                        tagImg.setAttribute('src',relativeSrc);
-                    }
+            //         if (imgSrc.startsWith('http://127.0.0.1:5500/')) {
+            //             const relativeSrc = imgSrc.replace('http://127.0.0.1:5500/', '')//removed ./
+            //             tagImg.setAttribute('src',relativeSrc);
+            //         }
 
-                        if(imgSrc.includes('hamburger')){
-                            tagImg.setAttribute('alt','hamburger');
-                        }
+            //             if(imgSrc.includes('hamburger')){
+            //                 tagImg.setAttribute('alt','hamburger');
+            //             }
 
-                        if(imgSrc.includes('dessert')){
-                            tagImg.setAttribute('alt','dessert');
-                        }
+            //             if(imgSrc.includes('dessert')){
+            //                 tagImg.setAttribute('alt','dessert');
+            //             }
                         
-                        if(imgSrc.includes('soda')){
-                            tagImg.setAttribute('alt','soda');
-                        }
+            //             if(imgSrc.includes('soda')){
+            //                 tagImg.setAttribute('alt','soda');
+            //             }
                     
-                    tagImg.setAttribute('width',100);
-                    tagImg.setAttribute('height',100);
-                    return tagImg;
-                }
-            }
+            //         tagImg.setAttribute('width',100);
+            //         tagImg.setAttribute('height',100);
+            //         return tagImg;
+            //     }
+            // }
 
             function getH1 () {
                 const h1 = item.getElementsByTagName('h1')[0].textContent;
@@ -126,12 +126,12 @@ function putBag () {
                 const li = createLi();
                 const div1 = createDiv();
                 const div2 = createDiv();
-                const img = getImg();
+                // const img = getImg();
                 const fffd = buttonsAddOrRemove();
                 const h1 = getH1();
                 const p = getP();
 
-                div1.appendChild(img);
+                // div1.appendChild(img);
                 div2.appendChild(fffd);
                 div2.appendChild(h1);
                 div2.appendChild(p);

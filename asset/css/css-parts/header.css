@@ -123,7 +123,6 @@ header #shopping-bag-box ul {
 header #shopping-bag-box li {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 10px;
     border: 1px solid rgb(139, 139, 139);
     padding: 10px;
     user-select: none;
