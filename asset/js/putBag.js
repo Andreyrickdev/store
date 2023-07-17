@@ -168,15 +168,7 @@ function putBag () {
                 const product = createYourOrder();
                 const phraseEmpty = createPhraseEmpty();
 
-                if(bag && bag.innerHTML === '') {
-
-                    bag.appendChild(phraseEmpty);
-
-                } else {
-                    
-                    bag.appendChild(product);
-
-                }
+                bag.appendChild(product);
             }
 
             putInBag();
