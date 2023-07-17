@@ -175,6 +175,8 @@ function putBag () {
 
                 } else {
                     
+                    
+
                 }
             }
 
