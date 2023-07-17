@@ -17,6 +17,12 @@ function putBag () {
                 }
 
             }
+
+            function createPhraseEmpty () {
+
+                
+
+            }
             
             function createLi () {
                 const li = document.createElement('li');
