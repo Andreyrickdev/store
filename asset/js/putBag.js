@@ -163,9 +163,9 @@ function putBag () {
 
             function putInBag () {
 
+                removePhraseEmpty();
                 const bag = document.getElementById('items-in-bag');
                 const product = createYourOrder();
-                removePhraseEmpty();
                 const phraseEmpty = createPhraseEmpty();
 
                 if(bag && bag.innerHTML === '') {
