@@ -173,6 +173,8 @@ function putBag () {
 
                     bag.appendChild(phraseEmpty);
 
+                } else {
+                    
                 }
             }
 
