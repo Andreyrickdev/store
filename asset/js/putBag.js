@@ -11,7 +11,10 @@ function putBag () {
             function removePhraseEmpty () {
 
                 const phrase = document.getElementById('cart-empty');
-                return phrase.remove();
+                
+                if (phrase) {
+                    return phrase.remove();
+                }
 
             }
 
