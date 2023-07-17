@@ -7,6 +7,12 @@ function putBag () {
 
     for(let item of items) {
         item.addEventListener('click', () => {
+
+            function removePhraseEmpty () {
+
+                
+
+            }
             
             function createLi () {
                 const li = document.createElement('li');
