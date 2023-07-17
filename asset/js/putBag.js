@@ -11,8 +11,11 @@ function putBag () {
             function removePhraseEmpty () {
 
                 const phrase = document.getElementById('cart-empty');
+                return phrase.remove();
 
             }
+
+            removePhraseEmpty();
             
             function createLi () {
                 const li = document.createElement('li');
