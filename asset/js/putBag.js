@@ -171,7 +171,7 @@ function putBag () {
 
                 if(bag && bag.innerHTML === '') {
 
-                    
+                    bag.appendChild(phraseEmpty);
 
                 }
             }
