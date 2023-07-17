@@ -166,7 +166,6 @@ function putBag () {
                 const bag = document.getElementById('items-in-bag');
                 const product = createYourOrder();
                 removePhraseEmpty();
-                bag.appendChild(product);
                 const phraseEmpty = createPhraseEmpty();
 
                 if(bag && bag.innerHTML === '') {
@@ -175,7 +174,7 @@ function putBag () {
 
                 } else {
                     
-                    
+                    bag.appendChild(product);
 
                 }
             }
