@@ -20,9 +20,14 @@ function putBag () {
 
             function createPhraseEmpty () {
 
+                const p = document.createElement('p');
+                p.setAttribute("id","cart-empty");
+                p.innerText = 'Your cart is empty';
+                return p;
                 
-
             }
+
+            createPhraseEmpty();
             
             function createLi () {
                 const li = document.createElement('li');
