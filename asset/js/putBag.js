@@ -17,8 +17,6 @@ function putBag () {
                 }
 
             }
-
-            removePhraseEmpty();
             
             function createLi () {
                 const li = document.createElement('li');
@@ -158,6 +156,7 @@ function putBag () {
 
                 const bag = document.getElementById('items-in-bag');
                 const product = createYourOrder();
+                removePhraseEmpty();
                 bag.appendChild(product);
 
             }
