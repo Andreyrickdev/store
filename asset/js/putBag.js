@@ -169,7 +169,12 @@ function putBag () {
                 const product = createYourOrder();
                 removePhraseEmpty();
                 bag.appendChild(product);
+                
+                if(bag && bag.innerHTML === '') {
 
+
+
+                }
             }
 
             putInBag();
