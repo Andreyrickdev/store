@@ -168,10 +168,10 @@ function putBag () {
                 removePhraseEmpty();
                 bag.appendChild(product);
                 const phraseEmpty = createPhraseEmpty();
-                
+
                 if(bag && bag.innerHTML === '') {
 
-
+                    
 
                 }
             }
