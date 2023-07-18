@@ -82,6 +82,17 @@ function putBag () {
                         return paragraph;
                     })
 
+                    remove.addEventListener('click', () => {
+
+                        if(paragraph < 1) {
+                            return li.remove();
+                        } else {
+                            --paragraph.innerText;
+                            return paragraph;
+                        }
+
+                    })
+
                     div.classList.add('add-or-remove-item');
                     div.appendChild(remove);
                     div.appendChild(paragraph);
@@ -174,6 +185,11 @@ function putBag () {
                 const product = createYourOrder();
 
                 bag.appendChild(product);
+            }
+
+            function removeInBag () {
+                const product = createYourOrder();
+                product.remove();
             }
 
             putInBag();
