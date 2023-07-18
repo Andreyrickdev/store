@@ -77,6 +77,11 @@ function putBag () {
 
                     paragraph.innerText = 1;
 
+                    add.addEventListener('click', () => {
+                        ++paragraph.innerText;
+                        return paragraph;
+                    })
+
                     div.classList.add('add-or-remove-item');
                     div.appendChild(remove);
                     div.appendChild(paragraph);
