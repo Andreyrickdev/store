@@ -84,11 +84,8 @@ function putBag () {
 
                     remove.addEventListener('click', () => {
 
-                        if(paragraph < 1) {
-                            return li.remove();
-                        } else {
+                        if(paragraph.innerText >= 1 ) {
                             --paragraph.innerText;
-                            return paragraph;
                         }
 
                     })
@@ -189,7 +186,7 @@ function putBag () {
 
             function removeInBag () {
                 const product = createYourOrder();
-                product.remove();
+                return product.remove();
             }
 
             putInBag();
