@@ -89,6 +89,11 @@ function putBag () {
                             return paragraph;
                         }
 
+                        if(paragraph.innerText <= 1 ) {
+                            const product = paragraph.parentNode.parentNode.parentNode;
+                            return product.remove();
+                        }
+
                     })
 
                     div.classList.add('add-or-remove-item');
