@@ -84,8 +84,9 @@ function putBag () {
 
                     remove.addEventListener('click', () => {
 
-                        if(paragraph.innerText >= 1 ) {
+                        if(paragraph.innerText >= 2 ) {
                             --paragraph.innerText;
+                            return paragraph;
                         }
 
                     })
@@ -182,6 +183,11 @@ function putBag () {
                 const product = createYourOrder();
 
                 bag.appendChild(product);
+
+                const addOrRemove = buttonsAddOrRemove();
+                const numOfProducts = addOrRemove.getElementsByTagName('p')[0];
+                console.log(numOfProducts);
+                // Vou começar por aqui, realizando minha remoção do item caso ocorra o click no botão e fique abaixo de 0.
             }
 
             function removeInBag () {
