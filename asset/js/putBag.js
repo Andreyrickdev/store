@@ -155,9 +155,6 @@ function putBag () {
 
                 bag.appendChild(product);
 
-                const addOrRemove = buttonsAddOrRemove();
-                const numOfProducts = addOrRemove.getElementsByTagName('p')[0];
-                console.log(numOfProducts);
 
             }
 
