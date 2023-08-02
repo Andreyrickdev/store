@@ -89,6 +89,9 @@ function putBag () {
                             return paragraph;
                         }
 
+                        // If paragraph arrive 0, remove and put phrase empty!!
+                        // ↓↓↓↓↓↓↓↓↓
+
                         if(paragraph.innerText <= 1 ) {
                             const product = paragraph.parentNode.parentNode.parentNode;
                             const bag = product.parentNode;
@@ -102,6 +105,8 @@ function putBag () {
 
                             
                         }
+
+                        // ↑↑↑↑↑↑↑↑↑↑
 
                     })
 
@@ -155,6 +160,7 @@ function putBag () {
 
                 bag.appendChild(product);
 
+                
 
             }
 
