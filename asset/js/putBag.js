@@ -161,11 +161,6 @@ function putBag () {
 
             }
 
-            function removeInBag () {
-                const product = createYourOrder();
-                return product.remove();
-            }
-
             putInBag();
 
         })
