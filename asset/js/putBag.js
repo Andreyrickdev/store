@@ -183,7 +183,6 @@ function putBag () {
                 li.appendChild(div2);
 
                 return li;
-                // console.log(li); just see
             }
 
             function putInBag () {
