@@ -172,18 +172,14 @@ function putBag () {
             function createYourOrder () {
 
                 const li = createLi();
-                const div1 = createDiv();
                 const div2 = createDiv();
-                // const img = getImg();
                 const AddOrRemove = buttonsAddOrRemove();
                 const h1 = getH1();
                 const p = getP();
 
-                // div1.appendChild(img);
                 div2.appendChild(AddOrRemove);
                 div2.appendChild(h1);
                 div2.appendChild(p);
-                li.appendChild(div1);
                 li.appendChild(div2);
 
                 return li;
