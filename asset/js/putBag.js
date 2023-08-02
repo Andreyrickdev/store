@@ -115,44 +115,6 @@ function putBag () {
                 return mix();
             }
 
-            // function getImg () {
-            //     const img = item.getElementsByTagName('img')[0];
-
-            //     function createImg () {
-
-            //         const tagImg = document.createElement('img');
-            //         return tagImg;
-
-            //     }
-
-            //     if (img) {
-            //         const imgSrc = img.src || img.getAttribute('src');
-
-            //         let tagImg = createImg();
-
-            //         if (imgSrc.startsWith('http://127.0.0.1:5500/')) {
-            //             const relativeSrc = imgSrc.replace('http://127.0.0.1:5500/', '')//removed ./
-            //             tagImg.setAttribute('src',relativeSrc);
-            //         }
-
-            //             if(imgSrc.includes('hamburger')){
-            //                 tagImg.setAttribute('alt','hamburger');
-            //             }
-
-            //             if(imgSrc.includes('dessert')){
-            //                 tagImg.setAttribute('alt','dessert');
-            //             }
-                        
-            //             if(imgSrc.includes('soda')){
-            //                 tagImg.setAttribute('alt','soda');
-            //             }
-                    
-            //         tagImg.setAttribute('width',100);
-            //         tagImg.setAttribute('height',100);
-            //         return tagImg;
-            //     }
-            // }
-
             function getH1 () {
                 const h1 = items[item].getElementsByTagName('h1')[0].textContent;
                 const newH1 = createH1();
