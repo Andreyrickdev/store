@@ -91,7 +91,17 @@ function putBag () {
 
                         if(paragraph.innerText <= 1 ) {
                             const product = paragraph.parentNode.parentNode.parentNode;
+                            const bag = product.parentNode;
+                            console.log(bag.childElementCount);
+
+                            if(bag.childElementCount === 1) {
+                                const phrase = createPhraseEmpty();
+                                bag.appendChild(phrase);
+                            }
+                            
                             return product.remove();
+
+                            
                         }
 
                     })
