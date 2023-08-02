@@ -201,7 +201,7 @@ function putBag () {
                 const addOrRemove = buttonsAddOrRemove();
                 const numOfProducts = addOrRemove.getElementsByTagName('p')[0];
                 console.log(numOfProducts);
-                // Vou começar por aqui, realizando minha remoção do item caso ocorra o click no botão e fique abaixo de 0.
+
             }
 
             function removeInBag () {
