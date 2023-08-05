@@ -152,29 +152,6 @@ function putBag () {
                 return li;
             }
 
-            function verifyBag (item) {
-
-                const bag = document.getElementById('items-in-bag');
-
-                const listOfProducts = [`project-0`, `project-1`];
-
-                for(let i of listOfProducts) {
-                    console.log(bag.getElementsByClassName(i));
-                    const cheque = bag.getElementsByClassName(i).length === 0;
-
-                    if(cheque) {
-                        console.log('Nao tem o item', i);
-                    } else {
-                        console.log('tem o item', i,);
-                    }
-
-                }
-
-
-            }
-
-            verifyBag();
-
             function putInBag () {
 
                 removePhraseEmpty();
@@ -206,6 +183,29 @@ function putBag () {
             }
 
             putInBag();
+
+            function verifyBag (item) {
+
+                const bag = document.getElementById('items-in-bag');
+
+                const listOfProducts = [`project-0`, `project-1`];
+
+                for(let i of listOfProducts) {
+                    console.log(bag.getElementsByClassName(i));
+                    const cheque = bag.getElementsByClassName(i).length === 0;
+
+                    if(cheque) {
+                        console.log('Nao tem o item', i);
+                    } else {
+                        console.log('tem o item', i,);
+                    }
+
+                }
+
+
+            }
+
+            verifyBag();
 
         })
     }
