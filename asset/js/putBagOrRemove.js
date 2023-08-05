@@ -152,6 +152,29 @@ function putBag () {
                 return li;
             }
 
+            function verifyBag (item) {
+
+                const bag = document.getElementById('items-in-bag');
+
+                const listOfProducts = [`project-0`, `project-1`];
+
+                for(let i of listOfProducts) {
+                    console.log(bag.getElementsByClassName(i));
+                    const cheque = bag.getElementsByClassName(i).length === 0;
+
+                    if(cheque) {
+                        console.log('Nao tem o item', i);
+                    } else {
+                        console.log('tem o item', i,);
+                    }
+
+                }
+
+
+            }
+
+            verifyBag();
+
             function putInBag () {
 
                 removePhraseEmpty();
@@ -161,6 +184,24 @@ function putBag () {
                 bag.appendChild(product);
 
                 
+
+                // for(let i of products) {
+                //     const teste = bag.getElementsByClassName(i)
+                //     // console.log(i);
+                //     // console.log(teste);
+                //                                         // ESTOU NESSA PARTE BUSCANDO UMA FORMA DE REALIZAR A CHECAGEM SE JA TEM O ITEM NA MINHA BAG, SE N TIVER ADICIONA, SE TIVER INCREMENTE MAIS UM NUMERO NO ADDORREMOVE
+                //     if(bag.getElementsByClassName(i)) {
+                //         let capturarP = product.getElementsByClassName(`add-or-remove-item`)[0].getElementsByTagName(`p`)[0];
+                //         Number(capturarP.innerText);
+                //         capturarP++;
+                //         console.log(capturarP);
+                //     } else {
+                //         alert('"Se nao" foi ativado');
+                //     }
+                    
+                // }
+
+                // console.log();
 
             }
 
