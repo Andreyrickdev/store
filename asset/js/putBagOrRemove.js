@@ -184,7 +184,7 @@ function putBag () {
 
             putInBag();
 
-            function verifyBag (item) {
+            function verifyBag () {
 
                 const bag = document.getElementById('items-in-bag');
 
