@@ -191,13 +191,15 @@ function putBag () {
                 const listOfProducts = [`project-0`, `project-1`, ];
                 // 'project-2','project-3','project-4','project-5','project-6','project-7','project-8','project-9','project-10','project-11',
                 for(let i of listOfProducts) {
-                    console.log(bag.getElementsByClassName(i));
+                    const item = bag.getElementsByClassName(i)[0];
+                    // const numOfItem = item.getElementsByClassName('add-or-remove-item');
                     const cheque = bag.getElementsByClassName(i).length === 0;
 
                     if(cheque) {
                         console.log('Nao tem o item', i);
                     } else {
-                        console.log('tem o item', i,);
+                        console.log('tem o item', i);
+                        console.log(item);
                     }
 
                 }
