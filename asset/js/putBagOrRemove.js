@@ -200,6 +200,7 @@ function putBag () {
                         console.log('tem o item', i);
                         const numOfItem = item.getElementsByClassName('add-or-remove-item')[0];
                         let qtdItem = Number(numOfItem.getElementsByTagName('p')[0].textContent);
+                        return qtdItem;
                     }
 
                 }
