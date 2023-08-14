@@ -175,12 +175,18 @@ function putBag () {
                     const item = bag.getElementsByClassName(i)[0];
                     const cheque = bag.getElementsByClassName(i).length === 0;
                     
-                    if(cheque) {
-                        console.log('Nao tem o item', i);
-                    } else {
-                        console.log('tem o item', i);
-                        verfied.push(i);
-                    }
+                    // if(cheque) {
+                    //     console.log('Nao tem o item', i);
+                    // } else {
+                    //     console.log('tem o item', i);
+                    //     verfied.push(i);
+                    // }
+
+                    let promise = new Promise ( (resolve,reject) => {
+
+                        
+
+                    })
 
                 }
 
