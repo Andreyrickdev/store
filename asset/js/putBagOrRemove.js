@@ -157,38 +157,19 @@ function putBag () {
                 removePhraseEmpty();
                 const bag = document.getElementById('items-in-bag');
                 const product = createYourOrder();
-
-                bag.appendChild(product);
-
                 
-
-                // for(let i of products) {
-                //     const teste = bag.getElementsByClassName(i)
-                //     // console.log(i);
-                //     // console.log(teste);
-                //                                         // ESTOU NESSA PARTE BUSCANDO UMA FORMA DE REALIZAR A CHECAGEM SE JA TEM O ITEM NA MINHA BAG, SE N TIVER ADICIONA, SE TIVER INCREMENTE MAIS UM NUMERO NO ADDORREMOVE
-                //     if(bag.getElementsByClassName(i)) {
-                //         let capturarP = product.getElementsByClassName(`add-or-remove-item`)[0].getElementsByTagName(`p`)[0];
-                //         Number(capturarP.innerText);
-                //         capturarP++;
-                //         console.log(capturarP);
-                //     } else {
-                //         alert('"Se nao" foi ativado');
-                //     }
-                    
-                // }
-
-                // console.log();
-
+                bag.appendChild(product);
             }
 
             putInBag();
-
+                
             function verifyBag () {
 
                 const bag = document.getElementById('items-in-bag');
 
-                const listOfProducts = [`project-0`, `project-1`, ];
+                const listOfProducts = [`project-0`, `project-1`, `project-2`];
+                let verfied = [];
+                
                 // 'project-2','project-3','project-4','project-5','project-6','project-7','project-8','project-9','project-10','project-11',
                 for(let i of listOfProducts) {
                     const item = bag.getElementsByClassName(i)[0];
@@ -198,13 +179,12 @@ function putBag () {
                         console.log('Nao tem o item', i);
                     } else {
                         console.log('tem o item', i);
-                        const numOfItem = item.getElementsByClassName('add-or-remove-item')[0];
-                        let qtdItem = Number(numOfItem.getElementsByTagName('p')[0].textContent);
-                        return qtdItem;
+                        verfied.push(i);
                     }
 
                 }
 
+                return verfied;
 
             }
 
