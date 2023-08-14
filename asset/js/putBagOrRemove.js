@@ -172,21 +172,9 @@ function putBag () {
                 
                 // 'project-2','project-3','project-4','project-5','project-6','project-7','project-8','project-9','project-10','project-11',
                 for(let i of listOfProducts) {
-                    const item = bag.getElementsByClassName(i)[0];
+                    const itemInBag = bag.getElementsByClassName(i)[0];
                     const cheque = bag.getElementsByClassName(i).length === 0;
-                    
-                    // if(cheque) {
-                    //     console.log('Nao tem o item', i);
-                    // } else {
-                    //     console.log('tem o item', i);
-                    //     verfied.push(i);
-                    // }
 
-                    let promise = new Promise ( (resolve,reject) => {
-
-                        
-
-                    })
 
                 }
 
