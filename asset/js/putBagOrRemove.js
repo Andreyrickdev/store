@@ -165,7 +165,11 @@ function putBag () {
 
                 const bag = document.getElementById('items-in-bag');
 
-                const listOfProducts = [`project-0`, `project-1`, `project-2`];
+                let listOfProducts = [];
+
+                for (let i = 0; i <= 11; i++) {
+                    listOfProducts.push(`project-${i}`);
+                }
                 
                 const yourLiName = listOfProducts[item];
 
