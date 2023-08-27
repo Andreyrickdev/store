@@ -161,7 +161,7 @@ function putBag () {
                 bag.appendChild(product);
             }
 
-            putInBag();
+            // putInBag();
                 
             function verifyBag () {
 
@@ -176,8 +176,12 @@ function putBag () {
 
                 const cheque = yourLi;
 
-                if(cheque.length !== 1 ) {
-                    alert('tem mais de um elemento');
+                if(cheque.length === 0) {
+                    putInBag();
+                }else{
+                    let yourP = yourLi[0].getElementsByTagName('p')[0];
+                    let numP = Number(yourP.textContent);
+                    yourP.textContent = ++numP;
                 }
 
                 return verfied;
