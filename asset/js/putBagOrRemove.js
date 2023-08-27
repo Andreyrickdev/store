@@ -172,7 +172,9 @@ function putBag () {
                 
                 const yourLiName = listOfProducts[item];
 
-                const cheque = bag.getElementsByClassName(yourLiName);
+                const yourLi = bag.getElementsByClassName(yourLiName);
+
+                const cheque = yourLi;
 
                 if(cheque.length !== 1 ) {
                     alert('tem mais de um elemento');
