@@ -160,9 +160,7 @@ function putBag () {
                 
                 bag.appendChild(product);
             }
-
-            // putInBag();
-                
+            
             function verifyBag () {
 
                 const bag = document.getElementById('items-in-bag');
