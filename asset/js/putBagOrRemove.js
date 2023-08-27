@@ -170,7 +170,6 @@ function putBag () {
                 const listOfProducts = [`project-0`, `project-1`, `project-2`];
                 let verfied = [];
                 
-
                 const yourLi = listOfProducts[item];
 
                 const cheque = bag.getElementsByClassName(yourLi);
@@ -178,18 +177,6 @@ function putBag () {
                 if(cheque.length !== 1 ) {
                     alert('tem mais de um elemento');
                 }
-                // 'project-2','project-3','project-4','project-5','project-6','project-7','project-8','project-9','project-10','project-11',
-                // for(let i of listOfProducts) {
-                //     const itemInBag = bag.getElementsByClassName(i);
-                //     const cheque = bag.getElementsByClassName(i).length === 0;
-                //     console.log(itemInBag);
-                //     // console.log(cheque, i);
-
-                //     // if (cheque == false) {
-                //     //     return alert(`esse item ${i}, ja tem.`);
-                //     // }
-
-                // }
 
                 return verfied;
 
