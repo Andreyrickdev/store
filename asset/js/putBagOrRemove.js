@@ -168,7 +168,6 @@ function putBag () {
                 const bag = document.getElementById('items-in-bag');
 
                 const listOfProducts = [`project-0`, `project-1`, `project-2`];
-                let verfied = [];
                 
                 const yourLiName = listOfProducts[item];
 
@@ -183,8 +182,6 @@ function putBag () {
                     let numP = Number(yourP.textContent);
                     yourP.textContent = ++numP;
                 }
-
-                return verfied;
 
             }
 
