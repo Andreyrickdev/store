@@ -78,8 +78,10 @@ function putBag () {
                     paragraph.innerText = 1;
 
                     add.addEventListener('click', () => {
-                        ++paragraph.innerText;
-                        return paragraph;
+                        if(paragraph.innerText < 10) {
+                            ++paragraph.innerText;
+                            return paragraph;
+                        }
                     })
 
                     remove.addEventListener('click', () => {
@@ -182,7 +184,9 @@ function putBag () {
                 }else{
                     let yourP = yourLi[0].getElementsByTagName('p')[0];
                     let numP = Number(yourP.textContent);
-                    yourP.textContent = ++numP;
+                    if(numP < 10) {
+                        yourP.textContent = ++numP;
+                    }
                 }
 
             }
