@@ -26,6 +26,7 @@
 
 #box-yourItemAddedInBag.active {
     opacity: 0.9;
+    transition: 0.5s opacity;
 }
 
 header {
