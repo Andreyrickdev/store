@@ -11,12 +11,12 @@
     width: 100%;
 }
 
-#header-categories #box-yourItemAddedInBag {
+#box-yourItemAddedInBag {
     background-color: #a4fa9d;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     right: 20px;
-    bottom: -4rem;
+    bottom: 6rem;
     width: 200px;
     text-align: center;
     z-index: 3;
