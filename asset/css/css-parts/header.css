@@ -21,6 +21,7 @@
     text-align: center;
     z-index: 3;
     color: #000;
+    opacity: 0;
 }
 
 header {
