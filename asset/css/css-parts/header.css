@@ -24,6 +24,10 @@
     opacity: 0;
 }
 
+#box-yourItemAddedInBag.active {
+    opacity: 0.9;
+}
+
 header {
     display: flex;
     justify-content: space-between;
