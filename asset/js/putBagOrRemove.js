@@ -197,13 +197,19 @@ function putBag () {
     }
 }
 
-const noFavorite = document.getElementsByClassName('favorite');
+function noFavorite () {
+    
+    const noFavorite = document.getElementsByClassName('favorite');
+    
+    for(let fav = 0; fav < noFavorite.length; fav++) {
+        noFavorite[fav].addEventListener('click', (e) => {
+            e.stopPropagation();
+            alert(fav);
+        }) 
+    }
+    
+    putBag();
 
-for(let fav = 0; fav < noFavorite.length; fav++) {
-    noFavorite[fav].addEventListener('click', (e) => {
-        e.stopPropagation();
-        alert(fav);
-    }) 
 }
 
-putBag();
+noFavorite();
