@@ -204,7 +204,6 @@ function noFavorite () {
     for(let fav = 0; fav < noFavorite.length; fav++) {
         noFavorite[fav].addEventListener('click', (e) => {
             e.stopPropagation();
-            alert(fav);
         }) 
     }
     
