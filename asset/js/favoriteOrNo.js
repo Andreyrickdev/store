@@ -9,7 +9,7 @@ function eventOnHeart () {
 
     for (let fav of heart) {
         fav.addEventListener('click', () => {
-            
+            fav.classList.toggle('active');
         });
     }
 }
