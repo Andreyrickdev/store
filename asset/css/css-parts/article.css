@@ -35,6 +35,7 @@
 
 .favorite.active .fav{
     fill: #FF214F;
+    transition: all 0.3s;
 } 
 
 #food-items .item-food:hover, #dessert-items .item-food:hover, #drinks-items .item-food:hover {
