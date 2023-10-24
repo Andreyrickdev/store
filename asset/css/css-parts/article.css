@@ -33,7 +33,7 @@
     display: grid;
 }
 
-#food-items .favorite:hover .fav, #dessert-items .favorite:hover .fav, #drinks-items .favorite:hover .fav {
+.favorite.active .fav{
     fill: #FF214F;
 } 
 
