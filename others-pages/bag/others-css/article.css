@@ -35,6 +35,7 @@
 .product .buttons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .product .buttons .add-or-remove-item {
