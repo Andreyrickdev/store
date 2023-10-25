@@ -42,3 +42,10 @@
     align-items: center;
     font-size: 1.2rem;
 }
+
+.product .buttons .add-or-remove-item input {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #FF214F;
+    color: #fff;
+}
