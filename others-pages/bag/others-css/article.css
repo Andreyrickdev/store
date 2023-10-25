@@ -36,3 +36,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+.product .buttons .add-or-remove-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
