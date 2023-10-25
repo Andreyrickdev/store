@@ -6,6 +6,11 @@
     display: grid;
 }
 
+#article ul {
+    display: grid;
+    gap: 10px 20px;
+}
+
 .product {
     background-color: blueviolet;
     display: grid;
