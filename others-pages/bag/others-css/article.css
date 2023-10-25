@@ -43,6 +43,11 @@
     font-size: 1.2rem;
 }
 
+.product .buttons .add-or-remove-item p {
+    padding: 5px 20px;
+    background-color: #fff;
+}
+
 .product .buttons .add-or-remove-item input {
     padding: 10px;
     cursor: pointer;
