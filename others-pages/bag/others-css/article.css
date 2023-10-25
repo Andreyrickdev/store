@@ -1,5 +1,5 @@
 #article {
-    max-width: 1200px;
+    max-width: 900px;
     background-color: orange;
     padding: 0 20px;
     margin: 0 auto;
@@ -28,4 +28,5 @@
 
 .product .description-product {
     font-size: 1.2rem;
+    max-width: 400px;
 }
