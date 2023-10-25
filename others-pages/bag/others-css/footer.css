@@ -1,0 +1,10 @@
+#footer {
+    display: flex;
+    align-items: end;
+    background-color: red;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
