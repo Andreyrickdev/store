@@ -20,3 +20,7 @@
     height: 100px;
     display: grid;
 }
+
+.product .description-product {
+    font-size: 1.2rem;
+}
