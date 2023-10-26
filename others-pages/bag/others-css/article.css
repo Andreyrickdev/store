@@ -29,6 +29,9 @@
     width: 100px;
     height: 100px;
     display: grid;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product .img-product.hamburger {
