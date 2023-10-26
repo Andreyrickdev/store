@@ -18,7 +18,13 @@ function addOrRemoveItems () {
     function addOrRemove () {
 
         document.addEventListener('click', (e) => {
-            console.log(e.target);
+            
+            const buttonAddOrRemove = e.target; 
+            
+            if(buttonAddOrRemove.classList.contains('button-remove')) {
+                alert('deu certo');
+            }
+
         })
 
     }
