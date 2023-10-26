@@ -14,4 +14,14 @@ function addOrRemoveItems () {
         const add = document.getElementsByClassName('button-add');
         return add;
     }
+
+    function addOrRemove () {
+
+        document.addEventListener('click', (e) => {
+            console.log(e.target);
+        })
+
+    }
+
+    addOrRemove();
 }
