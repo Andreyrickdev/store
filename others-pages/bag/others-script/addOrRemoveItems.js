@@ -31,3 +31,5 @@ function addOrRemoveItems () {
 
     addOrRemove();
 }
+
+addOrRemoveItems();
