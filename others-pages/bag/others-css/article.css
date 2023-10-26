@@ -31,6 +31,18 @@
     display: grid;
 }
 
+.product .img-product.hamburger {
+    background-image: url('../img/hamburger.png');
+}
+
+.product .img-product.dessert {
+    background-image: url('../img/dessert.png');
+}
+
+.product .img-product.soda {
+    background-image: url('../img/soda.png');
+}
+
 .product .description-product {
     font-size: 1.2rem;
     max-width: 400px;
