@@ -6,10 +6,14 @@ function addOrRemoveItems () {
             
             const buttonAddOrRemove = e.target; 
             const getDadDiv = buttonAddOrRemove.parentNode;
-            const getNumItem = getDadDiv.querySelector('p');
+            let getNumItem = getDadDiv.querySelector('p');
             
             if(buttonAddOrRemove.classList.contains('button-remove')) {
-                alert('deu certo');
+
+                let num = Number(getNumItem.innerText);
+                getNumItem.innerText = --num;
+                alert(1);
+
             }
 
         })
