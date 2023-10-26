@@ -9,4 +9,9 @@ function addOrRemoveItems () {
         const num = document.getElementsByClassName('num-items');
         return num;
     }
+
+    function selectedAdd () {
+        const add = document.getElementsByClassName('button-add');
+        return add;
+    }
 }
