@@ -11,8 +11,15 @@ function addOrRemoveItems () {
             if(buttonAddOrRemove.classList.contains('button-remove')) {
 
                 let num = Number(getNumItem.innerText);
-                getNumItem.innerText = --num;
-                alert(1);
+
+                if(num >= 1) {
+                    getNumItem.innerText = --num;
+                }
+
+                if(num == 0) {
+                    const dadOfAll = getDadDiv.parentNode.parentNode.parentNode;
+                    dadOfAll.remove();
+                }
 
             }
 
