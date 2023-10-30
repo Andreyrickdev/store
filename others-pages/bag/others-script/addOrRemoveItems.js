@@ -37,6 +37,10 @@ function addOrRemoveItems () {
 
     }
 
+    function ifRemove () {
+        
+    }
+
     addOrRemove();
 }
 
