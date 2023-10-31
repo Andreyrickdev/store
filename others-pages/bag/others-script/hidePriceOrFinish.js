@@ -10,6 +10,17 @@ function hidePriceOrFinish () {
         return finish;
     }
 
+    function hide () {
+        const price = selectPrice();
+        const finish = selectFinish();
+
+        setInterval(() => {
+            price.classList.toggle('hide');
+            finish.classList.toggle('hide');
+        },2000);
+    }
+
+    hide();
 
 }
 
