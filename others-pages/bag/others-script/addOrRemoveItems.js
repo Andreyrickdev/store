@@ -18,7 +18,7 @@ function addOrRemoveItems () {
 
                 if(num == 0) {
                     const dadOfAll = getDadDiv.parentNode.parentNode.parentNode;
-                    dadOfAll.remove();
+                    ifRemove(dadOfAll);
                 }
 
             }
