@@ -55,6 +55,13 @@ function addOrRemoveItems () {
             return h1;
         }
 
+        function h1InDiv () {
+            const div = createDiv();
+            const h1 = setValueH1();
+            div.appendChild(h1);
+            return div;
+        }
+
     }
 
     addOrRemove();
