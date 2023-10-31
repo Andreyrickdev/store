@@ -33,6 +33,10 @@
     gap: 10px 20px;
 }
 
+.product .infs-product h1 {
+    font-size: 2em;
+}
+
 .product .img-product {
     width: 100px;
     height: 100px;
