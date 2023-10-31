@@ -62,6 +62,11 @@ function addOrRemoveItems () {
             return div;
         }
 
+        function resetValueInLi () {
+            li.innerText = '';
+            return li;
+        }
+
     }
 
     addOrRemove();
