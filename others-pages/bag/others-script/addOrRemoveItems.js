@@ -73,6 +73,13 @@ function addOrRemoveItems () {
             return li;
         }
 
+        function h1InLi () {
+            const li = addClassOnLi();
+            const div = h1InDiv();
+            li.appendChild(div);
+            return li;
+        }
+
     }
 
     addOrRemove();
