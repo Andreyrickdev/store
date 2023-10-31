@@ -88,6 +88,8 @@ function addOrRemoveItems () {
             }, 3000)
         }
 
+        timerForRemove();
+
     }
 
     addOrRemove();
