@@ -67,6 +67,12 @@ function addOrRemoveItems () {
             return li;
         }
 
+        function addClassOnLi () {
+            const li = resetValueInLi();
+            li.classList.add('removed');
+            return li;
+        }
+
     }
 
     addOrRemove();
