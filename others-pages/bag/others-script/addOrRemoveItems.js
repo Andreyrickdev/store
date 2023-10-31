@@ -39,7 +39,10 @@ function addOrRemoveItems () {
 
     function ifRemove (li) {
 
-
+        function createDiv () {
+            const div = document.createElement('div');
+            return div;
+        }
 
     }
 
