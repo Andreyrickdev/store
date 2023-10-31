@@ -5,6 +5,11 @@ function hidePriceOrFinish () {
         return price;
     }
 
+    function selectFinish () {
+        const finish = document.getElementsByClassName('finish')[0];
+        return finish;
+    }
+
 
 }
 
