@@ -44,6 +44,11 @@ function addOrRemoveItems () {
             return div;
         }
 
+        function createH1 () {
+            const h1 = document.createElement('h1');
+            return h1;
+        }
+
     }
 
     addOrRemove();
