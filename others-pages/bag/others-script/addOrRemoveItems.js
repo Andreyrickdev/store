@@ -80,6 +80,14 @@ function addOrRemoveItems () {
             return li;
         }
 
+        function timerForRemove () {
+            const li = h1InLi();
+
+            setTimeout(() => {
+                li.remove();
+            }, 3000)
+        }
+
     }
 
     addOrRemove();
