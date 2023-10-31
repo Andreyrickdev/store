@@ -19,6 +19,15 @@
     align-items: center;
 }
 
+.product.removed {
+    background-color: #ff214d9f;
+    height: 135px;
+    color: #FF214F;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+}
+
 .product .infs-product {
     display: grid;
     gap: 10px 20px;
