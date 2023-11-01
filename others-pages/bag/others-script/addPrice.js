@@ -11,7 +11,7 @@ function addPrice () {
         }
 
         let resultMultiplications = [];
-
+        let sum;
 
     });
 
