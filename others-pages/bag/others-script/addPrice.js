@@ -19,7 +19,7 @@ function addPrice () {
 
             for(let item of items) {
                 const allH1 = item.querySelector('h1').innerText;
-
+                const allNumItems = item.querySelector('.num-items').innerText;
             }
 
         }
