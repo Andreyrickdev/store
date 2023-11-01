@@ -13,6 +13,10 @@ function addPrice () {
         let resultMultiplications = [];
         let sum;
 
+        function readAllItems () {
+            
+        }
+
     });
 
 }
