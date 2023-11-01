@@ -17,6 +17,10 @@ function addPrice () {
 
             const items = selectItems();
 
+            for(let item of items) {
+                
+            }
+
         }
 
     });
