@@ -10,6 +10,9 @@ function addPrice () {
             return items;
         }
 
+        let resultMultiplications = [];
+
+
     });
 
 }
