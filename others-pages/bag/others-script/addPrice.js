@@ -10,7 +10,7 @@ function addPrice () {
             return items;
         }
 
-        let resultMultiplications = [];
+        let sumAllMultiplications = [];
         let sum;
 
         function readAllItems () {
