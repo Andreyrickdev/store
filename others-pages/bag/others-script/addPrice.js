@@ -6,7 +6,8 @@ function addPrice () {
     button.addEventListener('click', () => {
 
         function selectItems () {
-            
+            const items = document.getElementsByClassName('product');
+            return items;
         }
 
     });
