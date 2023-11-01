@@ -14,7 +14,9 @@ function addPrice () {
         let sum;
 
         function readAllItems () {
-            
+
+            const items = selectItems();
+
         }
 
     });
