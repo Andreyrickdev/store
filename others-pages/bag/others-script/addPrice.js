@@ -18,7 +18,8 @@ function addPrice () {
             const items = selectItems();
 
             for(let item of items) {
-                
+                const a = item.querySelector('h1').innerText;
+
             }
 
         }
