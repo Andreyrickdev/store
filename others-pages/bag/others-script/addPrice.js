@@ -5,6 +5,10 @@ function addPrice () {
 
     button.addEventListener('click', () => {
 
+        function selectItems () {
+            
+        }
+
     });
 
 }
