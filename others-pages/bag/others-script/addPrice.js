@@ -27,6 +27,8 @@ function addPrice () {
                 sum = sumAllMultiplications.reduce((total, valor) => total + valor, 0);
             }
 
+            numPrice.innerText = sum;
+
         }
 
         readAllItems();
