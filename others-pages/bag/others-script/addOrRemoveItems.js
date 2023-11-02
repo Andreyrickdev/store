@@ -85,7 +85,7 @@ function addOrRemoveItems () {
 
             setTimeout(() => {
                 li.remove();
-            }, 3000)
+            }, 1500)
         }
 
         timerForRemove();
