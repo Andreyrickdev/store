@@ -7,7 +7,9 @@ function addPrice () {
 
         const clickedOnButtons = e.target;
 
-
+        if(clickedOnButtons.hasAttribute('type')) {
+            
+        }
     });
 
 }
