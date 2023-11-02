@@ -21,9 +21,13 @@ function addPrice () {
                 const allH1 = item.querySelector('h1').innerText;
                 const allNumItems = item.querySelector('.num-items').innerText;
                 const resultMultiplications = allH1 * allNumItems;
+
+                sumAllMultiplications.push(resultMultiplications);
             }
 
         }
+
+        readAllItems();
 
     });
 
