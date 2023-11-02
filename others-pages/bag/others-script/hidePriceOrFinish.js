@@ -24,4 +24,4 @@ function hidePriceOrFinish () {
 
 }
 
-hidePriceOrFinish();
+// hidePriceOrFinish();
