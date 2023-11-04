@@ -38,7 +38,11 @@ function addPrice () {
 
                     }
         
-                    numPrice.innerText = sum.toFixed(2);
+                    try {
+                        numPrice.innerText = sum.toFixed(2);
+                    } catch {
+                        numPrice.innerText = '00.00';
+                    }
         
                 }
         
