@@ -99,6 +99,7 @@ header #shopping-bag {
     justify-content: center;
     gap: 10px;
     user-select: none;
+    position: relative;
 }
 
 header #shopping-bag #num-items-in-your-bag {
