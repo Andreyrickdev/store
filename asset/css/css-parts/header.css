@@ -111,6 +111,10 @@ header #shopping-bag #num-items-in-your-bag {
     display: none;
 }
 
+header #shopping-bag #num-items-in-your-bag.active {
+    display: block;
+}
+
 header #shopping-bag-box {
     background-color: #fff;
     position: absolute;
