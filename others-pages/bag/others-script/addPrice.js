@@ -56,10 +56,6 @@ function addPrice () {
 
     });
 
-    // window.addEventListener('load', () => {
-    //     teste();
-    // })
-
 }
 
 addPrice();
