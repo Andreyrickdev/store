@@ -110,7 +110,6 @@ header #shopping-bag #num-items-in-your-bag {
     right: -5px;
     font-weight: bold;
     display: none;
-    position: relative;
 }
 
 header #shopping-bag #num-items-in-your-bag.active {
