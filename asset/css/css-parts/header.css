@@ -127,7 +127,7 @@ header #shopping-bag-box {
     transition: 0.5s;
 }
 
-header #shopping-bag-box #cart-empty {
+header #shopping-bag-box #bag-empty {
     width: 100%;
     max-width: 500px;
     padding: 20px 10px;

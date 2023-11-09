@@ -3,14 +3,18 @@ function putBag () {
 
 
     const items = document.getElementsByClassName('item-food');
-    const bag = document.getElementById('items-in-bag');
 
     for( let item = 0; item < items.length; item++) {
         items[item].addEventListener('click', () => {
 
             function removePhraseEmpty () {
 
-                const phrase = document.getElementById('cart-empty');
+                function getPhrase () {
+                    const phrase = document.getElementById('bag-empty');
+                    return phrase;
+                }
+
+                const phrase = getPhrase();
                 
                 if (phrase) {
                     return phrase.remove();
@@ -20,17 +24,44 @@ function putBag () {
 
             function createPhraseEmpty () {
 
-                const p = document.createElement('p');
-                p.setAttribute("id","cart-empty");
-                p.innerText = 'Your cart is empty';
-                return p;
-                
+                function createdPhrase () {
+                    let p = createP();
+                    return p;
+                }
+
+                function setAttrOfP (p){
+                    p.setAttribute("id","bag-empty");
+                    return p;
+                }
+
+                function setTextOfP (p) {
+                    p.innerText = 'Your bag is empty';
+                    return p;
+                }
+
+                const p = createdPhrase();
+                const pWithId = setAttrOfP(p);
+                const finalP = setTextOfP(pWithId);
+
+                return finalP;
             }
             
             function createLi () {
-                const li = document.createElement('li');
-                li.classList.add(`project-${item}`);
-                return li;
+
+                function createdLi () {
+                    const li = document.createElement('li');
+                    return li;
+                }
+
+                function setClassOnLi (li) {
+                    li.classList.add(`project-${item}`);
+                    return li;
+                }
+                
+                const li = createdLi();
+                const finalLi = setClassOnLi(li);
+
+                return finalLi;
             }
 
             function createDiv () {
@@ -52,19 +83,52 @@ function putBag () {
 
                 function buttonAdd () {
 
-                    const button = document.createElement('input')
-                    button.setAttribute("type", "button");
-                    button.setAttribute("value","+");
-                    return button;
+                    function createdButtonAdd () {
+                        const button = document.createElement('input');
+                        return button;
+                    }
 
+                    function setAttrOfButton (button) {
+                        button.setAttribute("type", "button");
+                        button.setAttribute("value","+");
+                        return button;
+                    }
+
+                    function setClassOnButton (button) {
+                        button.classList.add('button-add');
+                        return button;
+                    }
+
+                    const button = createdButtonAdd();
+                    const setAttr = setAttrOfButton(button);
+                    const finalButton = setClassOnButton(setAttr);
+
+                    return finalButton;
                 }
 
                 function buttonRemove () {
 
-                    const button = document.createElement('input')
-                    button.setAttribute("type", "button");
-                    button.setAttribute("value","-");
-                    return button;
+                    function createdButtonRemove () {
+                        const button = document.createElement('input');
+                        return button;
+                    }
+
+                    function setAttrOfButton (button) {
+                        button.setAttribute("type", "button");
+                        button.setAttribute("value","-");
+                        return button;
+                    }
+
+                    function setClassOnButton (button) {
+                        button.classList.add('button-remove');
+                        return button;
+                    }
+
+                    const button = createdButtonRemove();
+                    const setAttr = setAttrOfButton(button);
+                    const finalButton = setClassOnButton(setAttr);
+
+                    return finalButton;
 
                 }
 
@@ -77,39 +141,44 @@ function putBag () {
 
                     paragraph.innerText = 1;
 
-                    add.addEventListener('click', () => {
-                        if(paragraph.innerText < 10) {
-                            ++paragraph.innerText;
-                            return paragraph;
-                        }
-                    })
+                    document.addEventListener('click', (event) => {
+                        const eventAttk = event.target;
 
-                    remove.addEventListener('click', () => {
-
-                        if(paragraph.innerText >= 2 ) {
-                            --paragraph.innerText;
-                            return paragraph;
-                        }
-
-                        // If paragraph arrive 0, remove and put phrase empty!!
-                        // ↓↓↓↓↓↓↓↓↓
-
-                        if(paragraph.innerText <= 1 ) {
-                            const product = paragraph.parentNode.parentNode.parentNode;
-                            const bag = product.parentNode;
-
-                            if(bag.childElementCount === 1) {
-                                const phrase = createPhraseEmpty();
-                                bag.appendChild(phrase);
+                        if(eventAttk == add) {
+                            if(paragraph.innerText < 10) {
+                                ++paragraph.innerText;
+                                return paragraph;
                             }
+                        }
+
+                        if(eventAttk == remove) {
+                            if(paragraph.innerText >= 2 ) {
+                                --paragraph.innerText;
+                                return paragraph;
+                            }
+
+                            if(paragraph.innerText <= 1 ) {
+                                const product = paragraph.parentNode.parentNode.parentNode;
+                                const bag = getBag();
+                                function removeItemInBagVerify () {
+                                    const itemsInBagRemove = bag.childElementCount - 1;
+                                    const numItemsTextRemoved = verifyNumItems(itemsInBagRemove);
+                                    // console.log(itemsInBagRemove);
+
+                                    return numItemsTextRemoved;
+                                }
+
+                                removeItemInBagVerify();
+
+                                if(bag.childElementCount === 1) {
+                                    const phrase = createPhraseEmpty();
+                                    bag.appendChild(phrase);
+                                }
 
                             return product.remove();
 
-                            
+                            }
                         }
-
-                        // ↑↑↑↑↑↑↑↑↑↑
-
                     })
 
                     div.classList.add('add-or-remove-item');
@@ -122,34 +191,87 @@ function putBag () {
                 return mix();
             }
 
+            
+            // Creating your order...
+
+            function getBag () {
+                const bag = document.getElementById('items-in-bag');
+                return bag;
+            }
+
             function getH1 () {
-                const h1 = items[item].getElementsByTagName('h1')[0].textContent;
-                const newH1 = createH1();
-                const textNode = document.createTextNode(h1);
-                newH1.appendChild(textNode);
-                return newH1;
+
+                function getedH1 () {
+                    const h1 = items[item].getElementsByTagName('h1')[0].textContent;
+                    return h1;
+                }
+
+                function createdNewH1 () {
+                    const newH1 = createH1();
+                    return newH1
+                }
+
+                function createdTextNode (h1) {
+                    const textNode = document.createTextNode(h1);
+                    return textNode;
+                }
+
+                function textNodeInNewH1 (textNode) {
+                    newH1.appendChild(textNode);
+                    return newH1;
+                }
+
+                const h1 = getedH1();
+                const newH1 = createdNewH1();
+                const textNode = createdTextNode(h1);
+                const finalH1 = textNodeInNewH1(textNode);
+
+                return finalH1;
+
             }
 
             function getP () {
-                const p = items[item].getElementsByTagName('p')[0].textContent;
-                const newP = createP();
-                const textNode = document.createTextNode(p);
-                newP.appendChild(textNode);
-                return newP;
+
+                function getedP () {
+                    const p = items[item].getElementsByTagName('p')[0].textContent;
+                    return p;
+                }
+
+                function createdNewP () {
+                    const newP = createP();
+                    return newP;
+                }
+
+                function createdTextNode (p) {
+                    const textNode = document.createTextNode(p);
+                    return textNode;
+                }
+
+                function textNodeInNewP (textNode) {
+                    newP.appendChild(textNode);
+                    return newP;
+                }
+
+                const p = getedP();
+                const newP = createdNewP();
+                const textNode = createdTextNode(p);
+                const finalP = textNodeInNewP(textNode);
+
+                return finalP;
             }
 
             function createYourOrder () {
 
                 const li = createLi();
-                const div2 = createDiv();
+                const div = createDiv();
                 const AddOrRemove = buttonsAddOrRemove();
                 const h1 = getH1();
                 const p = getP();
 
-                div2.appendChild(AddOrRemove);
-                div2.appendChild(h1);
-                div2.appendChild(p);
-                li.appendChild(div2);
+                div.appendChild(AddOrRemove);
+                div.appendChild(h1);
+                div.appendChild(p);
+                li.appendChild(div);
 
                 return li;
             }
@@ -157,41 +279,126 @@ function putBag () {
             function putInBag () {
 
                 removePhraseEmpty();
-                const bag = document.getElementById('items-in-bag');
-                const product = createYourOrder();
+
+                function getBag () {
+                    const bag = document.getElementById('items-in-bag');
+                    return bag;
+                }
+
+                function yourOrder () {
+                    const product = createYourOrder();
+                    return product;
+                }
                 
+                const bag = getBag();
+                const product = yourOrder();
+
                 bag.appendChild(product);
             }
             
             function verifyBag () {
 
-                const bag = document.getElementById('items-in-bag');
+                function gettingBag () {
+                    const bag = getBag();
+                    return bag;
+                }
 
-                let listOfProducts = [];
+                function createdListOfProducts () {
+                    let listOfProducts = [];
+                    return listOfProducts;
+                }
 
-                for (let i = 0; i <= 11; i++) {
-                    listOfProducts.push(`project-${i}`);
+                function pushProjectsInListOfProducts (listOfProducts) {
+                    for (let i = 0; i <= 11; i++) {
+                        listOfProducts.push(`project-${i}`);
+                    }
+
+                    return listOfProducts;
+                }
+
+                function getLiOfListOfProducts (listOfProducts) {
+                    const yourLiName = listOfProducts[item];
+                    return yourLiName
                 }
                 
-                const yourLiName = listOfProducts[item];
+                function getLi (bag,yourLiName) {
+                    const yourLi = bag.getElementsByClassName(yourLiName);
+                    return yourLi;
+                }
 
-                const yourLi = bag.getElementsByClassName(yourLiName);
+                function createdCheque (yourLi) {
+                    const cheque = yourLi;
+                    return cheque
+                }
 
-                const cheque = yourLi;
+                function verifyItemInBag (cheque, yourLi) {
 
-                if(cheque.length === 0) {
-                    putInBag();
-                }else{
-                    let yourP = yourLi[0].getElementsByTagName('p')[0];
-                    let numP = Number(yourP.textContent);
-                    if(numP < 10) {
-                        yourP.textContent = ++numP;
+                    if(cheque.length === 0) {
+                        putInBag();
+                    }else{
+                        let yourP = yourLi[0].getElementsByTagName('p')[0];
+                        let numP = Number(yourP.textContent);
+                        if(numP < 10) {
+                            yourP.textContent = ++numP;
+                        }
+                    }
+
+                }
+
+                const bag = gettingBag();
+                let listOfProducts = createdListOfProducts();
+                const liInList = pushProjectsInListOfProducts(listOfProducts);
+                const getLiInList = getLiOfListOfProducts(liInList);
+                const gettingLi = getLi(bag, getLiInList);
+                const creatingCheque = createdCheque(gettingLi);
+                const finishVerify = verifyItemInBag(creatingCheque, gettingLi);
+
+                return finishVerify;
+            }
+
+            function verifyNumItems (itemsInBagRemove) {
+
+                function gettingBag() {
+                    const bag = getBag();
+                    return bag;
+                }
+
+                function gettingNumItemsBagUpper () {
+                    let numItemsBagUpper = document.getElementById('num-items-in-your-bag');
+                    return numItemsBagUpper;
+                }
+
+                function gettingItemInBag (bag) {
+                    const itemInBag = bag.childElementCount;
+                    return itemInBag;
+                }
+
+                function putNumBagUpper (numItemsBagUpper, itemInBag) {
+                    if(itemInBag >= 1 && !itemsInBagRemove) {
+                        numItemsBagUpper.classList.add('active');
+                        numItemsBagUpper.innerText = itemInBag;
+                    } 
+
+                    if(itemsInBagRemove >= 1) {
+                        numItemsBagUpper.innerText = itemsInBagRemove;
+                    }
+
+                    if(itemsInBagRemove == 0) {
+                        numItemsBagUpper.innerText = 0;
+                        numItemsBagUpper.classList.remove('active');
                     }
                 }
 
+                const bag = gettingBag();
+                const numItems = gettingNumItemsBagUpper();
+                const itemInBag = gettingItemInBag(bag);
+                const bagUpper = putNumBagUpper(numItems, itemInBag);
+
+                return bagUpper; 
             }
 
             verifyBag();
+            verifyNumItems();
 
         })
     }
@@ -199,15 +406,26 @@ function putBag () {
 
 function noFavorite () {
     
-    const noFavorite = document.getElementsByClassName('favorite');
-    
-    for(let fav = 0; fav < noFavorite.length; fav++) {
-        noFavorite[fav].addEventListener('click', (e) => {
-            e.stopPropagation();
-        }) 
+    function getAllHearts () {
+        const noFavorite = document.getElementsByClassName('favorite');
+        return noFavorite;
     }
     
+    function ifClickOnHeartDontActiveBag (noFavorite) {
+        for(let fav = 0; fav < noFavorite.length; fav++) {
+            noFavorite[fav].addEventListener('click', (e) => {
+                e.stopPropagation();
+            }) 
+        }
+    }
+
+    const noFavorite = getAllHearts();
+    const stopPropagationOfHeart = ifClickOnHeartDontActiveBag(noFavorite);
+
     putBag();
+
+    return stopPropagationOfHeart;
+    
 
 }
 
