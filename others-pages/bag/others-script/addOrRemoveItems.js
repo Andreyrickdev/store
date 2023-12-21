@@ -51,7 +51,7 @@ function addOrRemoveItems () {
 
         function setValueH1 () {
             let h1 = createH1();
-            h1.innerText = `removed item`
+            h1.innerText = `removed item`;
             return h1;
         }
 
