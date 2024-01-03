@@ -81,10 +81,15 @@ function putBag () {
 
             function buttonsAddOrRemove () {
 
+                function createButton () {
+                    const button = document.createElement('input');
+                    return button;
+                }
+
                 function buttonAdd () {
 
                     function createdButtonAdd () {
-                        const button = document.createElement('input');
+                        const button = createButton();
                         return button;
                     }
 
@@ -109,7 +114,7 @@ function putBag () {
                 function buttonRemove () {
 
                     function createdButtonRemove () {
-                        const button = document.createElement('input');
+                        const button = createButton();
                         return button;
                     }
 
