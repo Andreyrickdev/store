@@ -165,10 +165,10 @@ function putBag () {
                             if(paragraph.innerText <= 1 ) {
                                 const product = paragraph.parentNode.parentNode.parentNode;
                                 const bag = getBag();
+                                
                                 function removeItemInBagVerify () {
                                     const itemsInBagRemove = bag.childElementCount - 1;
                                     const numItemsTextRemoved = verifyNumItems(itemsInBagRemove);
-                                    // console.log(itemsInBagRemove);
 
                                     return numItemsTextRemoved;
                                 }
