@@ -336,12 +336,12 @@ function putBag () {
                     return cheque;
                 }
 
-                function verifyItemInBag (cheque, yourLi) {
+                function verifyItemInBag (cheque) {
 
                     if(cheque.length === 0) {
                         putInBag();
                     }else{
-                        let yourP = yourLi[0].getElementsByTagName('p')[0];
+                        let yourP = cheque[0].getElementsByTagName('p')[0];
                         let numP = Number(yourP.textContent);
                         if(numP < 10) {
                             yourP.textContent = ++numP;
@@ -356,7 +356,7 @@ function putBag () {
                 const getLiInList = getLiOfListOfProducts(liInList);
                 const gettingLi = getLi(bag, getLiInList);
                 const creatingCheque = createdCheque(gettingLi);
-                const finishVerify = verifyItemInBag(creatingCheque, gettingLi);
+                const finishVerify = verifyItemInBag(creatingCheque);
 
                 return finishVerify;
             }
