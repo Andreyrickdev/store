@@ -333,7 +333,7 @@ function putBag () {
 
                 function createdCheque (yourLi) {
                     const cheque = yourLi;
-                    return cheque
+                    return cheque;
                 }
 
                 function verifyItemInBag (cheque, yourLi) {
