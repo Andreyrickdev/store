@@ -323,7 +323,7 @@ function putBag () {
 
                 function getLiOfListOfProducts (listOfProducts) {
                     const yourLiName = listOfProducts[item];
-                    return yourLiName
+                    return yourLiName;
                 }
                 
                 function getLi (bag,yourLiName) {
