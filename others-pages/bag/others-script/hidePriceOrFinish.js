@@ -10,18 +10,35 @@ function hidePriceOrFinish () {
         return finish;
     }
 
-    function hide () {
+    document.addEventListener('mouseover', (e) => {
+
+        
+        const price = selectPrice();
+        const finish = selectFinish();
+        
+        const yourTarget = e.target;
+
+        if(yourTarget.classList.contains("yourFooter") ||yourTarget.id === 'footer') {
+            price.classList.add('hide');
+            finish.classList.remove('hide');
+        }
+
+    })
+
+    document.addEventListener('mouseout', (e) => {
+
         const price = selectPrice();
         const finish = selectFinish();
 
-        setInterval(() => {
-            price.classList.toggle('hide');
-            finish.classList.toggle('hide');
-        },2000);
-    }
+        const yourTarget = e.target;
 
-    hide();
+        if(yourTarget.id === 'footer') {
+            price.classList.remove('hide');
+            finish.classList.add('hide');
+        }
+    
+    });
 
 }
 
-// hidePriceOrFinish();
+hidePriceOrFinish();
