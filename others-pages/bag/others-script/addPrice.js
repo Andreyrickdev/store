@@ -4,6 +4,11 @@ function addPrice () {
     const numPrice = button.getElementsByClassName('num-prices')[0];
 
 
+    document.addEventListener('DOMContentLoaded', () => {
+
+        
+
+    });
 
     document.addEventListener('click', (e) => {
 
