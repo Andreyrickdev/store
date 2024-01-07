@@ -44,7 +44,7 @@ function addPrice () {
 
     document.addEventListener('DOMContentLoaded', () => {
 
-        
+        setValuePrice();
 
     });
 
