@@ -56,7 +56,7 @@ function addPrice () {
 
             if(clickedOnButtons.hasAttribute('type')) {
     
-
+                setValuePrice();
     
             }
 
