@@ -754,7 +754,10 @@ function storeProductLocalStorage (item, qtdItem) {
     }
     const transferArrayToString = transferArrayToStringWithJson();
     
-    localStorage.setItem("productsInBag", transferArrayToString);
+    function setItemInLocalStorage () {
+        localStorage.setItem("productsInBag", transferArrayToString);
+    }
+    setItemInLocalStorage();
 }
 
 function noFavorite () {
