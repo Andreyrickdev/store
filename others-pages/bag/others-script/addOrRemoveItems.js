@@ -4,7 +4,11 @@ function addOrRemoveItems () {
 
         document.addEventListener('click', (e) => {
             
-            const buttonAddOrRemove = e.target;
+            function getTarget () {
+                const buttonAddOrRemove = e.target;
+                return buttonAddOrRemove;
+            }
+            const buttonAddOrRemove = getTarget();
             const getDadDiv = buttonAddOrRemove.parentNode;
             let getNumItem = getDadDiv.querySelector('p');
             
