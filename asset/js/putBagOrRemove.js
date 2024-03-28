@@ -1,412 +1,757 @@
 function putBag () {
 
+    function createLi () {
+        const li = document.createElement('li');
+        return li;
+    }
 
+    function createDiv () {
+        const div = document.createElement('div');
+        return div;
+    }
 
-    const items = document.getElementsByClassName('item-food');
+    function createP () {
+        const p = document.createElement('p');
+        return p;
+    }
 
-    for( let item = 0; item < items.length; item++) {
-        items[item].addEventListener('click', () => {
+    function createH1 () {
+        const h1 = document.createElement('h1');
+        return h1;
+    }
 
-            function removePhraseEmpty () {
+    function getBag () {
+        const bag = document.getElementById('items-in-bag');
+        return bag;
+    }
 
-                function getPhrase () {
-                    const phrase = document.getElementById('bag-empty');
-                    return phrase;
-                }
+    function removePhraseEmpty () {
+    
+        function getPhrase () {
+            const phrase = document.getElementById('bag-empty');
+            return phrase;
+        }
 
-                const phrase = getPhrase();
-                
-                if (phrase) {
-                    return phrase.remove();
-                }
+        const phrase = getPhrase();
+        
+        if (phrase) {
+            return phrase.remove();
+        }
 
+    }
+
+    function createPhraseEmpty () {
+
+        function createdPhrase () {
+            let p = createP();
+            return p;
+        }
+
+        function setAttrOfP (p){
+            p.setAttribute("id","bag-empty");
+            return p;
+        }
+
+        function setTextOfP (p) {
+            p.innerText = 'Your bag is empty';
+            return p;
+        }
+
+        const p = createdPhrase();
+        const pWithId = setAttrOfP(p);
+        const finalP = setTextOfP(pWithId);
+
+        return finalP;
+    }
+
+    function getAllFoodItems () {
+        const items = document.getElementsByClassName('item-food');
+        return items;
+    }
+
+    function getNumItemsBagUpper () {
+        const numItemsBagUpper = document.getElementById('num-items-in-your-bag');
+        return numItemsBagUpper;
+    }
+
+    function buttonsAddOrRemove (qtdProducts, numOfLoop, createdProduct) {
+    
+        function createButton () {
+            const button = document.createElement('input');
+            return button;
+        }
+
+        function buttonAdd () {
+
+            function createdButtonAdd () {
+                const button = createButton();
+                return button;
             }
 
-            function createPhraseEmpty () {
-
-                function createdPhrase () {
-                    let p = createP();
-                    return p;
-                }
-
-                function setAttrOfP (p){
-                    p.setAttribute("id","bag-empty");
-                    return p;
-                }
-
-                function setTextOfP (p) {
-                    p.innerText = 'Your bag is empty';
-                    return p;
-                }
-
-                const p = createdPhrase();
-                const pWithId = setAttrOfP(p);
-                const finalP = setTextOfP(pWithId);
-
-                return finalP;
-            }
-            
-            function createLi () {
-
-                function createdLi () {
-                    const li = document.createElement('li');
-                    return li;
-                }
-
-                function setClassOnLi (li) {
-                    li.classList.add(`project-${item}`);
-                    return li;
-                }
-                
-                const li = createdLi();
-                const finalLi = setClassOnLi(li);
-
-                return finalLi;
+            function setAttrOfButton (button) {
+                button.setAttribute("type", "button");
+                button.setAttribute("value","+");
+                return button;
             }
 
-            function createDiv () {
-                const div = document.createElement('div');
-                return div;
+            function setClassOnButton (button) {
+                button.classList.add('button-add');
+                return button;
             }
 
-            function createP () {
-                const p = document.createElement('p');
-                return p;
+            const button = createdButtonAdd();
+            const setAttr = setAttrOfButton(button);
+            const finalButton = setClassOnButton(setAttr);
+
+            return finalButton;
+        }
+
+        function buttonRemove () {
+
+            function createdButtonRemove () {
+                const button = createButton();
+                return button;
             }
 
-            function createH1 () {
-                const h1 = document.createElement('h1');
-                return h1;
+            function setAttrOfButton (button) {
+                button.setAttribute("type", "button");
+                button.setAttribute("value","-");
+                return button;
             }
 
-            function buttonsAddOrRemove () {
+            function setClassOnButton (button) {
+                button.classList.add('button-remove');
+                return button;
+            }
 
-                function createButton () {
-                    const button = document.createElement('input');
-                    return button;
-                }
+            const button = createdButtonRemove();
+            const setAttr = setAttrOfButton(button);
+            const finalButton = setClassOnButton(setAttr);
 
-                function buttonAdd () {
+            return finalButton;
 
-                    function createdButtonAdd () {
-                        const button = createButton();
-                        return button;
-                    }
+        }
 
-                    function setAttrOfButton (button) {
-                        button.setAttribute("type", "button");
-                        button.setAttribute("value","+");
-                        return button;
-                    }
+        function mix () {
 
-                    function setClassOnButton (button) {
-                        button.classList.add('button-add');
-                        return button;
-                    }
+            const div = createDiv();
+            const add = buttonAdd();
+            const paragraph = createP();
+            const remove = buttonRemove();
 
-                    const button = createdButtonAdd();
-                    const setAttr = setAttrOfButton(button);
-                    const finalButton = setClassOnButton(setAttr);
-
-                    return finalButton;
-                }
-
-                function buttonRemove () {
-
-                    function createdButtonRemove () {
-                        const button = createButton();
-                        return button;
-                    }
-
-                    function setAttrOfButton (button) {
-                        button.setAttribute("type", "button");
-                        button.setAttribute("value","-");
-                        return button;
-                    }
-
-                    function setClassOnButton (button) {
-                        button.classList.add('button-remove');
-                        return button;
-                    }
-
-                    const button = createdButtonRemove();
-                    const setAttr = setAttrOfButton(button);
-                    const finalButton = setClassOnButton(setAttr);
-
-                    return finalButton;
-
-                }
-
-                function mix () {
-
-                    const div = createDiv();
-                    const add = buttonAdd();
-                    const paragraph = createP();
-                    const remove = buttonRemove();
-
+            function ifCreateProductPutOldQtd () {
+                if(createdProduct == true) {
+                    paragraph.innerText = qtdProducts[numOfLoop];
+                } else {
                     paragraph.innerText = 1;
+                }
+            }
+            ifCreateProductPutOldQtd();
 
-                    document.addEventListener('click', (event) => {
+            function ifYouClickOnAddButtonOrRemoveButtonInBag () {
+                document.addEventListener('click', (event) => {
+    
+                    function getEventOfClick () {
                         const eventAttk = event.target;
-
+                        return eventAttk;
+                    }
+    
+                    const eventAttk = getEventOfClick();
+    
+                    function ifClickedOnAddButton () {
                         if(eventAttk == add) {
-                            if(paragraph.innerText < 10) {
-                                ++paragraph.innerText;
-                                return paragraph;
+                            
+                            function getYourLiClassName () {
+                                const yourLi = eventAttk.parentNode.parentNode.parentNode;
+                                return yourLi.classList.value;
                             }
+        
+                            function getQtdYourLi () {
+    
+                                function getYourQtdLi () {
+                                    let yourQtdLi = Number(paragraph.innerText) + 1;
+                                    return yourQtdLi;
+                                }
+    
+                                let yourQtdLi = getYourQtdLi();
+    
+                                if(yourQtdLi == 11) {
+                                    yourQtdLi = 10; 
+                                }
+                                return yourQtdLi;
+                            }
+        
+                            storeProductLocalStorage(getYourLiClassName(), getQtdYourLi());
+                            
+                            function ifProductQtdLessThan10 () {
+                                if(paragraph.innerText < 10) {
+                                    return paragraph.innerText++;
+                                }
+                            }
+    
+                            ifProductQtdLessThan10();
                         }
-
+    
+                    }
+    
+                    function ifClicekdOnRemoveButton () {
                         if(eventAttk == remove) {
-                            if(paragraph.innerText >= 2 ) {
-                                --paragraph.innerText;
-                                return paragraph;
+        
+                            function getYourLiClassName () {
+                                const yourLi = eventAttk.parentNode.parentNode.parentNode;
+                                return yourLi.classList.value;
                             }
-
-                            if(paragraph.innerText <= 1 ) {
-                                const product = paragraph.parentNode.parentNode.parentNode;
-                                const bag = getBag();
-                                
-                                function removeItemInBagVerify () {
-                                    const itemsInBagRemove = bag.childElementCount - 1;
-                                    const numItemsTextRemoved = verifyNumItems(itemsInBagRemove);
-
-                                    return numItemsTextRemoved;
-                                }
-
-                                removeItemInBagVerify();
-
-                                if(bag.childElementCount === 1) {
-                                    const phrase = createPhraseEmpty();
-                                    bag.appendChild(phrase);
-                                }
-
-                            return product.remove();
-
+        
+                            function getQtdYourLi () {
+                                return Number(paragraph.innerText - 1);
                             }
-                        }
-                    })
-
-                    div.classList.add('add-or-remove-item');
-                    div.appendChild(remove);
-                    div.appendChild(paragraph);
-                    div.appendChild(add);
-                    return div;
-                }
-
-                return mix();
-            }
-
+        
+                            storeProductLocalStorage(getYourLiClassName(), getQtdYourLi());
+        
+                            function ifQtdProductis () {
+                                if(paragraph.innerText >= 2 ) {
+                                    --paragraph.innerText;
+                                    return paragraph;
+                                }
             
-            // Creating your order...
+                                if(paragraph.innerText <= 1) {
+    
+                                    function getProduct () {
+                                        const product = paragraph.parentNode.parentNode.parentNode;
+                                        return product;
+                                    }
+                                    const product = getProduct();
+                                    const bag = getBag();
+                                    
+                                    function removeItemInBagVerify () {
+                                        const itemsInBagRemove = bag.childElementCount - 1;
+                                        const numItemsTextRemoved = setQtdItemInStore(itemsInBagRemove);
+                                        return numItemsTextRemoved;
+                                    }
+                                    removeItemInBagVerify();
+            
+                                    function ifProductsInBagEqual1 () {
+                                        if(bag.childElementCount === 1) {
+                                            const phrase = createPhraseEmpty();
+                                            bag.appendChild(phrase);
+                                        }
+                                    }
+                                    ifProductsInBagEqual1();
+            
+                                return product.remove();
+            
+                                }
+                            }
+                            ifQtdProductis();
 
-            function getBag () {
-                const bag = document.getElementById('items-in-bag');
-                return bag;
+                                
+                        }
+    
+                    }
+    
+                    ifClickedOnAddButton();
+                    ifClicekdOnRemoveButton();
+    
+                })
+            }
+            ifYouClickOnAddButtonOrRemoveButtonInBag();
+
+
+            div.classList.add('add-or-remove-item');
+            div.appendChild(remove);
+            div.appendChild(paragraph);
+            div.appendChild(add);
+            return div;
+        }
+
+        return mix();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function getQtdItemInStore () {
+
+        function getQtdItemsInLocalStorage () {
+            const getQtdItems = localStorage.getItem("qtdProductsInBag");
+            return getQtdItems;
+        }
+        const getQtdItems = getQtdItemsInLocalStorage();
+
+        function gettingNumItemsBagUpper () {
+            const numItemsBagUpper = getNumItemsBagUpper();
+            return numItemsBagUpper;
+        }
+
+        function putNumBagUpperLoad (numItemsBagUpper) {
+            if(getQtdItems != 0) {
+                numItemsBagUpper.classList.add('active');
+                numItemsBagUpper.innerText = getQtdItems;
+            } else {
+                numItemsBagUpper.classList.remove('active');
+            }
+        }
+
+        const numItemsBagUpper = gettingNumItemsBagUpper();
+        const putNumInBagUpper = putNumBagUpperLoad(numItemsBagUpper);
+        return putNumInBagUpper;
+
+    }
+    getQtdItemInStore();
+
+    function setQtdItemInStore (qtdItemRemovedInBag) {
+    
+        function gettingBag() {
+            const bag = getBag();
+            return bag;
+        }
+
+        function gettingNumItemsBagUpper () {
+            const numItemsBagUpper = getNumItemsBagUpper();
+            return numItemsBagUpper;
+        }
+
+        function gettingItemInBag (bag) {
+            const qtdItemInBag = bag.childElementCount;
+            return qtdItemInBag;
+        }
+
+        function putNumBagUpperSave (numItemsBagUpper, qtdItemInBag) {
+            if(qtdItemInBag >= 1 && !qtdItemRemovedInBag) {
+                numItemsBagUpper.classList.add('active');
+                numItemsBagUpper.innerText = qtdItemInBag;
             }
 
-            function getH1 () {
+            if(qtdItemRemovedInBag >= 1) {
+                numItemsBagUpper.innerText = qtdItemRemovedInBag;
+                qtdItemInBag = qtdItemRemovedInBag;
+            }
 
-                function getedH1 () {
-                    const h1 = items[item].getElementsByTagName('h1')[0].textContent;
-                    return h1;
+            if(qtdItemRemovedInBag == 0) {
+                numItemsBagUpper.innerText = 0;
+                numItemsBagUpper.classList.remove('active');
+                qtdItemInBag = qtdItemRemovedInBag;
+            }
+
+            const numOfItemsInBagStored = localStorage.setItem("qtdProductsInBag", qtdItemInBag);
+            return numOfItemsInBagStored;
+        }
+
+
+        const bag = gettingBag();
+        const numItemsBagUpper = gettingNumItemsBagUpper();
+        const qtdItemInBag = gettingItemInBag(bag);
+        const bagUpper = putNumBagUpperSave(numItemsBagUpper, qtdItemInBag);
+
+        return bagUpper; 
+    }
+
+
+
+
+    let createdProduct;
+
+    function getProductInStoreAndPutInBag () {
+
+        function getProductsInLocalStorage () {
+            const getProducts = localStorage.getItem("productsInBag");
+            return getProducts;
+        }
+        const getProducts = getProductsInLocalStorage();
+
+        function convertStringToArray () {
+            const convertToArray = JSON.parse(getProducts);
+            return convertToArray;
+        }
+        const convertToArray = convertStringToArray();
+
+        const allClassNameProducts = [];
+        const allQtdProducts = [];
+
+        function putAllValuesInArray () {
+            for(proj of convertToArray) {
+                allClassNameProducts.push(proj.project)
+                allQtdProducts.push(proj.qtd)
+            }   
+        }
+        putAllValuesInArray();
+
+        function setClassOnLi () {
+
+            const allLiInArray = [];
+
+            function gettingEachClass () {
+                for (oneClass of allClassNameProducts) {
+    
+                    function setClass (li) {
+                        li.classList.add(oneClass);
+                        allLiInArray.push(li);
+                        return li;
+                    }
+    
+                    const li = createLi();
+                    setClass(li);
+    
                 }
+            }
+            gettingEachClass();
 
-                function createdNewH1 () {
-                    const newH1 = createH1();
-                    return newH1
+            return allLiInArray;
+
+        }
+        setClassOnLi();
+
+        function createButtonsAddOrRemove (numOfLoop) {
+            let createdProduct = true;
+            const addOrRemove = buttonsAddOrRemove(allQtdProducts, numOfLoop, createdProduct);
+            return addOrRemove;
+
+        }
+
+        function getH1 () {
+
+            const items = getAllFoodItems();
+            const allH1InArray = [];
+
+            for (oneClassName of allClassNameProducts) {
+
+                for (itemNameId of items) {
+
+                    if (itemNameId.id == oneClassName) {
+                        const item = document.getElementById(itemNameId.id);
+                        const h1 = item.getElementsByTagName('h1')[0].innerText;
+                        allH1InArray.push(h1);
+                    }
+
                 }
-
-                function createdTextNode (h1) {
-                    const textNode = document.createTextNode(h1);
-                    return textNode;
-                }
-
-                function textNodeInNewH1 (textNode) {
-                    newH1.appendChild(textNode);
-                    return newH1;
-                }
-
-                const h1 = getedH1();
-                const newH1 = createdNewH1();
-                const textNode = createdTextNode(h1);
-                const finalH1 = textNodeInNewH1(textNode);
-
-                return finalH1;
 
             }
 
-            function getP () {
+            return allH1InArray;
 
-                function getedP () {
-                    const p = items[item].getElementsByTagName('p')[0].textContent;
-                    return p;
+        }
+
+        function getP () {
+
+            const items = getAllFoodItems();
+            const allPInArray = [];
+
+            for(oneClassName of allClassNameProducts) {
+
+                for (itemNameId of items) {
+
+                    if (itemNameId.id == oneClassName) {
+                        const item = document.getElementById(itemNameId.id);
+                        const p = item.getElementsByTagName('p')[0].innerText;
+                        allPInArray.push(p);
+                    }
+
                 }
 
-                function createdNewP () {
-                    const newP = createP();
-                    return newP;
-                }
 
-                function createdTextNode (p) {
-                    const textNode = document.createTextNode(p);
-                    return textNode;
-                }
-
-                function textNodeInNewP (textNode) {
-                    newP.appendChild(textNode);
-                    return newP;
-                }
-
-                const p = getedP();
-                const newP = createdNewP();
-                const textNode = createdTextNode(p);
-                const finalP = textNodeInNewP(textNode);
-
-                return finalP;
             }
 
-            function createYourOrder () {
+            return allPInArray;
 
-                const li = createLi();
+        }
+        getP();
+        getH1();
+
+        function mixAllFunctions () {
+
+            const lisInStore = setClassOnLi();
+            const h1sInStore = getH1();
+            const psInStore = getP();
+            const bag = getBag();
+
+
+            for (let item = 0; item < h1sInStore.length; item++) {
+                const li = lisInStore[item];
                 const div = createDiv();
-                const AddOrRemove = buttonsAddOrRemove();
-                const h1 = getH1();
-                const p = getP();
+                const h1 = createH1();
+                const p = createP();
+                const addOrRemove = createButtonsAddOrRemove(item);
+                
 
-                div.appendChild(AddOrRemove);
+
+                h1.innerText = h1sInStore[item];
+                p.innerText = psInStore[item];
+                div.appendChild(addOrRemove);
                 div.appendChild(h1);
                 div.appendChild(p);
                 li.appendChild(div);
 
-                return li;
-            }
-
-            function putInBag () {
 
                 removePhraseEmpty();
+                bag.appendChild(li);
 
-                function getBag () {
-                    const bag = document.getElementById('items-in-bag');
-                    return bag;
-                }
-
-                function yourOrder () {
-                    const product = createYourOrder();
-                    return product;
-                }
-                
-                const bag = getBag();
-                const product = yourOrder();
-
-                bag.appendChild(product);
-            }
-            
-            function verifyBag () {
-
-                function gettingBag () {
-                    const bag = getBag();
-                    return bag;
-                }
-
-                function createdListOfProducts () {
-                    let listOfProducts = [];
-                    return listOfProducts;
-                }
-
-                function pushProjectsInListOfProducts (listOfProducts) {
-                    for (let i = 0; i <= 11; i++) {
-                        listOfProducts.push(`project-${i}`);
-                    }
-
-                    return listOfProducts;
-                }
-
-                function getLiOfListOfProducts (listOfProducts) {
-                    const yourLiName = listOfProducts[item];
-                    return yourLiName;
-                }
-                
-                function getLi (bag,yourLiName) {
-                    const yourLi = bag.getElementsByClassName(yourLiName);
-                    return yourLi;
-                }
-
-                function createdCheque (yourLi) {
-                    const cheque = yourLi;
-                    return cheque;
-                }
-
-                function verifyItemInBag (cheque) {
-
-                    if(cheque.length === 0) {
-                        putInBag();
-                    }else{
-                        let yourP = cheque[0].getElementsByTagName('p')[0];
-                        let numP = Number(yourP.textContent);
-                        if(numP < 10) {
-                            yourP.textContent = ++numP;
-                        }
-                    }
-
-                }
-
-                const bag = gettingBag();
-                let listOfProducts = createdListOfProducts();
-                const liInList = pushProjectsInListOfProducts(listOfProducts);
-                const getLiInList = getLiOfListOfProducts(liInList);
-                const gettingLi = getLi(bag, getLiInList);
-                const creatingCheque = createdCheque(gettingLi);
-                const finishVerify = verifyItemInBag(creatingCheque);
-
-                return finishVerify;
             }
 
-            function verifyNumItems (itemsInBagRemove) {
+        }
+        mixAllFunctions();
 
-                function gettingBag() {
-                    const bag = getBag();
-                    return bag;
-                }
-
-                function gettingNumItemsBagUpper () {
-                    let numItemsBagUpper = document.getElementById('num-items-in-your-bag');
-                    return numItemsBagUpper;
-                }
-
-                function gettingItemInBag (bag) {
-                    const itemInBag = bag.childElementCount;
-                    return itemInBag;
-                }
-
-                function putNumBagUpper (numItemsBagUpper, itemInBag) {
-                    if(itemInBag >= 1 && !itemsInBagRemove) {
-                        numItemsBagUpper.classList.add('active');
-                        numItemsBagUpper.innerText = itemInBag;
-                    } 
-
-                    if(itemsInBagRemove >= 1) {
-                        numItemsBagUpper.innerText = itemsInBagRemove;
-                    }
-
-                    if(itemsInBagRemove == 0) {
-                        numItemsBagUpper.innerText = 0;
-                        numItemsBagUpper.classList.remove('active');
-                    }
-                }
-
-                const bag = gettingBag();
-                const numItems = gettingNumItemsBagUpper();
-                const itemInBag = gettingItemInBag(bag);
-                const bagUpper = putNumBagUpper(numItems, itemInBag);
-
-                return bagUpper; 
-            }
-
-            verifyBag();
-            verifyNumItems();
-
-        })
     }
+    getProductInStoreAndPutInBag();
+
+
+    function setProductInStoreAndPutInBag () {
+        
+        const items = getAllFoodItems();
+    
+        function creatingYourOrderWhenYouJustClickOnProduct () {
+            for( let item = 0; item < items.length; item++) {
+                items[item].addEventListener('click', () => {
+                    createdProduct = false;
+    
+                    function setClassOnLi () {
+        
+                        function setClass (li) {
+                            li.classList.add(`product-${item}`);
+                            return li;
+                        }
+                        
+                        const li = createLi();
+                        const finalLi = setClass(li);
+        
+                        return finalLi;
+                    }
+    
+                    function getH1 () {
+        
+                        function getedH1 () {
+                            const h1 = items[item].getElementsByTagName('h1')[0].textContent;
+                            return h1;
+                        }
+        
+                        function createdNewH1 () {
+                            const newH1 = createH1();
+                            return newH1
+                        }
+        
+                        function createdTextNode (h1) {
+                            const textNode = document.createTextNode(h1);
+                            return textNode;
+                        }
+        
+                        function textNodeInNewH1 (textNode) {
+                            newH1.appendChild(textNode);
+                            return newH1;
+                        }
+        
+                        const h1 = getedH1();
+                        const newH1 = createdNewH1();
+                        const textNode = createdTextNode(h1);
+                        const finalH1 = textNodeInNewH1(textNode);
+        
+                        return finalH1;
+        
+                    }
+        
+                    function getP () {
+        
+                        function getedP () {
+                            const p = items[item].getElementsByTagName('p')[0].textContent;
+                            return p;
+                        }
+        
+                        function createdNewP () {
+                            const newP = createP();
+                            return newP;
+                        }
+        
+                        function createdTextNode (p) {
+                            const textNode = document.createTextNode(p);
+                            return textNode;
+                        }
+        
+                        function textNodeInNewP (textNode) {
+                            newP.appendChild(textNode);
+                            return newP;
+                        }
+        
+                        const p = getedP();
+                        const newP = createdNewP();
+                        const textNode = createdTextNode(p);
+                        const finalP = textNodeInNewP(textNode);
+        
+                        return finalP;
+                    }
+    
+                    function createYourOrder () {
+        
+                        const li = setClassOnLi();
+                        const div = createDiv();
+                        const AddOrRemove = buttonsAddOrRemove(null, null, createdProduct);
+                        const h1 = getH1();
+                        const p = getP();
+        
+                        div.appendChild(AddOrRemove);
+                        div.appendChild(h1);
+                        div.appendChild(p);
+                        li.appendChild(div);
+    
+                        return li;
+                    }
+        
+                    function putInBag () {
+        
+                        removePhraseEmpty();
+        
+                        function yourOrder () {
+                            const product = createYourOrder();
+                            return product;
+                        }
+                        
+                        const bag = getBag();
+                        const product = yourOrder();
+        
+                        bag.appendChild(product);
+                    }
+                    
+                    function verifyBag () {
+        
+                        function gettingBag () {
+                            const bag = getBag();
+                            return bag;
+                        }
+        
+                        function createdListOfProducts () {
+                            let listOfProducts = [];
+                            return listOfProducts;
+                        }
+        
+                        function pushProjectsInListOfProducts (listOfProducts) {
+                            for (let i = 0; i <= 11; i++) {
+                                listOfProducts.push(`product-${i}`);
+                            }
+        
+                            return listOfProducts;
+                        }
+        
+                        function getLiOfListOfProducts (listOfProducts) {
+                            const yourLiName = listOfProducts[item];
+                            return yourLiName;
+                        }
+                        
+                        function getLi (bag,yourLiName) {
+                            const yourLi = bag.getElementsByClassName(yourLiName);
+                            return yourLi;
+                        }
+        
+                        function createdCheque (yourLi) {
+                            const cheque = yourLi;
+                            return cheque;
+                        }
+        
+                        function setItemInBag (cheque) {
+
+                            if(cheque.length === 0) {
+                                putInBag();
+                            }else{
+                                let yourP = cheque[0].getElementsByTagName('p')[0];
+                                let numP = Number(yourP.textContent);
+                                if(numP < 10) {
+                                    yourP.textContent = ++numP;
+                                }
+                            }
+    
+                            storeProductLocalStorage(cheque[0].classList.value, Number(cheque[0].getElementsByTagName('p')[0].innerText));
+    
+                        }
+        
+                        const bag = gettingBag();
+                        let listOfProducts = createdListOfProducts();
+                        const liInList = pushProjectsInListOfProducts(listOfProducts);
+                        const getLiInList = getLiOfListOfProducts(liInList);
+                        const gettingLi = getLi(bag, getLiInList);
+                        const creatingCheque = createdCheque(gettingLi);
+                        const finishVerify = setItemInBag(creatingCheque);
+        
+                        return finishVerify;
+                    }
+        
+                    verifyBag();
+                    setQtdItemInStore();
+        
+                })
+            }
+
+        }
+        creatingYourOrderWhenYouJustClickOnProduct();
+    }
+    setProductInStoreAndPutInBag();
+}
+
+let productInStore = [];
+
+function loadProductsFromStoreLocalStorage () {
+    const storedProducts = localStorage.getItem("productsInBag");
+
+    function convertToArray () {
+        if(storedProducts) {
+            productInStore = JSON.parse(storedProducts);
+        }
+    }
+    convertToArray();
+}
+
+loadProductsFromStoreLocalStorage();
+
+function storeProductLocalStorage (item, qtdItem) {
+
+    let objectToProduct = {
+        project: item,
+        qtd: qtdItem,
+    }
+
+    function findIndexProductIfFoundReplaceWithTheExistingValue() {
+
+        function iterateUntilFindingTheIndices () {
+            const findIndexProduct = productInStore.findIndex( (object) => {
+                return object.project === objectToProduct.project;
+            })
+            return findIndexProduct;
+        }
+        const findIndexProduct = iterateUntilFindingTheIndices();
+        
+        function ifFoundDoItIfNotPush () {
+            if(findIndexProduct !== -1) {
+                productInStore[findIndexProduct] = objectToProduct;
+            } else {
+                productInStore.push(objectToProduct);
+            }
+        }
+        ifFoundDoItIfNotPush();
+    
+        function ifProductRemoveInLocalStorage () {
+
+            if(objectToProduct.qtd === 0) {
+                
+                let indexToRemove = productInStore.indexOf(objectToProduct);
+        
+                if(indexToRemove !== -1) {
+                    productInStore.splice(indexToRemove, 1);
+                }
+            }
+
+        }
+        ifProductRemoveInLocalStorage();
+    }
+    findIndexProductIfFoundReplaceWithTheExistingValue();
+    console.log(productInStore);
+    
+    const transferArrayToString = JSON.stringify(productInStore);
+
+    localStorage.setItem("productsInBag", transferArrayToString);
 }
 
 function noFavorite () {
