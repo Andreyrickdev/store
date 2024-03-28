@@ -747,9 +747,13 @@ function storeProductLocalStorage (item, qtdItem) {
         ifProductRemoveInLocalStorage();
     }
     findIndexProductIfFoundReplaceWithTheExistingValue();
-    
-    const transferArrayToString = JSON.stringify(productInStore);
 
+    function transferArrayToStringWithJson () {
+        const transferArrayToString = JSON.stringify(productInStore);
+        return transferArrayToString;
+    }
+    const transferArrayToString = transferArrayToStringWithJson();
+    
     localStorage.setItem("productsInBag", transferArrayToString);
 }
 
