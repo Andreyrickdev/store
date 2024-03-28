@@ -9,7 +9,13 @@ function addOrRemoveItems () {
                 return buttonAddOrRemove;
             }
             const buttonAddOrRemove = getTarget();
-            const getDadDiv = buttonAddOrRemove.parentNode;
+
+            function getDadDivWithParentNode () {
+                const getDadDiv = buttonAddOrRemove.parentNode;
+                return getDadDiv;
+            }
+            const getDadDiv = getDadDivWithParentNode();
+            
             let getNumItem = getDadDiv.querySelector('p');
             
             if(buttonAddOrRemove.classList.contains('button-remove')) {
