@@ -16,7 +16,11 @@ function addOrRemoveItems () {
             }
             const getDadDiv = getDadDivWithParentNode();
             
-            let getNumItem = getDadDiv.querySelector('p');
+            function getNumItemInGetDadDiv () {
+                let getNumItem = getDadDiv.querySelector('p');
+                return getNumItem;
+            }
+            const getNumItem = getNumItemInGetDadDiv();
             
             if(buttonAddOrRemove.classList.contains('button-remove')) {
 
