@@ -44,10 +44,13 @@ function hidePriceOrFinish () {
             }
             const yourTarget = getTarget();
     
-            if(yourTarget.id === 'footer') {
-                price.classList.remove('hide');
-                finish.classList.add('hide');
+            function ifYourTargetIsTotalPrice () {
+                if(yourTarget.id === 'footer') {
+                    price.classList.remove('hide');
+                    finish.classList.add('hide');
+                }
             }
+            ifYourTargetIsTotalPrice();
         
         });
     }
