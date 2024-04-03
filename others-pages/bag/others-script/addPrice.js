@@ -79,11 +79,14 @@ function addPrice () {
 
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-
-        setValuePrice();
-
-    });
+    function whenPageLoadsSetValuePrice () {
+        document.addEventListener('DOMContentLoaded', () => {
+    
+            setValuePrice();
+    
+        });
+    }
+    whenPageLoadsSetValuePrice();
 
     document.addEventListener('click', (e) => {
 
