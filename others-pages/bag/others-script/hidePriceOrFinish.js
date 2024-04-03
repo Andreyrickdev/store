@@ -15,7 +15,11 @@ function hidePriceOrFinish () {
             const price = selectPrice();
             const finish = selectFinish();
             
-            const yourTarget = e.target;
+            function getTarger () {
+                const yourTarget = e.target;
+                return yourTarget;
+            }
+            const yourTarget = getTarger();
     
             if(yourTarget.classList.contains("yourFooter") ||yourTarget.id === 'footer') {
                 price.classList.add('hide');
