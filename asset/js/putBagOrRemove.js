@@ -360,149 +360,6 @@ function putBag () {
 
     let createdProduct;
 
-    function getProductInStoreAndPutInBag () {
-
-        function getProductsInLocalStorage () {
-            const getProducts = localStorage.getItem("productsInBag");
-            return getProducts;
-        }
-        const getProducts = getProductsInLocalStorage();
-
-        function convertStringToArray () {
-            const convertToArray = JSON.parse(getProducts);
-            return convertToArray;
-        }
-        const convertToArray = convertStringToArray();
-
-        const allClassNameProducts = [];
-        const allQtdProducts = [];
-
-        function putAllValuesInArray () {
-            for(proj of convertToArray) {
-                allClassNameProducts.push(proj.project)
-                allQtdProducts.push(proj.qtd)
-            }   
-        }
-        putAllValuesInArray();
-
-        function setClassOnLi () {
-
-            const allLiInArray = [];
-
-            function gettingEachClass () {
-                for (oneClass of allClassNameProducts) {
-    
-                    function setClass (li) {
-                        li.classList.add(oneClass);
-                        allLiInArray.push(li);
-                        return li;
-                    }
-    
-                    const li = createLi();
-                    setClass(li);
-    
-                }
-            }
-            gettingEachClass();
-
-            return allLiInArray;
-
-        }
-        setClassOnLi();
-
-        function createButtonsAddOrRemove (numOfLoop) {
-            let createdProduct = true;
-            const addOrRemove = buttonsAddOrRemove(allQtdProducts, numOfLoop, createdProduct);
-            return addOrRemove;
-
-        }
-
-        function getH1 () {
-
-            const items = getAllFoodItems();
-            const allH1InArray = [];
-
-            for (oneClassName of allClassNameProducts) {
-
-                for (itemNameId of items) {
-
-                    if (itemNameId.id == oneClassName) {
-                        const item = document.getElementById(itemNameId.id);
-                        const h1 = item.getElementsByTagName('h1')[0].innerText;
-                        allH1InArray.push(h1);
-                    }
-
-                }
-
-            }
-
-            return allH1InArray;
-
-        }
-
-        function getP () {
-
-            const items = getAllFoodItems();
-            const allPInArray = [];
-
-            for(oneClassName of allClassNameProducts) {
-
-                for (itemNameId of items) {
-
-                    if (itemNameId.id == oneClassName) {
-                        const item = document.getElementById(itemNameId.id);
-                        const p = item.getElementsByTagName('p')[0].innerText;
-                        allPInArray.push(p);
-                    }
-
-                }
-
-
-            }
-
-            return allPInArray;
-
-        }
-        getP();
-        getH1();
-
-        function mixAllFunctions () {
-
-            const lisInStore = setClassOnLi();
-            const h1sInStore = getH1();
-            const psInStore = getP();
-            const bag = getBag();
-
-
-            for (let item = 0; item < h1sInStore.length; item++) {
-                const li = lisInStore[item];
-                const div = createDiv();
-                const h1 = createH1();
-                const p = createP();
-                const addOrRemove = createButtonsAddOrRemove(item);
-                
-
-
-                h1.innerText = h1sInStore[item];
-                p.innerText = psInStore[item];
-                div.appendChild(addOrRemove);
-                div.appendChild(h1);
-                div.appendChild(p);
-                li.appendChild(div);
-
-
-                removePhraseEmpty();
-                bag.appendChild(li);
-
-            }
-
-        }
-        mixAllFunctions();
-
-    }
-    getProductInStoreAndPutInBag();
-
-
     function setProductInStoreAndPutInBag () {
         
         const items = getAllFoodItems();
@@ -689,6 +546,148 @@ function putBag () {
         creatingYourOrderWhenYouJustClickOnProduct();
     }
     setProductInStoreAndPutInBag();
+    
+    function getProductInStoreAndPutInBag () {
+
+        function getProductsInLocalStorage () {
+            const getProducts = localStorage.getItem("productsInBag");
+            return getProducts;
+        }
+        const getProducts = getProductsInLocalStorage();
+
+        function convertStringToArray () {
+            const convertToArray = JSON.parse(getProducts);
+            return convertToArray;
+        }
+        const convertToArray = convertStringToArray();
+
+        const allClassNameProducts = [];
+        const allQtdProducts = [];
+
+        function putAllValuesInArray () {
+            for(proj of convertToArray) {
+                allClassNameProducts.push(proj.product)
+                allQtdProducts.push(proj.qtd)
+            }   
+        }
+        putAllValuesInArray();
+
+        function setClassOnLi () {
+
+            const allLiInArray = [];
+
+            function gettingEachClass () {
+                for (oneClass of allClassNameProducts) {
+    
+                    function setClass (li) {
+                        li.classList.add(oneClass);
+                        allLiInArray.push(li);
+                        return li;
+                    }
+    
+                    const li = createLi();
+                    setClass(li);
+    
+                }
+            }
+            gettingEachClass();
+
+            return allLiInArray;
+
+        }
+        setClassOnLi();
+
+        function createButtonsAddOrRemove (numOfLoop) {
+            let createdProduct = true;
+            const addOrRemove = buttonsAddOrRemove(allQtdProducts, numOfLoop, createdProduct);
+            return addOrRemove;
+
+        }
+
+        function getH1 () {
+
+            const items = getAllFoodItems();
+            const allH1InArray = [];
+
+            for (oneClassName of allClassNameProducts) {
+
+                for (itemNameId of items) {
+
+                    if (itemNameId.id == oneClassName) {
+                        const item = document.getElementById(itemNameId.id);
+                        const h1 = item.getElementsByTagName('h1')[0].innerText;
+                        allH1InArray.push(h1);
+                    }
+
+                }
+
+            }
+
+            return allH1InArray;
+
+        }
+
+        function getP () {
+
+            const items = getAllFoodItems();
+            const allPInArray = [];
+
+            for(oneClassName of allClassNameProducts) {
+
+                for (itemNameId of items) {
+
+                    if (itemNameId.id == oneClassName) {
+                        const item = document.getElementById(itemNameId.id);
+                        const p = item.getElementsByTagName('p')[0].innerText;
+                        allPInArray.push(p);
+                    }
+
+                }
+
+
+            }
+
+            return allPInArray;
+
+        }
+        getP();
+        getH1();
+
+        function mixAllFunctions () {
+
+            const lisInStore = setClassOnLi();
+            const h1sInStore = getH1();
+            const psInStore = getP();
+            const bag = getBag();
+
+
+            for (let item = 0; item < h1sInStore.length; item++) {
+                const li = lisInStore[item];
+                const div = createDiv();
+                const h1 = createH1();
+                const p = createP();
+                const addOrRemove = createButtonsAddOrRemove(item);
+                
+
+
+                h1.innerText = h1sInStore[item];
+                p.innerText = psInStore[item];
+                div.appendChild(addOrRemove);
+                div.appendChild(h1);
+                div.appendChild(p);
+                li.appendChild(div);
+
+
+                removePhraseEmpty();
+                bag.appendChild(li);
+
+            }
+
+        }
+        mixAllFunctions();
+
+    }
+    getProductInStoreAndPutInBag();
 }
 
 let productInStore = [];
@@ -709,7 +708,7 @@ loadProductsFromStoreLocalStorage();
 function storeProductLocalStorage (item, qtdItem) {
 
     let objectToProduct = {
-        project: item,
+        product: item,
         qtd: qtdItem,
     }
 
@@ -717,7 +716,7 @@ function storeProductLocalStorage (item, qtdItem) {
 
         function iterateUntilFindingTheIndices () {
             const findIndexProduct = productInStore.findIndex( (object) => {
-                return object.project === objectToProduct.project;
+                return object.product === objectToProduct.product;
             })
             return findIndexProduct;
         }
