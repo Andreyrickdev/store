@@ -28,19 +28,22 @@ function hidePriceOrFinish () {
     }
     ifMouseOver();
 
-    document.addEventListener('mouseout', (e) => {
-
-        const price = selectPrice();
-        const finish = selectFinish();
-
-        const yourTarget = e.target;
-
-        if(yourTarget.id === 'footer') {
-            price.classList.remove('hide');
-            finish.classList.add('hide');
-        }
+    function ifMouseOut () {
+        document.addEventListener('mouseout', (e) => {
     
-    });
+            const price = selectPrice();
+            const finish = selectFinish();
+    
+            const yourTarget = e.target;
+    
+            if(yourTarget.id === 'footer') {
+                price.classList.remove('hide');
+                finish.classList.add('hide');
+            }
+        
+        });
+    }
+    ifMouseOut();
 
 }
 
