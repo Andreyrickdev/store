@@ -40,8 +40,12 @@ function addPrice () {
                             return allNumItems;
                         }
                         const allNumItems = selectAllQtdOfTheProduct();
-                        
-                        const resultMultiplications = allH1 * allNumItems;
+
+                        function multiplyingTheValueByTheQuantity () {
+                            const resultMultiplications = allH1 * allNumItems;
+                            return resultMultiplications;
+                        }
+                        const resultMultiplications = multiplyingTheValueByTheQuantity();
         
                         sumAllMultiplications.push(resultMultiplications);
         
