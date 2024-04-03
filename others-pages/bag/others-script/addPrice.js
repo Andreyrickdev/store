@@ -29,7 +29,11 @@ function addPrice () {
             function retrievingEachValueAndMultiplyingItByTheQuantityOfItems () {
                 for(let item of items) {
                     try {
-                        const allH1 = item.querySelector('h1').innerText;
+                        function selectAllValuesOfTheProduct () {
+                            const allH1 = item.querySelector('h1').innerText;
+                            return allH1;
+                        }
+                        const allH1 = selectAllValuesOfTheProduct();
                         const allNumItems = item.querySelector('.num-items').innerText;
                         const resultMultiplications = allH1 * allNumItems;
         
