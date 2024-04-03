@@ -40,15 +40,18 @@ function addOrRemoveItems () {
             }
             ifTargetIsButtonRemove();
 
-            if(buttonAddOrRemove.classList.contains('button-add')) {
-
-                let num = Number(getNumItem.innerText);
-
-                if(num < 10) {
-                    getNumItem.innerText = ++num;
+            function ifTargetIsButtonAdd () {
+                if(buttonAddOrRemove.classList.contains('button-add')) {
+    
+                    let num = Number(getNumItem.innerText);
+    
+                    if(num < 10) {
+                        getNumItem.innerText = ++num;
+                    }
+    
                 }
-
             }
+            ifTargetIsButtonAdd();
 
         })
 
