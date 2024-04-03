@@ -47,7 +47,11 @@ function addPrice () {
                         }
                         const resultMultiplications = multiplyingTheValueByTheQuantity();
         
-                        sumAllMultiplications.push(resultMultiplications);
+                        function pushResultMultiplicationsInSumAllMultiplications () {
+                            sumAllMultiplications.push(resultMultiplications);
+                            return sumAllMultiplications;
+                        }
+                        pushResultMultiplicationsInSumAllMultiplications();
         
                         sum = sumAllMultiplications.reduce((total, valor) => total + valor, 0);
                     } catch {}
