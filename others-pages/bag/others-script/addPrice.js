@@ -5,7 +5,12 @@ function addPrice () {
         return button;
     }
     const button = getFooter();
-    const numPrice = button.getElementsByClassName('num-prices')[0];
+
+    function getNumPrices () {
+        const numPrice = button.getElementsByClassName('num-prices')[0];
+        return numPrice;
+    }
+    const numPrice = getNumPrices();
 
     function setValuePrice () {
 
