@@ -34,7 +34,13 @@ function addPrice () {
                             return allH1;
                         }
                         const allH1 = selectAllValuesOfTheProduct();
-                        const allNumItems = item.querySelector('.num-items').innerText;
+
+                        function selectAllQtdOfTheProduct () {
+                            const allNumItems = item.querySelector('.num-items').innerText;
+                            return allNumItems;
+                        }
+                        const allNumItems = selectAllQtdOfTheProduct();
+                        
                         const resultMultiplications = allH1 * allNumItems;
         
                         sumAllMultiplications.push(resultMultiplications);
