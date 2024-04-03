@@ -35,7 +35,6 @@ function hidePriceOrFinish () {
 
     function ifMouseOut () {
         document.addEventListener('mouseout', (e) => {
-    
             const price = selectPrice();
             const finish = selectFinish();
     
