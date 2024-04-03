@@ -12,8 +12,6 @@ function hidePriceOrFinish () {
 
     function ifMouseOver () {
         document.addEventListener('mouseover', (e) => {
-    
-            
             const price = selectPrice();
             const finish = selectFinish();
             
