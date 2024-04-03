@@ -63,12 +63,15 @@ function addPrice () {
                 }
             }
             retrievingEachValueAndMultiplyingItByTheQuantityOfItems();
-
-            try {
-                numPrice.innerText = sum.toFixed(2);
-            } catch {
-                numPrice.innerText = '00.00';
+            
+            function roundTheValueIfNotZero () {
+                try {
+                    numPrice.innerText = sum.toFixed(2);
+                } catch {
+                    numPrice.innerText = '00.00';
+                }
             }
+            roundTheValueIfNotZero();
 
         }
 
