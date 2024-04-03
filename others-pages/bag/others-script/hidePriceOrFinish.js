@@ -21,10 +21,13 @@ function hidePriceOrFinish () {
             }
             const yourTarget = getTarger();
     
-            if(yourTarget.classList.contains("yourFooter") ||yourTarget.id === 'footer') {
-                price.classList.add('hide');
-                finish.classList.remove('hide');
+            function ifYourTargetIsTotalPrice () {
+                if(yourTarget.classList.contains("yourFooter") ||yourTarget.id === 'footer') {
+                    price.classList.add('hide');
+                    finish.classList.remove('hide');
+                }
             }
+            ifYourTargetIsTotalPrice();
     
         })
     }
