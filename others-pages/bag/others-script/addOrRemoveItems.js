@@ -16,11 +16,11 @@ function addOrRemoveItems () {
             }
             const getDadDiv = getDadButtonsAddOrRemove();
             
-            function getNumItemInGetDadDiv () {
+            function getNumItemsOfProduct () {
                 let getNumItem = getDadDiv.querySelector('p');
                 return getNumItem;
             }
-            const getNumItem = getNumItemInGetDadDiv();
+            const getNumItem = getNumItemsOfProduct();
             
             if(buttonAddOrRemove.classList.contains('button-remove')) {
 
