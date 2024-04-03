@@ -10,20 +10,23 @@ function hidePriceOrFinish () {
         return finish;
     }
 
-    document.addEventListener('mouseover', (e) => {
-
-        
-        const price = selectPrice();
-        const finish = selectFinish();
-        
-        const yourTarget = e.target;
-
-        if(yourTarget.classList.contains("yourFooter") ||yourTarget.id === 'footer') {
-            price.classList.add('hide');
-            finish.classList.remove('hide');
-        }
-
-    })
+    function ifMouseOver () {
+        document.addEventListener('mouseover', (e) => {
+    
+            
+            const price = selectPrice();
+            const finish = selectFinish();
+            
+            const yourTarget = e.target;
+    
+            if(yourTarget.classList.contains("yourFooter") ||yourTarget.id === 'footer') {
+                price.classList.add('hide');
+                finish.classList.remove('hide');
+            }
+    
+        })
+    }
+    ifMouseOver();
 
     document.addEventListener('mouseout', (e) => {
 
