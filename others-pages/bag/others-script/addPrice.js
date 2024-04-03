@@ -88,23 +88,26 @@ function addPrice () {
     }
     whenPageLoadsSetValuePrice();
 
-    document.addEventListener('click', (e) => {
-
-        const clickedOnButtons = e.target;
-
-        function addValue () {
-
-            if(clickedOnButtons.hasAttribute('type')) {
+    function ifYourTargetIsAddOrRemoveButton () {
+        document.addEventListener('click', (e) => {
     
-                setValuePrice();
+            const clickedOnButtons = e.target;
+    
+            function addValue () {
+    
+                if(clickedOnButtons.hasAttribute('type')) {
+        
+                    setValuePrice();
+        
+                }
     
             }
-
-        }
-
-        addValue();
-
-    });
+    
+            addValue();
+    
+        });
+    }
+    ifYourTargetIsAddOrRemoveButton();
 
 }
 
