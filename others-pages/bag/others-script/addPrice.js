@@ -53,7 +53,11 @@ function addPrice () {
                         }
                         pushResultMultiplicationsInSumAllMultiplications();
         
-                        sum = sumAllMultiplications.reduce((total, valor) => total + valor, 0);
+                        function traverseAndSumTheMultiplications () {
+                            sum = sumAllMultiplications.reduce((total, valor) => total + valor, 0);
+                            return sum;
+                        }
+                        traverseAndSumTheMultiplications();
                     } catch {}
     
                 }
