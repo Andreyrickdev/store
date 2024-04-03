@@ -1,6 +1,10 @@
 function addPrice () {
 
-    const button = document.getElementById('footer');
+    function getFooter () {
+        const button = document.getElementById('footer');
+        return button;
+    }
+    const button = getFooter();
     const numPrice = button.getElementsByClassName('num-prices')[0];
 
     function setValuePrice () {
