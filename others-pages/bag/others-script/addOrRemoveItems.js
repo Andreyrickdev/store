@@ -10,11 +10,11 @@ function addOrRemoveItems () {
             }
             const buttonAddOrRemove = getTarget();
 
-            function getDadDivWithParentNode () {
+            function getDadButtonsAddOrRemove () {
                 const getDadDiv = buttonAddOrRemove.parentNode;
                 return getDadDiv;
             }
-            const getDadDiv = getDadDivWithParentNode();
+            const getDadDiv = getDadButtonsAddOrRemove();
             
             function getNumItemInGetDadDiv () {
                 let getNumItem = getDadDiv.querySelector('p');
