@@ -22,20 +22,23 @@ function addOrRemoveItems () {
             }
             const getNumItem = getNumItemsOfProduct();
             
-            if(buttonAddOrRemove.classList.contains('button-remove')) {
-
-                let num = Number(getNumItem.innerText);
-
-                if(num >= 1) {
-                    getNumItem.innerText = --num;
+            function ifTargetIsButtonRemove () {
+                if(buttonAddOrRemove.classList.contains('button-remove')) {
+    
+                    let num = Number(getNumItem.innerText);
+    
+                    if(num >= 1) {
+                        getNumItem.innerText = --num;
+                    }
+    
+                    if(num == 0) {
+                        const dadOfAll = getDadDiv.parentNode.parentNode.parentNode;
+                        ifRemove(dadOfAll);
+                    }
+    
                 }
-
-                if(num == 0) {
-                    const dadOfAll = getDadDiv.parentNode.parentNode.parentNode;
-                    ifRemove(dadOfAll);
-                }
-
             }
+            ifTargetIsButtonRemove();
 
             if(buttonAddOrRemove.classList.contains('button-add')) {
 
