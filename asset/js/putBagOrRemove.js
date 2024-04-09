@@ -161,8 +161,13 @@ function putBag () {
                     function ifClickedOnAddButton () {
                         if(eventAttk == add) {
                             
-                            function getYourLiClassName () {
+                            function getYourLi () {
                                 const yourLi = eventAttk.parentNode.parentNode.parentNode;
+                                return yourLi;
+                            }
+
+                            function getYourLiClassName () {
+                                const yourLi = getYourLi();
                                 return yourLi.classList.value;
                             }
         
