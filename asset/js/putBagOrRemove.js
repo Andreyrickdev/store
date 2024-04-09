@@ -705,11 +705,12 @@ function loadProductsFromStoreLocalStorage () {
 
 loadProductsFromStoreLocalStorage();
 
-function storeProductLocalStorage (item, qtdItem) {
+function storeProductLocalStorage (item, qtdItem, desc) {
 
     let objectToProduct = {
         product: item,
         qtd: qtdItem,
+        desc: desc,
     }
 
     function findIndexProductIfFoundReplaceWithTheExistingValue() {
