@@ -429,21 +429,27 @@ function putBag () {
                             const newP = createP();
                             return newP;
                         }
-        
+
+                        function setClassOnP (newP) {
+                            const newPWithClass = newP.classList.add('desc');
+                            return newP;
+                        }
+
                         function createdTextNode (p) {
                             const textNode = document.createTextNode(p);
                             return textNode;
                         }
         
-                        function textNodeInNewP (textNode) {
-                            newP.appendChild(textNode);
-                            return newP;
+                        function textNodeInNewP (textNode, newPWithClass) {
+                            newPWithClass.appendChild(textNode);
+                            return newPWithClass;
                         }
         
                         const p = getedP();
                         const newP = createdNewP();
+                        const newPWithClass = setClassOnP(newP);
                         const textNode = createdTextNode(p);
-                        const finalP = textNodeInNewP(textNode);
+                        const finalP = textNodeInNewP(textNode, newPWithClass);
         
                         return finalP;
                     }
