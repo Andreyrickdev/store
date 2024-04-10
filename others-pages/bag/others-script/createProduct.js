@@ -12,7 +12,9 @@
         }
 
         function getUl () {
-            
+            const getArticleById = getArticle();
+            const ul = getArticleById.getElementsByTagName('ul')[0];
+            return ul;
         }
     }
 
