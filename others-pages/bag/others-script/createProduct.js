@@ -6,6 +6,11 @@
 
     function getListOfProductUlTag () {
         
+        function getArticle () {
+            const getArticle = document.getElementById('article');
+            return getArticle;
+        }
+
     }
 
 
