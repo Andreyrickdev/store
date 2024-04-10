@@ -188,8 +188,7 @@ function putBag () {
 
                             function getDescYourLi () {
                                 const yourLi = getYourLi();
-                                const desc = yourLi.getElementsByClassName('desc')[0];
-                                console.log(desc);
+                                const desc = yourLi.getElementsByClassName('desc')[0].innerText;
                                 return desc;
                             }
         
@@ -225,8 +224,7 @@ function putBag () {
 
                             function getDescYourLi () {
                                 const yourLi = getYourLi();
-                                const desc = yourLi.getElementsByClassName('desc')[0];
-                                console.log(desc);
+                                const desc = yourLi.getElementsByClassName('desc')[0].innerText;
                                 return desc;
                             }
         
@@ -546,7 +544,7 @@ function putBag () {
                                 }
                             }
     
-                            storeProductLocalStorage(cheque[0].classList.value, Number(cheque[0].getElementsByTagName('p')[0].innerText),cheque[0].getElementsByClassName('desc')[0]);
+                            storeProductLocalStorage(cheque[0].classList.value, Number(cheque[0].getElementsByTagName('p')[0].innerText),cheque[0].getElementsByClassName('desc')[0].innerText);
     
                         }
         
