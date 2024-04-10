@@ -4,7 +4,9 @@
     const convertido = JSON.parse(productsInStore);
     console.log(convertido);
 
-    
+    function getListOfProductUlTag () {
+        
+    }
 
 
 })();
