@@ -160,7 +160,7 @@ function putBag () {
     
                     function ifClickedOnAddButton () {
                         if(eventAttk == add) {
-                            
+
                             function getYourLi () {
                                 const yourLi = eventAttk.parentNode.parentNode.parentNode;
                                 return yourLi;
@@ -185,8 +185,15 @@ function putBag () {
                                 }
                                 return yourQtdLi;
                             }
+
+                            function getDescYourLi () {
+                                const yourLi = getYourLi();
+                                const desc = yourLi.getElementsByClassName('desc')[0];
+                                console.log(desc);
+                                return desc;
+                            }
         
-                            storeProductLocalStorage(getYourLiClassName(), getQtdYourLi());
+                            storeProductLocalStorage(getYourLiClassName(), getQtdYourLi(), getDescYourLi());
                             
                             function ifProductQtdLessThan10 () {
                                 if(paragraph.innerText < 10) {
@@ -201,17 +208,29 @@ function putBag () {
     
                     function ifClicekdOnRemoveButton () {
                         if(eventAttk == remove) {
+
+                            function getYourLi () {
+                                const yourLi = eventAttk.parentNode.parentNode.parentNode;
+                                return yourLi;
+                            }
         
                             function getYourLiClassName () {
-                                const yourLi = eventAttk.parentNode.parentNode.parentNode;
+                                const yourLi = getYourLi();
                                 return yourLi.classList.value;
                             }
         
                             function getQtdYourLi () {
                                 return Number(paragraph.innerText - 1);
                             }
+
+                            function getDescYourLi () {
+                                const yourLi = getYourLi();
+                                const desc = yourLi.getElementsByClassName('desc')[0];
+                                console.log(desc);
+                                return desc;
+                            }
         
-                            storeProductLocalStorage(getYourLiClassName(), getQtdYourLi());
+                            storeProductLocalStorage(getYourLiClassName(), getQtdYourLi(), getDescYourLi());
         
                             function ifQtdProductis () {
                                 if(paragraph.innerText >= 2 ) {
@@ -427,11 +446,7 @@ function putBag () {
         
                         function createdNewP () {
                             const newP = createP();
-                            return newP;
-                        }
-
-                        function setClassOnP (newP) {
-                            const newPWithClass = newP.classList.add('desc');
+                            newP.classList.add('desc');
                             return newP;
                         }
 
@@ -440,16 +455,15 @@ function putBag () {
                             return textNode;
                         }
         
-                        function textNodeInNewP (textNode, newPWithClass) {
-                            newPWithClass.appendChild(textNode);
-                            return newPWithClass;
+                        function textNodeInNewP (textNode) {
+                            newP.appendChild(textNode);
+                            return newP;
                         }
         
                         const p = getedP();
                         const newP = createdNewP();
-                        const newPWithClass = setClassOnP(newP);
                         const textNode = createdTextNode(p);
-                        const finalP = textNodeInNewP(textNode, newPWithClass);
+                        const finalP = textNodeInNewP(textNode);
         
                         return finalP;
                     }
@@ -532,7 +546,7 @@ function putBag () {
                                 }
                             }
     
-                            storeProductLocalStorage(cheque[0].classList.value, Number(cheque[0].getElementsByTagName('p')[0].innerText));
+                            storeProductLocalStorage(cheque[0].classList.value, Number(cheque[0].getElementsByTagName('p')[0].innerText),cheque[0].getElementsByClassName('desc')[0]);
     
                         }
         
@@ -683,6 +697,7 @@ function putBag () {
 
                 h1.innerText = h1sInStore[item];
                 p.innerText = psInStore[item];
+                p.classList.add('desc');
                 div.appendChild(addOrRemove);
                 div.appendChild(h1);
                 div.appendChild(p);
