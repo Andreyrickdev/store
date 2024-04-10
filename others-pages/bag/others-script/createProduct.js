@@ -7,8 +7,8 @@
     function getListOfProductUlTag () {
         
         function getArticle () {
-            const getArticle = document.getElementById('article');
-            return getArticle;
+            const getArticleById = document.getElementById('article');
+            return getArticleById;
         }
 
     }
