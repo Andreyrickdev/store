@@ -16,6 +16,8 @@
             const ul = getArticleById.getElementsByTagName('ul')[0];
             return ul;
         }
+
+        return getUl();
     }
 
 
