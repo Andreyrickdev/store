@@ -20,5 +20,10 @@
         return getUl();
     }
 
+    function createLi () {
+        const li = document.createElement('li');
+        return li;
+    }
+
 
 })();
