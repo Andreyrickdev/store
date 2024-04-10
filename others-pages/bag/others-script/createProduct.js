@@ -22,6 +22,7 @@
 
     function createLi () {
         const li = document.createElement('li');
+        li.classList.add('product');
         return li;
     }
 
