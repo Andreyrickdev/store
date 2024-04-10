@@ -58,7 +58,7 @@
     background-image: url('../img/soda.png');
 }
 
-.product .description-product {
+.product .desc {
     font-size: 1.2rem;
     max-width: 400px;
 }
