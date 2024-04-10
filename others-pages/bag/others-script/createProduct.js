@@ -36,5 +36,10 @@
         return h1;
     }
 
+    function createP () {
+        const p = document.createElement('p');
+        return p;
+    }
+
 
 })();
