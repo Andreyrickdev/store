@@ -41,5 +41,10 @@
         return p;
     }
 
+    function createSpan () {
+        const span = document.createElement('span');
+        return span;
+    }
+
 
 })();
