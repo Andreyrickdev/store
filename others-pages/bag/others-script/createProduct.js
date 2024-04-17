@@ -33,7 +33,11 @@
 
     function createImgDiv () {
         for(idProduct of converted) {
-            const div = createDiv();
+            function imgDiv () {
+                const div = createDiv();
+                return div;
+            }
+            const div = imgDiv();
     
             div.classList.add('img-product');
             
