@@ -122,7 +122,13 @@
                 }
 
                 function buttonsAddOrRemove () {
-                    
+
+                    function createDivButtonsAddOrRemove () {
+                        const div = createDiv();
+                        div.classList.add('add-or-remove-item');
+                        return div;
+                    }
+
                 }
 
 
