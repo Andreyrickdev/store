@@ -171,6 +171,10 @@
 
                         setAttributeOnInput();
                     }
+                    
+                    function createPNumOfItems () {
+                        
+                    }
 
                 }
 
