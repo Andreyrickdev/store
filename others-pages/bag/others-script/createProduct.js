@@ -46,6 +46,11 @@
         return span;
     }
 
+    function createInput () {
+        const input = document.createElement('input');
+        return input;
+    }
+
 
     function createImgDiv () {
         for(idProduct of converted) {
