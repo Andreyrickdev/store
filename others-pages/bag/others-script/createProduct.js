@@ -96,7 +96,11 @@
             function pInf () {
                 const p = createP();
                 p.innerText = idProduct.desc;
-                return p;
+
+                function setClassOnP () {
+                    p.classList.add('desc');
+                    return p;
+                }
             }
             const div = infDiv();
             const h1 = h1Inf();
