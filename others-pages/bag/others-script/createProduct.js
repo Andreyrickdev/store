@@ -32,12 +32,11 @@
     }
 
     function createImgDiv () {
-        const div = createDiv();
-
-        div.classList.add('img-product');
-
         for(idProduct of converted) {
-
+            const div = createDiv();
+    
+            div.classList.add('img-product');
+            
             let product;
 
             function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
