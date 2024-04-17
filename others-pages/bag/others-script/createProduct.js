@@ -86,7 +86,14 @@
                 }
                 putClassOnInfDiv();
             }
+
+            function h1Inf () {
+                const h1 = createH1();
+                h1.innerText = 12.99;
+                return h1;
+            }
             const div = infDiv();
+            const h1 = h1Inf();
 
         }
 
