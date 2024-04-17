@@ -79,7 +79,12 @@
 
             function infDiv () {
                 const div = createDiv();
-                return div;
+
+                function putClassOnInfDiv () {
+                    div.classList.add('infs-product');
+                    return div;
+                }
+                putClassOnInfDiv();
             }
             const div = infDiv();
 
