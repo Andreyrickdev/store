@@ -106,12 +106,23 @@
 
             function buttonsInf () {
 
-                
+                function buttonsDiv () {
+                    const div = createDiv();
+
+                    function putClassOnButtonsDiv () {
+                        div.classList.add('buttons');
+                        return div;
+                    }
+                    putClassOnButtonsDiv();
+                }
+
+
 
             }
             const div = infDiv();
             const h1 = h1Inf();
             const p = pInf();
+            const buttonsDiv = buttonsInf();
 
         }
 
