@@ -121,6 +121,9 @@
                     return span;
                 }
 
+                function buttonsAddOrRemove () {
+                    
+                }
 
 
             }
