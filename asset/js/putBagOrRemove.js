@@ -394,7 +394,7 @@ function putBag () {
                     function setClassOnLi () {
         
                         function setClass (li) {
-                            li.classList.add(`product-${item}`);
+                            li.classList.add(`product${item}`);
                             return li;
                         }
                         
@@ -511,7 +511,7 @@ function putBag () {
         
                         function pushProjectsInListOfProducts (listOfProducts) {
                             for (let i = 0; i <= 11; i++) {
-                                listOfProducts.push(`product-${i}`);
+                                listOfProducts.push(`product${i}`);
                             }
         
                             return listOfProducts;
