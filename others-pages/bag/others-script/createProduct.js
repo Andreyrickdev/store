@@ -129,6 +129,10 @@
                         return div;
                     }
 
+                    function createInputRemove () {
+
+                    }
+
                 }
 
 
