@@ -92,8 +92,15 @@
                 h1.innerText = 12.99;
                 return h1;
             }
+
+            function pInf () {
+                const p = createP();
+                p.innerText = idProduct.desc;
+                return p;
+            }
             const div = infDiv();
             const h1 = h1Inf();
+            const p = pInf();
 
         }
 
