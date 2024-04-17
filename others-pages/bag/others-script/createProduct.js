@@ -101,6 +101,7 @@
                     p.classList.add('desc');
                     return p;
                 }
+                setClassOnP();
             }
             const div = infDiv();
             const h1 = h1Inf();
