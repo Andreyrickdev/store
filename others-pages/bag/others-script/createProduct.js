@@ -218,7 +218,7 @@
 
                 div.appendChild(span);
                 div.appendChild(addOrRemove);
-
+                // falta o favorite.
 
 
             }
