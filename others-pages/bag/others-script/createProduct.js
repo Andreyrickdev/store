@@ -49,6 +49,17 @@
                 }
             }
             takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
+
+            function isHamburgerOrDessertOrSoda () {
+                if(product >= 0 && product < 4) {
+                    div.classList.add('hamburger');
+                } else if (product >= 4 && product < 8) {
+                    div.classList.add('dessert');
+                } else {
+                    div.classList.add('soda');
+                }
+            }
+            isHamburgerOrDessertOrSoda();
         }
 
 
