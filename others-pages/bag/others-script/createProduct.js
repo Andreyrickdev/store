@@ -179,7 +179,25 @@
                     }
 
                     function createInputAdd () {
-                        
+                        function creatingInput () {
+                            const input = createInput();
+                            return input;
+                        }
+
+                        function setClassOnInput () {
+                            const input = creatingInput();
+                            input.classList.add('button-add');
+                            return input;
+                        }
+
+                        function setAttributeOnInput () {
+                            const input = setClassOnInput();
+                            input.setAttribute('type','button');
+                            input.setAttribute('value','+');
+                            return input;
+                        }
+
+                        setAttributeOnInput();
                     }
 
                 }
