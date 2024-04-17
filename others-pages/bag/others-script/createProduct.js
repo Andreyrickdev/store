@@ -1,8 +1,8 @@
 (function () {
 
     const productsInStore = localStorage.getItem("productsInBag");
-    const convertido = JSON.parse(productsInStore);
-    console.log(convertido);
+    const converted = JSON.parse(productsInStore);
+    console.log(converted);
 
     function getListOfProductUlTag () {
         
@@ -36,6 +36,18 @@
 
         div.classList.add('img-product');
 
+        for(idProduct of converted) {
+
+            let product;
+
+            if (isNaN(idProduct.product.slice(-2)) == true) {
+                product = Number(idProduct.product.slice(-1));
+                console.log(product);
+            } else {
+                product = Number(idProduct.product.slice(-2));
+                console.log(product);
+            }
+        }
 
 
     }
