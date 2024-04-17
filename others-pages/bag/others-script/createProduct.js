@@ -227,6 +227,11 @@
             const p = pInf();
             const buttonsDiv = buttonsInf();
 
+            div.appendChild(h1);
+            div.appendChild(p);
+            div.appendChild(buttonsDiv);
+
+            return div;
         }
 
     }
