@@ -31,6 +31,22 @@
         return div;
     }
 
+    function createH1 () {
+        const h1 = document.createElement('h1');
+        return h1;
+    }
+
+    function createP () {
+        const p = document.createElement('p');
+        return p;
+    }
+
+    function createSpan () {
+        const span = document.createElement('span');
+        return span;
+    }
+
+
     function createImgDiv () {
         for(idProduct of converted) {
             function imgDiv () {
@@ -147,20 +163,6 @@
     }
     createInfsProductDiv();
 
-    function createH1 () {
-        const h1 = document.createElement('h1');
-        return h1;
-    }
-
-    function createP () {
-        const p = document.createElement('p');
-        return p;
-    }
-
-    function createSpan () {
-        const span = document.createElement('span');
-        return span;
-    }
 
     function createProductInBag (imgDiv, ) {
         const ul = getListOfProductUlTag();
