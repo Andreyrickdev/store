@@ -71,7 +71,11 @@
 
     function createInfsProductDiv () {
 
-        
+        for (idProduct of converted) {
+
+            
+
+        }
 
     }
     createInfsProductDiv();
