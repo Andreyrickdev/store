@@ -40,13 +40,16 @@
 
             let product;
 
-            if (isNaN(idProduct.product.slice(-2)) == true) {
-                product = Number(idProduct.product.slice(-1));
-                console.log(product);
-            } else {
-                product = Number(idProduct.product.slice(-2));
-                console.log(product);
+            function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
+                if (isNaN(idProduct.product.slice(-2)) == true) {
+                    product = Number(idProduct.product.slice(-1));
+                    console.log(product);
+                } else {
+                    product = Number(idProduct.product.slice(-2));
+                    console.log(product);
+                }
             }
+            takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
         }
 
 
