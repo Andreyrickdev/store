@@ -53,10 +53,13 @@
             function isHamburgerOrDessertOrSoda () {
                 if(product >= 0 && product < 4) {
                     div.classList.add('hamburger');
+                    createProductInBag(div);
                 } else if (product >= 4 && product < 8) {
                     div.classList.add('dessert');
+                    createProductInBag(div);
                 } else {
                     div.classList.add('soda');
+                    createProductInBag(div);
                 }
             }
             isHamburgerOrDessertOrSoda();
@@ -81,5 +84,11 @@
         return span;
     }
 
+    function createProductInBag (imgDiv, ) {
+        const ul = getListOfProductUlTag();
+        const li = createLi();
+        li.appendChild(imgDiv);
+        ul.appendChild(li);
+    }
 
 })();
