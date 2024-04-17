@@ -115,6 +115,11 @@
                     }
                     putClassOnButtonsDiv();
                 }
+                
+                function spanButtonsDiv () {
+                    const span = createSpan();
+                    return span;
+                }
 
 
 
