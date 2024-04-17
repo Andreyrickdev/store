@@ -77,7 +77,11 @@
 
         for (idProduct of converted) {
 
-            
+            function infDiv () {
+                const div = createDiv();
+                return div;
+            }
+            const div = infDiv();
 
         }
 
