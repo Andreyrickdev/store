@@ -103,6 +103,12 @@
                 }
                 setClassOnP();
             }
+
+            function buttonsInf () {
+
+                
+
+            }
             const div = infDiv();
             const h1 = h1Inf();
             const p = pInf();
