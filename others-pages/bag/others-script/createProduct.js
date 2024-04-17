@@ -200,6 +200,16 @@
                         setAttributeOnInput();
                     }
 
+                    const div = createDivButtonsAddOrRemove();
+                    const inputRemove = createInputRemove();
+                    const numOfItems = createPNumOfItems();
+                    const inputAdd = createInputAdd();
+
+                    div.appendChild(inputRemove);
+                    div.appendChild(numOfItems);
+                    div.appendChild(inputAdd);
+                    return div;
+
                 }
 
 
