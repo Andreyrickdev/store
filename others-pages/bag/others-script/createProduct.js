@@ -173,7 +173,9 @@
                     }
                     
                     function createPNumOfItems () {
-                        
+                        const p = createP();
+                        p.innerText = idProduct.qtd;
+                        return p;
                     }
 
                 }
