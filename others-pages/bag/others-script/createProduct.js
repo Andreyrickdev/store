@@ -31,6 +31,16 @@
         return div;
     }
 
+    function createImgDiv () {
+        const div = createDiv();
+
+        div.classList.add('img-product');
+
+
+
+    }
+    createImgDiv();
+
     function createH1 () {
         const h1 = document.createElement('h1');
         return h1;
