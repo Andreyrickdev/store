@@ -53,6 +53,9 @@
 
 
     function createImgDiv () {
+
+        let imgsDiv = [];
+
         for(idProduct of converted) {
             function imgDiv () {
                 const div = createDiv();
@@ -78,13 +81,13 @@
             function isHamburgerOrDessertOrSoda () {
                 if(product >= 0 && product < 4) {
                     div.classList.add('hamburger');
-                    createProductInBag(div);
+                    imgsDiv.push(div);
                 } else if (product >= 4 && product < 8) {
                     div.classList.add('dessert');
-                    createProductInBag(div);
+                    imgsDiv.push(div);
                 } else {
                     div.classList.add('soda');
-                    createProductInBag(div);
+                    imgsDiv.push(div);
                 }
             }
             isHamburgerOrDessertOrSoda();
@@ -96,6 +99,8 @@
 
     function createInfsProductDiv () {
 
+        let infsDiv = [];
+
         for (idProduct of converted) {
 
             function infDiv () {
@@ -105,7 +110,7 @@
                     div.classList.add('infs-product');
                     return div;
                 }
-                putClassOnInfDiv();
+                return putClassOnInfDiv();
             }
 
             function h1Inf () {
@@ -122,7 +127,7 @@
                     p.classList.add('desc');
                     return p;
                 }
-                setClassOnP();
+                return setClassOnP();
             }
 
             function buttonsInf () {
@@ -134,7 +139,7 @@
                         div.classList.add('buttons');
                         return div;
                     }
-                    putClassOnButtonsDiv();
+                    return putClassOnButtonsDiv();
                 }
                 
                 function spanButtonsDiv () {
@@ -169,7 +174,7 @@
                             return input;
                         }
 
-                        setAttributeOnInput();
+                        return setAttributeOnInput();
                     }
                     
                     function createPNumOfItems () {
@@ -197,7 +202,7 @@
                             return input;
                         }
 
-                        setAttributeOnInput();
+                        return setAttributeOnInput();
                     }
 
                     const div = createDivButtonsAddOrRemove();
@@ -219,7 +224,7 @@
                 div.appendChild(span);
                 div.appendChild(addOrRemove);
                 // falta o favorite.
-
+                return div;
 
             }
             const div = infDiv();
@@ -238,7 +243,7 @@
     createInfsProductDiv();
 
 
-    function createProductInBag (imgDiv, ) {
+    function createProductInBag () {
         const ul = getListOfProductUlTag();
         const li = createLi();
         li.appendChild(imgDiv);
