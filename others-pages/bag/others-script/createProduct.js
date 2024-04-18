@@ -235,8 +235,7 @@
             div.appendChild(h1);
             div.appendChild(p);
             div.appendChild(buttonsDiv);
-
-            return div;
+            infsDiv.push(div);
         }
 
     }
