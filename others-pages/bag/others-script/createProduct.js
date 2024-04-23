@@ -113,7 +113,7 @@
     }
     createImgDivAndInfsProductDiv();
 
-    function createProductInBag (imgDiv, qtd, desc) {
+    function createProductInBag (imgDiv, infDiv) {
         const ul = getListOfProductUlTag();
         const li = createLi();
         li.appendChild(imgDiv);
