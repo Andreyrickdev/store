@@ -93,6 +93,10 @@
                 isHamburgerOrDessertOrSoda();
             }
             getImg();
+
+            function getInfs () {
+                
+            }
         }
 
     }
