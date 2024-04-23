@@ -54,7 +54,6 @@
 
     function createImgDiv () {
 
-
         for(idProduct of converted) {
             function imgDiv () {
                 const div = createDiv();
