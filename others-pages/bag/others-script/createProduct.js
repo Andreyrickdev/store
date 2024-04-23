@@ -95,7 +95,17 @@
             getImg();
 
             function getInfs () {
-                
+
+                function infDiv () {
+                    const div = createDiv();
+    
+                    function putClassOnInfDiv () {
+                        div.classList.add('infs-product');
+                        return div;
+                    }
+                    return putClassOnInfDiv();
+                }
+
             }
         }
 
