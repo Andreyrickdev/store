@@ -56,6 +56,19 @@
 
         for(idProduct of converted) {
 
+            let product;
+    
+            function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
+                if (isNaN(idProduct.product.slice(-2)) == true) {
+                    product = Number(idProduct.product.slice(-1));
+                    console.log(product);
+                } else {
+                    product = Number(idProduct.product.slice(-2));
+                    console.log(product);
+                }
+            }
+            takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
+
             function getImg () {
                 function imgDiv () {
                     const div = createDiv();
@@ -64,19 +77,6 @@
                 const div = imgDiv();
         
                 div.classList.add('img-product');
-                
-                let product;
-    
-                function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
-                    if (isNaN(idProduct.product.slice(-2)) == true) {
-                        product = Number(idProduct.product.slice(-1));
-                        console.log(product);
-                    } else {
-                        product = Number(idProduct.product.slice(-2));
-                        console.log(product);
-                    }
-                }
-                takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
     
                 function isHamburgerOrDessertOrSoda () {
                     if(product >= 0 && product < 4) {
