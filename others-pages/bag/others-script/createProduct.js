@@ -54,7 +54,6 @@
 
     function createImgDiv () {
 
-        let imgsDiv = [];
 
         for(idProduct of converted) {
             function imgDiv () {
@@ -81,18 +80,14 @@
             function isHamburgerOrDessertOrSoda () {
                 if(product >= 0 && product < 4) {
                     div.classList.add('hamburger');
-                    imgsDiv.push(div);
                 } else if (product >= 4 && product < 8) {
                     div.classList.add('dessert');
-                    imgsDiv.push(div);
                 } else {
                     div.classList.add('soda');
-                    imgsDiv.push(div);
                 }
             }
             isHamburgerOrDessertOrSoda();
         }
-
 
     }
     createImgDiv();
@@ -237,6 +232,8 @@
             div.appendChild(buttonsDiv);
             infsDiv.push(div);
         }
+
+        return infsDiv;
 
     }
     createInfsProductDiv();
