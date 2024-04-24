@@ -121,6 +121,10 @@
 
                 }
 
+                function infPrice () {
+                    
+                }
+
                 const box = infDivBox();
 
             }
