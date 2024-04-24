@@ -108,6 +108,10 @@
                     return div;
                 }
 
+                function putClassOnDiv (div) {
+                    div.classList.add('infs-product');
+                    return div;
+                }
             }
         }
 
