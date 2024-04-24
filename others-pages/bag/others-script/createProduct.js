@@ -140,7 +140,12 @@
                 }
 
                 function infDesc () {
-                    
+
+                    function createPInf () {
+                        const p = createP();
+                        return p;
+                    }
+
                 }
 
                 const box = infDivBox();
