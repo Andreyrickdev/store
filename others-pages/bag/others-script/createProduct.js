@@ -81,33 +81,19 @@
                 function isHamburgerOrDessertOrSoda () {
                     if(product >= 0 && product < 4) {
                         div.classList.add('hamburger');
-                        createProductInBag(div);
+                        createProductInBag(div,getInfs());
                     } else if (product >= 4 && product < 8) {
                         div.classList.add('dessert');
-                        createProductInBag(div);
+                        createProductInBag(div,getInfs());
                     } else {
                         div.classList.add('soda');
-                        createProductInBag(div);
+                        createProductInBag(div,getInfs());
                     }
                 }
                 isHamburgerOrDessertOrSoda();
             }
             getImg();
 
-            function getInfs () {
-
-                function infDiv () {
-                    const div = createDiv();
-    
-                    function putClassOnInfDiv () {
-                        div.classList.add('infs-product');
-                        return div;
-                    }
-                    return putClassOnInfDiv();
-                }
-
-            }
-            getInfs();
         }
 
     }
@@ -117,6 +103,7 @@
         const ul = getListOfProductUlTag();
         const li = createLi();
         li.appendChild(imgDiv);
+        li.appendChild(infDiv);
         ul.appendChild(li);
     }
 
