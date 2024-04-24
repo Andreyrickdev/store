@@ -133,6 +133,10 @@
                         return h1;
                     }
 
+                    const h1 = createH1();
+                    const valueInH1 = putValueInH1(h1);
+                    return valueInH1;
+
                 }
 
                 const box = infDivBox();
