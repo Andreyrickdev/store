@@ -103,15 +103,26 @@
 
             function getInfs () {
 
-                function createInfDiv () {
-                    const div = createDiv();
-                    return div;
+                function infDivBox () {
+
+                    function createInfDiv () {
+                        const div = createDiv();
+                        return div;
+                    }
+    
+                    function putClassOnDiv (div) {
+                        div.classList.add('infs-product');
+                        return div;
+                    }
+
+                    const div = createInfDiv();
+                    const divWithClass = putClassOnDiv(div);
+                    return divWithClass;
+
                 }
 
-                function putClassOnDiv (div) {
-                    div.classList.add('infs-product');
-                    return div;
-                }
+                const box = infDivBox();
+
             }
         }
 
