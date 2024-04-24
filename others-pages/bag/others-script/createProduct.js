@@ -123,7 +123,7 @@
 
                 function infPrice () {
                     
-                    function createH1 () {
+                    function createH1Price () {
                         const h1 = createH1();
                         return h1;
                     }
@@ -133,7 +133,7 @@
                         return h1;
                     }
 
-                    const h1 = createH1();
+                    const h1 = createH1Price();
                     const valueInH1 = putValueInH1(h1);
                     return valueInH1;
 
@@ -142,6 +142,8 @@
                 const box = infDivBox();
                 const price = infPrice();
 
+                box.appendChild(price);
+                return box;
             }
         }
 
