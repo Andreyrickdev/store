@@ -69,7 +69,7 @@
             }
             takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
 
-            function getImg () {
+            function fetchingProductFromStorageAccordingToItsId () {
                 function imgDiv () {
                     const div = createDiv();
                     return div;
@@ -92,7 +92,7 @@
                 }
                 isHamburgerOrDessertOrSoda();
             }
-            getImg();
+            fetchingProductFromStorageAccordingToItsId();
 
         }
 
