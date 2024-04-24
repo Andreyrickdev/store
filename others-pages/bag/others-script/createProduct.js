@@ -139,6 +139,10 @@
 
                 }
 
+                function infDesc () {
+                    
+                }
+
                 const box = infDivBox();
                 const price = infPrice();
 
