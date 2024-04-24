@@ -101,6 +101,11 @@
             }
             fetchingProductFromStorageAccordingToItsId();
 
+            function getInfs () {
+
+                
+
+            }
         }
 
     }
