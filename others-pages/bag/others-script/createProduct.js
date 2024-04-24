@@ -70,11 +70,7 @@
             takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
 
             function fetchingProductFromStorageAccordingToItsId () {
-                function imgDiv () {
-                    const div = createDiv();
-                    return div;
-                }
-                const div = imgDiv();
+                const div = createDiv();
         
                 div.classList.add('img-product');
     
