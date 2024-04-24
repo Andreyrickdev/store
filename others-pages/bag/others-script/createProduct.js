@@ -128,6 +128,11 @@
                         return h1;
                     }
 
+                    function putValueInH1 (h1) {
+                        h1.innerText = 12.99;
+                        return h1;
+                    }
+
                 }
 
                 const box = infDivBox();
