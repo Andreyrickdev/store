@@ -123,6 +123,11 @@
 
                 function infPrice () {
                     
+                    function createH1 () {
+                        const h1 = createH1();
+                        return h1;
+                    }
+
                 }
 
                 const box = infDivBox();
