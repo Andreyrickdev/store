@@ -70,11 +70,18 @@
             takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
 
             function fetchingProductFromStorageAccordingToItsId () {
-                const div = createDiv();
+
+                function createImgDiv() {
+                    const div = createDiv();
+                    return div;
+                }
+
+                function putClassOnDiv(div) {
+                    div.classList.add('img-product');
+                    return div;
+                }
         
-                div.classList.add('img-product');
-    
-                function isHamburgerOrDessertOrSoda () {
+                function isHamburgerOrDessertOrSoda (div) {
                     if(product >= 0 && product < 4) {
                         div.classList.add('hamburger');
                         createProductInBag(div,getInfs());
@@ -86,7 +93,11 @@
                         createProductInBag(div,getInfs());
                     }
                 }
-                isHamburgerOrDessertOrSoda();
+
+                const div = createImgDiv();
+                const divWithClass = putClassOnDiv(div);
+                const finishProduct = isHamburgerOrDessertOrSoda(divWithClass);
+                return finishProduct;
             }
             fetchingProductFromStorageAccordingToItsId();
 
