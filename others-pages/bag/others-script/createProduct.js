@@ -140,6 +140,7 @@
                 }
 
                 const box = infDivBox();
+                const price = infPrice();
 
             }
         }
