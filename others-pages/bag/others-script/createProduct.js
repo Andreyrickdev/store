@@ -103,7 +103,10 @@
 
             function getInfs () {
 
-                
+                function createInfDiv () {
+                    const div = createDiv();
+                    return div;
+                }
 
             }
         }
