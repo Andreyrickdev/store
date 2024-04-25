@@ -256,6 +256,11 @@
                                 return p;
                             }
 
+                            function putValueInP (p) {
+                                p.innerText = idProduct.qtd;
+                                return p;
+                            }
+
                         }
 
                         const div = creatingDiv();
