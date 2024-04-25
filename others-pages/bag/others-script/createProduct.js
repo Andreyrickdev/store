@@ -245,7 +245,12 @@
                         }
 
                         function numItemsOfProduct () {
-                            
+
+                            function creatingP () {
+                                const p = createP();
+                                return p;
+                            }
+
                         }
 
                         const div = creatingDiv();
