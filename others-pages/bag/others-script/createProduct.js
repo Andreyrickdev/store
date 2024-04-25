@@ -275,6 +275,7 @@
                         const remove = buttonRemove();
 
                         finalDiv.appendChild(remove);
+                        finalDiv.appendChild(qtdOfProduct);
                         return finalDiv;
 
                     }
