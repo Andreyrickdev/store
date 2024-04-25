@@ -200,6 +200,7 @@
 
                 box.appendChild(price);
                 box.appendChild(desc);
+                box.appendChild(buttons);
                 return box;
             }
         }
