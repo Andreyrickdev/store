@@ -246,6 +246,7 @@
 
                         const div = creatingDiv();
                         const finalDiv = divWithClass(div);
+                        const add = buttonAdd();
                         const remove = buttonRemove();
 
                         finalDiv.appendChild(remove);
