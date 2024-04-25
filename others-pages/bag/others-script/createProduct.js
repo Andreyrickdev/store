@@ -276,6 +276,7 @@
 
                         finalDiv.appendChild(remove);
                         finalDiv.appendChild(qtdOfProduct);
+                        finalDiv.appendChild(add);
                         return finalDiv;
 
                     }
