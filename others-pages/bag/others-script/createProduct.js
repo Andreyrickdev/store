@@ -244,6 +244,10 @@
                             return finalButton;
                         }
 
+                        function numItemsOfProduct () {
+                            
+                        }
+
                         const div = creatingDiv();
                         const finalDiv = divWithClass(div);
                         const add = buttonAdd();
