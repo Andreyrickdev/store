@@ -181,6 +181,10 @@
                             return div;
                         }
 
+                        const div = creatingDiv();
+                        const finalDiv = divWithClass(div);
+                        return finalDiv;
+
                     }
 
                 }
