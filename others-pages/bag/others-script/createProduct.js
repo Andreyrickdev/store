@@ -156,6 +156,10 @@
                         return p;
                     }
 
+                    const p = createPInf();
+                    const pWithClass = putClassOnDiv(p);
+                    const finalP = putValueInP(pWithClass);
+                    return finalP;
                 }
 
                 const box = infDivBox();
