@@ -271,6 +271,7 @@
                         const div = creatingDiv();
                         const finalDiv = divWithClass(div);
                         const add = buttonAdd();
+                        const qtdOfProduct = numItemsOfProduct();
                         const remove = buttonRemove();
 
                         finalDiv.appendChild(remove);
