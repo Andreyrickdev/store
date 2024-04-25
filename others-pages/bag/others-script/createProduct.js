@@ -151,6 +151,11 @@
                         return p;
                     }
 
+                    function putValueInP (p) {
+                        p.innerText = idProduct.desc;
+                        return p;
+                    }
+
                 }
 
                 const box = infDivBox();
