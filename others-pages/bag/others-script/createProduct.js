@@ -167,6 +167,7 @@
                 const desc = infDesc();
 
                 box.appendChild(price);
+                box.appendChild(desc);
                 return box;
             }
         }
