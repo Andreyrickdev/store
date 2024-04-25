@@ -251,6 +251,11 @@
                                 return p;
                             }
 
+                            function putClassOnP (p) {
+                                p.classList.add('num-items');
+                                return p;
+                            }
+
                         }
 
                         const div = creatingDiv();
