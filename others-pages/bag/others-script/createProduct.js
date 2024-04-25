@@ -202,6 +202,7 @@
                     const buttonsDiv = createButtonsDiv();
                     const span = createSpan();
                     const buttonsAddOrRemove = createButtonsAddOrRemoveDiv();
+                    buttonsDiv.appendChild(span);
                     buttonsDiv.appendChild(buttonsAddOrRemove);
                     return buttonsDiv;
                 }
