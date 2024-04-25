@@ -164,7 +164,10 @@
 
                 function buttonsAddOrRemove () {
 
-
+                    function createButtonsDiv () {
+                        const div = createDiv();
+                        return div;
+                    }
 
                 }
 
