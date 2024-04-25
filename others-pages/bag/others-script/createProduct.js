@@ -261,6 +261,11 @@
                                 return p;
                             }
 
+                            const p = creatingP();
+                            const pWithClass = putClassOnP(p);
+                            const finalP = putValueInP(pWithClass);
+                            return finalP;
+
                         }
 
                         const div = creatingDiv();
