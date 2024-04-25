@@ -164,6 +164,7 @@
 
                 const box = infDivBox();
                 const price = infPrice();
+                const desc = infDesc();
 
                 box.appendChild(price);
                 return box;
