@@ -177,6 +177,8 @@
                         }
 
                         const div = creatingDiv();
+                        const finalDiv = putClassOnDiv(div);
+                        return finalDiv;
                     }
 
                     function createButtonsAddOrRemoveDiv () {
