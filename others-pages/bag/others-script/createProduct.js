@@ -176,6 +176,11 @@
                             return div;
                         }
 
+                        function divWithClass (div) {
+                            div.classList.add('add-or-remove-item');
+                            return div;
+                        }
+
                     }
 
                 }
