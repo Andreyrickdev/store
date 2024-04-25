@@ -169,6 +169,12 @@
                         return div;
                     }
 
+                    function createButtonsAddOrRemoveDiv () {
+
+                        
+
+                    }
+
                 }
 
                 const box = infDivBox();
