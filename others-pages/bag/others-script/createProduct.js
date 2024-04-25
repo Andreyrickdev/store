@@ -175,6 +175,8 @@
                             div.classList.add('buttons');
                             return div;
                         }
+
+                        const div = creatingDiv();
                     }
 
                     function createButtonsAddOrRemoveDiv () {
