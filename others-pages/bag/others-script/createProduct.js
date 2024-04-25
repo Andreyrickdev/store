@@ -187,6 +187,9 @@
 
                     }
 
+                    const buttonsDiv = createButtonsDiv();
+                    const buttonsAddOrRemove = createButtonsAddOrRemoveDiv();
+                    
                 }
 
                 const box = infDivBox();
