@@ -146,6 +146,11 @@
                         return p;
                     }
 
+                    function putClassOnDiv (p) {
+                        p.classList.add('desc');
+                        return p;
+                    }
+
                 }
 
                 const box = infDivBox();
