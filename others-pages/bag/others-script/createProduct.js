@@ -190,6 +190,7 @@
                     const buttonsDiv = createButtonsDiv();
                     const buttonsAddOrRemove = createButtonsAddOrRemoveDiv();
                     buttonsDiv.appendChild(buttonsAddOrRemove);
+                    return buttonsDiv;
                 }
 
                 const box = infDivBox();
