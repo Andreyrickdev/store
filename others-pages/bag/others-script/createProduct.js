@@ -170,7 +170,11 @@
                             const div = createDiv();
                             return div;
                         }
-                        
+
+                        function putClassOnDiv (div) {
+                            div.classList.add('buttons');
+                            return div;
+                        }
                     }
 
                     function createButtonsAddOrRemoveDiv () {
