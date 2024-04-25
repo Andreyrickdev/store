@@ -134,8 +134,8 @@
                     }
 
                     const h1 = createH1Price();
-                    const valueInH1 = putValueInH1(h1);
-                    return valueInH1;
+                    const finalH1 = putValueInH1(h1);
+                    return finalH1;
 
                 }
 
