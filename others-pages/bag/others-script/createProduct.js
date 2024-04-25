@@ -222,7 +222,7 @@
                         function buttonAdd () {
 
                             function createdButtonAdd () {
-                                const button = createButton();
+                                const button = createInput();
                                 return button;
                             }
                 
