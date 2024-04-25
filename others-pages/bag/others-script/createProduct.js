@@ -219,6 +219,31 @@
                 
                         }
 
+                        function buttonAdd () {
+
+                            function createdButtonAdd () {
+                                const button = createButton();
+                                return button;
+                            }
+                
+                            function setAttrOfButton (button) {
+                                button.setAttribute("type", "button");
+                                button.setAttribute("value","+");
+                                return button;
+                            }
+                
+                            function setClassOnButton (button) {
+                                button.classList.add('button-add');
+                                return button;
+                            }
+                
+                            const button = createdButtonAdd();
+                            const setAttr = setAttrOfButton(button);
+                            const finalButton = setClassOnButton(setAttr);
+                
+                            return finalButton;
+                        }
+
                         const div = creatingDiv();
                         const finalDiv = divWithClass(div);
                         const remove = buttonRemove();
