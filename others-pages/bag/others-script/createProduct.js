@@ -196,6 +196,7 @@
                 const box = infDivBox();
                 const price = infPrice();
                 const desc = infDesc();
+                const buttons = buttonsAddOrRemove();
 
                 box.appendChild(price);
                 box.appendChild(desc);
