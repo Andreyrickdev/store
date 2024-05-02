@@ -1,5 +1,9 @@
-.fav {
+.favorite {
     width: 22px;
     height: 22px;
     background-image: url('../../../asset/imgs/favorite.svg');
+}
+
+.favorite svg path {
+    fill: #757474;
 }
