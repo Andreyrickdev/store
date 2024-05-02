@@ -7,3 +7,7 @@
 .favorite svg path {
     fill: #757474;
 }
+
+.favorite.active svg path {
+    fill: #FF214F;
+}
