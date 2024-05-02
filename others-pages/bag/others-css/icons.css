@@ -1,0 +1,6 @@
+.fav {
+    width: 22px;
+    height: 22px;
+    background-image: url('../../../asset/imgs/favorite.svg');
+    background-color: green;
+}
