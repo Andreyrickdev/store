@@ -2,12 +2,8 @@
     width: 22px;
     height: 22px;
     background-image: url('../../../asset/imgs/favorite.svg');
-}
-
-.favorite svg path {
-    fill: #757474;
-}
-
-.favorite.active svg path {
-    fill: #FF214F;
+    -webkit-mask-image: url('../../../asset/imgs/favorite.svg');
+    mask-image: url('../../../asset/imgs/favorite.svg');
+    mask-size: cover;
+    background-color: #757474;
 }
