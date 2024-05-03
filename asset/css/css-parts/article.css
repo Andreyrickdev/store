@@ -42,8 +42,8 @@
     display: grid;
 }
 
-.favorite.active .fav{
-    fill: #FF214F;
+#food-items .favorite.active {
+    background-color: #FF214F;
     transition: all 0.3s;
 } 
 
