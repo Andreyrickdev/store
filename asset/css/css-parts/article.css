@@ -26,8 +26,17 @@
     cursor: pointer;
 }
 
+#food-items ul {
+    padding: 10px;
+    border: 1px solid rgb(139, 139, 139);
+}
+
 #food-items .favorite, #dessert-items .favorite, #drinks-items .favorite {
-    background-color: #fff;
+    background-color: #757474;
+    background-image: url('../../imgs/favorite.svg');
+    -webkit-mask-image: url('../../imgs/favorite.svg');
+    mask-image: url('../../imgs/favorite.svg');
+    mask-size: cover;
     border: 1px solid rgb(139, 139, 139);
     padding: 10px;
     display: grid;
