@@ -281,6 +281,12 @@
 
                     }
 
+                    function favButton (){
+                        
+                        
+
+                    }
+
                     const buttonsDiv = createButtonsDiv();
                     const span = createSpan();
                     const buttonsAddOrRemove = createButtonsAddOrRemoveDiv();
