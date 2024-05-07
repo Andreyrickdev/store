@@ -283,7 +283,10 @@
 
                     function favButton (){
                         
-                        
+                        function creatingDiv () {
+                            const div = createDiv();
+                            return div;
+                        }
 
                     }
 
