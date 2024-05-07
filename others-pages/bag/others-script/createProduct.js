@@ -162,7 +162,7 @@
                     return finalP;
                 }
 
-                function buttonsAddOrRemove () {
+                function allButtonsDiv () {
 
                     function createButtonsDiv () {
                         
@@ -292,7 +292,7 @@
                 const box = infDivBox();
                 const price = infPrice();
                 const desc = infDesc();
-                const buttons = buttonsAddOrRemove();
+                const buttons = allButtonsDiv();
 
                 box.appendChild(price);
                 box.appendChild(desc);
