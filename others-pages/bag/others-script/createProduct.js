@@ -288,6 +288,11 @@
                             return div;
                         }
 
+                        function putClassOnDiv (div) {
+                            div.classList.add('favorite');
+                            return div;
+                        }
+
                     }
 
                     const buttonsDiv = createButtonsDiv();
