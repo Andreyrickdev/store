@@ -31,6 +31,10 @@
     border: 1px solid rgb(139, 139, 139);
 }
 
+.favorite-box {
+    background-color: #fff;
+}
+
 #food-items .favorite, #dessert-items .favorite, #drinks-items .favorite {
     background-color: #757474;
     background-image: url('../../imgs/favorite.svg');
