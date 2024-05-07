@@ -304,6 +304,7 @@
                     const favoriteButton = favButton();
                     buttonsDiv.appendChild(span);
                     buttonsDiv.appendChild(buttonsAddOrRemove);
+                    buttonsDiv.appendChild(favoriteButton);
                     return buttonsDiv;
                 }
 
