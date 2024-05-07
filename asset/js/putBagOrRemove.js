@@ -787,7 +787,7 @@ function storeProductLocalStorage (item, qtdItem, desc) {
 function noFavorite () {
     
     function getAllHearts () {
-        const noFavorite = document.getElementsByClassName('favorite');
+        const noFavorite = document.getElementsByClassName('favorite-box');
         return noFavorite;
     }
     
