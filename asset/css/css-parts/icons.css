@@ -1,0 +1,11 @@
+/* .favorite {
+    width: 22px;
+    height: 22px;
+    background-image: url('../../imgs/favorite.svg');
+    -webkit-mask-image: url('../../imgs/favorite.svg');
+    mask-image: url('../../imgs/favorite.svg');
+    mask-size: cover;
+    background-color: red;
+    border: 1px solid green;
+    padding: 10px;
+} */

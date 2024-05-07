@@ -293,6 +293,9 @@
                             return div;
                         }
 
+                        const div = creatingDiv();
+                        const finalDiv = putClassOnDiv(div);
+                        return finalDiv;
                     }
 
                     const buttonsDiv = createButtonsDiv();

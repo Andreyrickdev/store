@@ -70,6 +70,20 @@
     align-items: center;
 }
 
+.favorite {
+    width: 22px;
+    height: 22px;
+    background-image: url('../../../asset/imgs/favorite.svg');
+    -webkit-mask-image: url('../../../asset/imgs/favorite.svg');
+    mask-image: url('../../../asset/imgs/favorite.svg');
+    mask-size: cover;
+    background-color: #757474;
+}
+
+.favorite:active {
+    background-color: #FF214F;
+}
+
 .product .buttons .add-or-remove-item {
     display: flex;
     align-items: center;
