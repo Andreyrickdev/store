@@ -198,7 +198,7 @@ header #shopping-bag #price {
 }
 
 header .button-shopping-bag {
-    background-color:#FF214F;
+    background-color: #757474;
     padding: 10px;
     width: 100%;
     color: #fff;
@@ -209,4 +209,8 @@ header .button-shopping-bag {
     border-radius: 2px;
     display: inline-block;
     text-align: center;
+}
+
+header .button-shopping-bag.active {
+    background-color:#FF214F;
 }
