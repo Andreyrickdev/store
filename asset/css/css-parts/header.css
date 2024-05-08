@@ -208,6 +208,7 @@ header .button-shopping-bag {
     border-radius: 2px;
     display: inline-block;
     text-align: center;
+    pointer-events: none;
 }
 
 header .button-shopping-bag.active {
