@@ -64,6 +64,13 @@ function putBag () {
             return p;
         }
 
+        function goToShoppingBag () {
+            const button = document.getElementsByClassName('button-shopping-bag')[0];
+            button.classList.remove('active');
+            return button;
+        }
+        goToShoppingBag();
+
         const p = createdPhrase();
         const pWithId = setAttrOfP(p);
         const finalP = setTextOfP(pWithId);
