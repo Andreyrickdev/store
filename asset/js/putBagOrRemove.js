@@ -32,6 +32,13 @@ function putBag () {
             return phrase;
         }
 
+        function goToShoppingBag () {
+            const button = document.getElementsByClassName('button-shopping-bag')[0];
+            button.classList.add('active');
+            return button;
+        }
+        goToShoppingBag();
+
         const phrase = getPhrase();
         
         if (phrase) {
