@@ -52,11 +52,19 @@
     }
 
 
-    function createImgDivAndInfsProductDiv () {
+    function createImgDivAndInfsProductDivandPutClassOnLi () {
 
         for(idProduct of converted) {
 
             let product;
+
+            function putClassOnLi () {
+                const classProduct = idProduct.product;
+                // createLi(classProduct);
+                console.log(classProduct);
+                return classProduct;
+                // TENTANDO DEFINIR UMA CLASSE NO PRODUTO NA BOLSA.
+            }
     
             function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
                 if (isNaN(idProduct.product.slice(-2)) == true) {
@@ -84,13 +92,13 @@
                 function isHamburgerOrDessertOrSoda (div) {
                     if(product >= 0 && product < 4) {
                         div.classList.add('hamburger');
-                        createProductInBag(div,getInfs());
+                        createProductInBag(div,getInfs(),putClassOnLi());
                     } else if (product >= 4 && product < 8) {
                         div.classList.add('dessert');
-                        createProductInBag(div,getInfs());
+                        createProductInBag(div,getInfs(),putClassOnLi());
                     } else {
                         div.classList.add('soda');
-                        createProductInBag(div,getInfs());
+                        createProductInBag(div,getInfs(),putClassOnLi());
                     }
                 }
 
@@ -321,11 +329,12 @@
         }
 
     }
-    createImgDivAndInfsProductDiv();
+    createImgDivAndInfsProductDivandPutClassOnLi();
 
-    function createProductInBag (imgDiv, infDiv) {
+    function createProductInBag (imgDiv, infDiv, classOfProduct) {
         const ul = getListOfProductUlTag();
         const li = createLi();
+        li.classList.add(classOfProduct);
         li.appendChild(imgDiv);
         li.appendChild(infDiv);
         ul.appendChild(li);
