@@ -101,6 +101,16 @@ function addPrice () {
             return splitClass[1];
         }
 
+        function getNewQtdItem (addOrRemoveDiv) {
+            const qtdItem = addOrRemoveDiv.getElementsByClassName('num-items')[0].innerText;
+            const product = getProduct();
+
+            const productInStore = localStorage.getItem("productsInBag");
+            const convert = JSON.parse(productInStore);
+
+
+        }
+
     }
 
     function ifYourTargetIsAddOrRemoveButton () {
