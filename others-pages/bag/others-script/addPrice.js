@@ -123,6 +123,7 @@ function addPrice () {
 
         const addOrRemoveDiv = getAddOrRemoveItemDiv();
         const newQtdItem = getNewQtdItem(addOrRemoveDiv);
+        return newQtdItem;
 
     }
 
