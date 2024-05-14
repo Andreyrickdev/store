@@ -121,6 +121,9 @@ function addPrice () {
             iterateUntilFindingTheIndices();
         }
 
+        const addOrRemoveDiv = getAddOrRemoveItemDiv();
+        const newQtdItem = getNewQtdItem(addOrRemoveDiv);
+
     }
 
     function ifYourTargetIsAddOrRemoveButton () {
