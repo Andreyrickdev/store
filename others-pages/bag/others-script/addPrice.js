@@ -88,6 +88,12 @@ function addPrice () {
     }
     whenPageLoadsSetValuePrice();
 
+    function setNewQtdWhenClick (event) {
+        
+
+
+    }
+
     function ifYourTargetIsAddOrRemoveButton () {
         document.addEventListener('click', (e) => {
     
