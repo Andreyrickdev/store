@@ -97,8 +97,10 @@ function addPrice () {
 
         function getProduct () {
             const product = event.parentNode.parentNode.parentNode.parentNode;
-            const splitClass = product.className.split(" ");
-            return splitClass[1];
+            try {
+                const splitClass = product.className.split(" ");
+                return splitClass[1];
+            } catch {}
         }
 
         function getNewQtdItem (addOrRemoveDiv) {
