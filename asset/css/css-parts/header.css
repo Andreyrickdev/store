@@ -214,4 +214,5 @@ header .button-shopping-bag {
 header .button-shopping-bag.active {
     background-color:#FF214F;
     cursor: pointer;
+    pointer-events: auto;
 }
