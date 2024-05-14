@@ -90,7 +90,10 @@ function addPrice () {
 
     function setNewQtdWhenClick (event) {
         
-
+        function getAddOrRemoveItemDiv () {
+            const addOrRemoveDiv = event.parentNode;
+            return addOrRemoveDiv;
+        }
 
     }
 
