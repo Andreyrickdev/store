@@ -95,6 +95,12 @@ function addPrice () {
             return addOrRemoveDiv;
         }
 
+        function getProduct () {
+            const product = event.parentNode.parentNode.parentNode.parentNode;
+            const splitClass = product.className.split(" ");
+            return splitClass[1];
+        }
+
     }
 
     function ifYourTargetIsAddOrRemoveButton () {
