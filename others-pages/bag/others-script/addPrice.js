@@ -108,7 +108,17 @@ function addPrice () {
             const productInStore = localStorage.getItem("productsInBag");
             const convert = JSON.parse(productInStore);
 
-
+            function iterateUntilFindingTheIndices () {
+                const findIndexProduct = convert.findIndex( (object) => {
+                    if(object.product === product) {
+                        object.qtd = Number(qtdItem);
+                        const convert2 = JSON.stringify(convert);
+                        localStorage.setItem("productsInBag", convert2);
+                    }
+                })
+                return findIndexProduct;
+            }
+            iterateUntilFindingTheIndices();
         }
 
     }
