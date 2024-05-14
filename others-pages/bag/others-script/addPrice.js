@@ -97,6 +97,7 @@ function addPrice () {
     
                 if(clickedOnButtons.hasAttribute('type')) {
         
+                    setNewQtdWhenClick(clickedOnButtons);
                     setValuePrice();
         
                 }
