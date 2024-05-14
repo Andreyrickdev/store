@@ -2,7 +2,6 @@
 
     const productsInStore = localStorage.getItem("productsInBag");
     const converted = JSON.parse(productsInStore);
-    console.log(converted);
 
     function getListOfProductUlTag () {
         
@@ -61,7 +60,7 @@
             function putClassOnLi () {
                 const classProduct = idProduct.product;
                 // createLi(classProduct);
-                console.log(classProduct);
+                // console.log(classProduct);
                 return classProduct;
                 // TENTANDO DEFINIR UMA CLASSE NO PRODUTO NA BOLSA.
             }
@@ -69,10 +68,8 @@
             function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
                 if (isNaN(idProduct.product.slice(-2)) == true) {
                     product = Number(idProduct.product.slice(-1));
-                    console.log(product);
                 } else {
                     product = Number(idProduct.product.slice(-2));
-                    console.log(product);
                 }
             }
             takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
