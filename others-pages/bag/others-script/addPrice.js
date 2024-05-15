@@ -15,6 +15,7 @@ function addPrice () {
         const footerButton = getFooter();
         const numPrice = getNumPrices(footerButton);
         return numPrice;
+        
     }
     const numPrice = gettingTotalValue();
 
