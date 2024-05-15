@@ -1,16 +1,23 @@
 function addPrice () {
 
-    function getFooter () {
-        const button = document.getElementById('footer');
-        return button;
-    }
-    const button = getFooter();
+    function gettingTotalValue () {
 
-    function getNumPrices () {
-        const numPrice = button.getElementsByClassName('num-prices')[0];
+        function getFooter () {
+            const button = document.getElementById('footer');
+            return button;
+        }
+
+        function getNumPrices (button) {
+            const numPrice = button.getElementsByClassName('num-prices')[0];
+            return numPrice;
+        }
+
+        const footerButton = getFooter();
+        const numPrice = getNumPrices(footerButton);
         return numPrice;
     }
-    const numPrice = getNumPrices();
+    const numPrice = gettingTotalValue();
+
 
     function setValuePrice () {
 
