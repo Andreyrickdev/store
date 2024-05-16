@@ -303,18 +303,6 @@ function putBag () {
         return mix();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     function getQtdItemInStore () {
 
         function getQtdItemsInLocalStorage () {
@@ -390,9 +378,6 @@ function putBag () {
 
         return bagUpper; 
     }
-
-
-
 
     let createdProduct;
 
