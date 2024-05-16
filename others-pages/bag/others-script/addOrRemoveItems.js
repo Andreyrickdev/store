@@ -123,7 +123,7 @@ function addOrRemoveItems () {
                 stringToObject.splice(indexToRemove, 1);
             }
 
-            const obejctToString = JSON.stringify(convert);
+            const obejctToString = JSON.stringify(stringToObject);
             localStorage.setItem("productsInBag", obejctToString);
 
             setTimeout(() => {
