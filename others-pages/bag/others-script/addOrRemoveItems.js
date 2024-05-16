@@ -102,6 +102,29 @@ function addOrRemoveItems () {
 
         function timerForRemove () {
             const li = h1InLi();
+            console.log(li);
+
+            function getClass () {
+                const getLiClass = li.className.split(" ");
+                return getLiClass[1];
+            }
+            const getLiClass = getClass();
+
+            const productInStore = localStorage.getItem("productsInBag");
+            const stringToObject = JSON.parse(productInStore);
+
+            function iterateUntilFindingTheIndices () {
+                return findIndexProduct = stringToObject.findIndex( (object) => object.product === getLiClass);
+            }
+
+            const indexToRemove = iterateUntilFindingTheIndices();
+
+            if (indexToRemove !== -1) {
+                stringToObject.splice(indexToRemove, 1);
+            }
+
+            const obejctToString = JSON.stringify(convert);
+            localStorage.setItem("productsInBag", obejctToString);
 
             setTimeout(() => {
                 li.remove();
