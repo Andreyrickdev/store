@@ -83,11 +83,6 @@ function putBag () {
         return items;
     }
 
-    function getNumItemsBagUpper () {
-        const numItemsBagUpper = document.getElementById('num-items-in-your-bag');
-        return numItemsBagUpper;
-    }
-
     function buttonsAddOrRemove (qtdProducts, numOfLoop, createdProduct) {
     
         function createButton () {
@@ -301,6 +296,11 @@ function putBag () {
         }
 
         return mix();
+    }
+
+    function getNumItemsBagUpper () {
+        const numItemsBagUpper = document.getElementById('num-items-in-your-bag');
+        return numItemsBagUpper;
     }
 
     function getQtdItemInStore () {
