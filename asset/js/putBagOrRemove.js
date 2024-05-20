@@ -239,7 +239,7 @@ function putBag () {
         
                             storeProductLocalStorage(getYourLiClassName(), getQtdYourLi(), getDescYourLi());
         
-                            function ifQtdProductis () {
+                            function ifQtdProducts () {
                                 if(paragraph.innerText >= 2 ) {
                                     --paragraph.innerText;
                                     return paragraph;
@@ -273,7 +273,7 @@ function putBag () {
             
                                 }
                             }
-                            ifQtdProductis();
+                            ifQtdProducts();
 
                                 
                         }
@@ -296,87 +296,6 @@ function putBag () {
         }
 
         return mix();
-    }
-
-    function getNumItemsBagUpper () {
-        const numItemsBagUpper = document.getElementById('num-items-in-your-bag');
-        return numItemsBagUpper;
-    }
-
-    function getQtdItemInStore () {
-
-        function getQtdItemsInLocalStorage () {
-            const getQtdItems = localStorage.getItem("qtdProductsInBag");
-            return getQtdItems;
-        }
-        const getQtdItems = getQtdItemsInLocalStorage();
-
-        function gettingNumItemsBagUpper () {
-            const numItemsBagUpper = getNumItemsBagUpper();
-            return numItemsBagUpper;
-        }
-
-        function putNumBagUpperLoad (numItemsBagUpper) {
-            if(getQtdItems != 0) {
-                numItemsBagUpper.classList.add('active');
-                numItemsBagUpper.innerText = getQtdItems;
-            } else {
-                numItemsBagUpper.classList.remove('active');
-            }
-        }
-
-        const numItemsBagUpper = gettingNumItemsBagUpper();
-        const putNumInBagUpper = putNumBagUpperLoad(numItemsBagUpper);
-        return putNumInBagUpper;
-
-    }
-    getQtdItemInStore();
-
-    function setQtdItemInStore (qtdItemRemovedInBag) {
-    
-        function gettingBag() {
-            const bag = getBag();
-            return bag;
-        }
-
-        function gettingNumItemsBagUpper () {
-            const numItemsBagUpper = getNumItemsBagUpper();
-            return numItemsBagUpper;
-        }
-
-        function gettingItemInBag (bag) {
-            const qtdItemInBag = bag.childElementCount;
-            return qtdItemInBag;
-        }
-
-        function putNumBagUpperSave (numItemsBagUpper, qtdItemInBag) {
-            if(qtdItemInBag >= 1 && !qtdItemRemovedInBag) {
-                numItemsBagUpper.classList.add('active');
-                numItemsBagUpper.innerText = qtdItemInBag;
-            }
-
-            if(qtdItemRemovedInBag >= 1) {
-                numItemsBagUpper.innerText = qtdItemRemovedInBag;
-                qtdItemInBag = qtdItemRemovedInBag;
-            }
-
-            if(qtdItemRemovedInBag == 0) {
-                numItemsBagUpper.innerText = 0;
-                numItemsBagUpper.classList.remove('active');
-                qtdItemInBag = qtdItemRemovedInBag;
-            }
-
-            const numOfItemsInBagStored = localStorage.setItem("qtdProductsInBag", qtdItemInBag);
-            return numOfItemsInBagStored;
-        }
-
-
-        const bag = gettingBag();
-        const numItemsBagUpper = gettingNumItemsBagUpper();
-        const qtdItemInBag = gettingItemInBag(bag);
-        const bagUpper = putNumBagUpperSave(numItemsBagUpper, qtdItemInBag);
-
-        return bagUpper; 
     }
 
     let createdProduct;
@@ -709,8 +628,104 @@ function putBag () {
         }
         mixAllFunctions();
 
+        getQtdItemInStore();
+
     }
     getProductInStoreAndPutInBag();
+}
+
+function whenPageLoadPutValueOnBallon () {
+    document.addEventListener('DOMContentLoaded', () => {
+        getQtdItemInStore();
+    });
+}
+whenPageLoadPutValueOnBallon();
+
+function getNumItemsBagUpperBallon () {
+
+    const numItemsBagUpper = document.getElementById('num-items-in-your-bag');
+    return numItemsBagUpper;
+
+}
+
+function getQtdItemInStore () {
+
+    function gettingNumItemsBagUpper () {
+        const numItemsBagUpper = getNumItemsBagUpperBallon();
+        return numItemsBagUpper;
+    }
+
+    function getQtdItemInStoreAndPutClass () {
+
+        function getQtdItemsInLocalStorage () {
+            const getQtdItems = localStorage.getItem("qtdProductsInBag");
+            return getQtdItems;
+        }
+        const getQtdItems = getQtdItemsInLocalStorage();
+
+        function putNumBagUpperLoad (numItemsBagUpper) {
+            if(getQtdItems != 0) {
+                numItemsBagUpper.classList.add('active');
+                numItemsBagUpper.innerText = getQtdItems;
+            } else {
+                numItemsBagUpper.classList.remove('active');
+            }
+        }
+
+        const numItemsBagUpper = gettingNumItemsBagUpper();
+        const putNumInBagUpper = putNumBagUpperLoad(numItemsBagUpper);
+        return putNumInBagUpper;
+
+    }
+
+    getQtdItemInStoreAndPutClass();
+
+}
+
+function setQtdItemInStore (qtdItemRemovedInBag) {
+
+    function gettingBag () {
+        const bag = document.getElementById('items-in-bag');
+        return bag;
+    }
+
+    function gettingNumItemsBagUpper () {
+        const numItemsBagUpper = getNumItemsBagUpperBallon();
+        return numItemsBagUpper;
+    }
+
+    function gettingItemInBag (bag) {
+        const qtdItemInBag = bag.childElementCount;
+        return qtdItemInBag;
+    }
+
+    function putNumBagUpperSave (numItemsBagUpper, qtdItemInBag) {
+        if(qtdItemInBag >= 1 && !qtdItemRemovedInBag) {
+            numItemsBagUpper.classList.add('active');
+            numItemsBagUpper.innerText = qtdItemInBag;
+        }
+
+        if(qtdItemRemovedInBag >= 1) {
+            numItemsBagUpper.innerText = qtdItemRemovedInBag;
+            qtdItemInBag = qtdItemRemovedInBag;
+        }
+
+        if(qtdItemRemovedInBag == 0) {
+            numItemsBagUpper.innerText = 0;
+            numItemsBagUpper.classList.remove('active');
+            qtdItemInBag = qtdItemRemovedInBag;
+        }
+
+        const numOfItemsInBagStored = localStorage.setItem("qtdProductsInBag", qtdItemInBag);
+        return numOfItemsInBagStored;
+    }
+
+    const bag = gettingBag();
+    const numItemsBagUpper = gettingNumItemsBagUpper();
+    const qtdItemInBag = gettingItemInBag(bag);
+    const bagUpper = putNumBagUpperSave(numItemsBagUpper, qtdItemInBag);
+    return bagUpper;
+
 }
 
 let productInStore = [];
