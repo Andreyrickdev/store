@@ -123,8 +123,12 @@ function addOrRemoveItems () {
                 stringToObject.splice(indexToRemove, 1);
             }
 
+            const getQtdProductsInBagAndRemoveOne = localStorage.getItem("qtdProductsInBag") - 1;
+
+
             const obejctToString = JSON.stringify(stringToObject);
             localStorage.setItem("productsInBag", obejctToString);
+            localStorage.setItem("qtdProductsInBag", getQtdProductsInBagAndRemoveOne);
 
             setTimeout(() => {
                 li.remove();
