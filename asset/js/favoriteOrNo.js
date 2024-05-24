@@ -48,7 +48,7 @@ function eventOnHeart () {
     }
 
     for (let fav of heart) {
-        fav.addEventListener('click', (e) => {
+        fav.addEventListener('click', () => {
             fav.getElementsByTagName('li')[0].classList.toggle('active');
             const yourProduct = fav.parentNode.parentNode;
             const gettingTheLastOne = getLastClass(yourProduct);
