@@ -19,9 +19,6 @@ function whenPageLoadPutActiveOnHeart () {
             getFavorite.classList.add('active');
         }
 
-        const yourFavoritesInLocalStorage = localStorage.getItem("favoriteProducts");
-        console.log(JSON.parse(yourFavoritesInLocalStorage));
-
     });
 }
 whenPageLoadPutActiveOnHeart();
