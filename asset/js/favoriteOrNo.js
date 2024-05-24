@@ -10,7 +10,6 @@ function whenPageLoadPutActiveOnHeart () {
     document.addEventListener('DOMContentLoaded', () => {
         
         const getFavoritesInLocalStorage = localStorage.getItem('favoriteProducts');
-        const heart = hearts();
 
         const StringToObject = JSON.parse(getFavoritesInLocalStorage);
 
