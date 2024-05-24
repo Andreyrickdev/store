@@ -6,6 +6,27 @@ function hearts () {
 const favoritedProducts = [];
 
 
+function whenPageLoadPutActiveOnHeart () {
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const getFavoritesInLocalStorage = localStorage.getItem('favoriteProducts');
+        const heart = hearts();
+
+        const StringToObject = JSON.parse(getFavoritesInLocalStorage);
+
+        for(product of StringToObject) {
+            const getId = document.getElementById(product);
+            const getFavorite = getId.getElementsByClassName('favorite')[0];
+            getFavorite.classList.add('active');
+        }
+
+        const yourFavoritesInLocalStorage = localStorage.getItem("favoriteProducts");
+        console.log(JSON.parse(yourFavoritesInLocalStorage));
+
+    });
+}
+whenPageLoadPutActiveOnHeart();
+
 function eventOnHeart () {
 
     const heart = hearts();
