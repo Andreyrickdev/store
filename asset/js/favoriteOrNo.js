@@ -37,7 +37,6 @@ function eventOnHeart () {
         } else {
             const itemForRemove = favoritedProducts.indexOf(gettingTheLastOne);
             favoritedProducts.splice(itemForRemove, 1);
-            console.log();
         }
     }
 
