@@ -108,4 +108,5 @@
 
 .product .buttons .favorite.active {
     background-color: #FF214F;
+    transition: all 0.3s;
 }
