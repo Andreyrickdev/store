@@ -6,22 +6,6 @@ function hearts () {
 const favoritedProducts = [];
 
 
-function whenPageLoadPutActiveOnHeart () {
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        const getFavoritesInLocalStorage = localStorage.getItem('favoriteProducts');
-
-        const StringToObject = JSON.parse(getFavoritesInLocalStorage);
-
-        for(product of StringToObject) {
-            const getId = document.getElementById(product);
-            const getFavorite = getId.getElementsByClassName('favorite')[0];
-            getFavorite.classList.add('active');
-        }
-
-    });
-}
-whenPageLoadPutActiveOnHeart();
 
 function eventOnHeart () {
 
@@ -68,3 +52,21 @@ function eventOnHeart () {
 }
 
 eventOnHeart();
+
+
+function whenPageLoadPutActiveOnHeart () {
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const getFavoritesInLocalStorage = localStorage.getItem('favoriteProducts');
+
+        const StringToObject = JSON.parse(getFavoritesInLocalStorage);
+
+        for(product of StringToObject) {
+            const getId = document.getElementById(product);
+            const getFavorite = getId.getElementsByClassName('favorite')[0];
+            getFavorite.classList.add('active');
+        }
+
+    });
+}
+whenPageLoadPutActiveOnHeart();
