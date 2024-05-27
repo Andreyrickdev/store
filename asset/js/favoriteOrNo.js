@@ -11,16 +11,22 @@ function eventOnHeart () {
 
     const heart = hearts();
     const getFavoriteProductsInLocalStorage = localStorage.getItem("favoriteProducts");
-    const stringToObject = JSON.parse(getFavoriteProductsInLocalStorage);
+    
+    let stringToObject = [];
+    if(getFavoriteProductsInLocalStorage) {
+        stringToObject = JSON.parse(getFavoriteProductsInLocalStorage);
+    }
 
     const favoritedProducts = [];
 
-    for(oneFavorite of stringToObject) {
-        if(oneFavorite !== -1) {
-            favoritedProducts.push(oneFavorite);
-        } else {
-            const itemForRemove = favoritedProducts.indexOf(gettingTheLastOne);
-            favoritedProducts.splice(itemForRemove, 1);
+    if (Array.isArray(stringToObject)) {
+        for(oneFavorite of stringToObject) {
+            if(oneFavorite !== -1) {
+                favoritedProducts.push(oneFavorite);
+            } else {
+                const itemForRemove = favoritedProducts.indexOf(gettingTheLastOne);
+                favoritedProducts.splice(itemForRemove, 1);
+            }
         }
     }
 
@@ -59,12 +65,17 @@ function whenPageLoadPutActiveOnHeart () {
         
         const getFavoritesInLocalStorage = localStorage.getItem('favoriteProducts');
 
-        const StringToObject = JSON.parse(getFavoritesInLocalStorage);
+        let stringToObject = [];
+        if(getFavoritesInLocalStorage) {
+            stringToObject = JSON.parse(getFavoritesInLocalStorage);
+        }
 
-        for(product of StringToObject) {
-            const getId = document.getElementById(product);
-            const getFavorite = getId.getElementsByClassName('favorite')[0];
-            getFavorite.classList.add('active');
+        if(Array.isArray(stringToObject)) {
+            for(product of stringToObject) {
+                const getId = document.getElementById(product);
+                const getFavorite = getId.getElementsByClassName('favorite')[0];
+                getFavorite.classList.add('active');
+            }
         }
 
     });
