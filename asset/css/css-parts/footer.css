@@ -90,16 +90,12 @@
     bottom: 10px;
     background-image: url('../../imgs/favorite-footer.svg');
     mask-image: url('../../imgs/favorite-footer.svg');
-    background-color: #FF214F;
+    background-color: black;
     mask-size: cover;
+    transition: 0.2s all;
 }
 
-#footer #favorites:hover::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 4px;
+#footer #favorites:hover{
     background-color: #FF214F;
 }
 
