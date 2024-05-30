@@ -50,7 +50,6 @@
         return input;
     }
 
-
     function createImgDivAndInfsProductDivandPutClassOnLi () {
 
         for(idProduct of converted) {
