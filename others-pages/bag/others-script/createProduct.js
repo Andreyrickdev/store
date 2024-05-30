@@ -3,6 +3,23 @@
     const productsInStore = localStorage.getItem("productsInBag");
     const converted = JSON.parse(productsInStore);
 
+    function allValueProducts () {
+
+        return values = [12.99
+            ,15.00
+            ,13.99
+            ,12.99
+            ,8.99
+            ,8.99
+            ,12.99
+            ,13.99
+            ,10.99
+            ,12.99
+            ,11.99
+            ,2.50];
+    }
+    console.log(allValueProducts());
+
     function getListOfProductUlTag () {
         
         function getArticle () {
@@ -64,11 +81,12 @@
             function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
                 if (isNaN(idProduct.product.slice(-2)) == true) {
                     product = Number(idProduct.product.slice(-1));
+                    return product;
                 } else {
                     product = Number(idProduct.product.slice(-2));
+                    return product;
                 }
             }
-            takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
 
             function fetchingProductFromStorageAccordingToItsId () {
 
@@ -130,7 +148,9 @@
                     }
 
                     function putValueInH1 (h1) {
-                        h1.innerText = 12.99;
+                        const yourProductIndice = takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
+                        const listValueOfProducts = allValueProducts();
+                        h1.innerText = listValueOfProducts[yourProductIndice];
                         return h1;
                     }
 
