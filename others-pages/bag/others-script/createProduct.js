@@ -59,10 +59,7 @@
 
             function putClassOnLi () {
                 const classProduct = idProduct.product;
-                // createLi(classProduct);
-                // console.log(classProduct);
                 return classProduct;
-                // TENTANDO DEFINIR UMA CLASSE NO PRODUTO NA BOLSA.
             }
     
             function takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo () {
