@@ -26,6 +26,10 @@
     cursor: pointer;
 }
 
+#food-items h1, #dessert-items h1, #drinks-items h1 {
+    text-align: center;
+}
+
 #food-items ul, #dessert-items ul, #drinks-items ul {
     padding: 10px;
     border: 1px solid rgb(139, 139, 139);
