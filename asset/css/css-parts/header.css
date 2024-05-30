@@ -127,6 +127,10 @@ header #shopping-bag-box {
     transition: 0.5s;
 }
 
+header #shopping-bag-box h1 {
+    font-size: 1.7rem;
+}
+
 header #shopping-bag-box #bag-empty {
     width: 100%;
     max-width: 500px;
