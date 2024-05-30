@@ -34,14 +34,10 @@
     mask-image: url('../../imgs/instagram-footer.svg');
     background-color: black;
     mask-size: cover;
+    transition: 0.2s all;
 }
 
-#footer #others:hover::after {
-    content:'';
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 4px;
+#footer #others:hover {
     background-color: #FF214F;
 }
 
