@@ -18,7 +18,6 @@
             ,11.99
             ,2.50];
     }
-    console.log(allValueProducts());
 
     function getListOfProductUlTag () {
         
