@@ -66,6 +66,7 @@
     margin: 0 10px;
     cursor: pointer;
     user-select: none;
+    transition: 0.5s;
 }
 
 #footer #search-now-box.active {
@@ -96,7 +97,6 @@
     position: relative;
     padding: 10px 20px;
     font-size: 1.2rem;
-    transition: 0.5s;
     display: grid;
 }
 
