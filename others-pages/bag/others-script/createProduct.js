@@ -87,6 +87,8 @@
                 }
             }
 
+            takeTwoIndicesIfReturnsNaNItWillTakeOneIfNotItWillTakeTwo();
+
             function fetchingProductFromStorageAccordingToItsId () {
 
                 function createImgDiv() {
@@ -100,15 +102,57 @@
                 }
         
                 function isHamburgerOrDessertOrSoda (div) {
-                    if(product >= 0 && product < 4) {
-                        div.classList.add('hamburger');
-                        createProductInBag(div,getInfs(),putClassOnLi());
-                    } else if (product >= 4 && product < 8) {
-                        div.classList.add('dessert');
-                        createProductInBag(div,getInfs(),putClassOnLi());
-                    } else {
-                        div.classList.add('soda');
-                        createProductInBag(div,getInfs(),putClassOnLi());
+                    switch(product) {
+                        case 0:
+                            div.classList.add('hamburger0');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 1:
+                            div.classList.add('hamburger1');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 2:
+                            div.classList.add('hamburger2');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 3:
+                            div.classList.add('hamburger3');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 4:
+                            div.classList.add('dessert4');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 5:
+                            div.classList.add('dessert5');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 6:
+                            div.classList.add('dessert6');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 7:
+                            div.classList.add('dessert7');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 8:
+                            div.classList.add('soda8');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 9:
+                            div.classList.add('soda9');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 10:
+                            div.classList.add('soda10');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        case 11:
+                            div.classList.add('soda11');
+                            createProductInBag(div,getInfs(),putClassOnLi());
+                            break;
+                        default:
+                            alert('nothing');
                     }
                 }
 
