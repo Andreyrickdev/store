@@ -1,7 +1,7 @@
 function functSearch () {
 
     const search = document.getElementById('search');
-    const inputSearch = document.getElementById('search-now');
+    const inputSearch = document.getElementById('search-now-box');
 
     const shoppingBagBox = document.getElementById('shopping-bag-box');
     const userBox = document.getElementById('user-box');
