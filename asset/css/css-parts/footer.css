@@ -56,18 +56,47 @@
     cursor: pointer;
 }
 
+#footer #search-now-box {
+    position: absolute;
+    background-color: #fff;
+    top: 1000px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#footer #search-now-box.active {
+    top: -100px;
+}
+
+#footer #product-found {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(139, 139, 139);
+}
+
+#footer #product-found:hover {
+    background-color: #cccccc ;
+}
+
+#footer #product-found .favorite-box {
+    padding: 10px;
+    border: 1px solid rgb(139, 139, 139);
+}
+
 #footer #search-now {
     background-color: fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    width: 90%;
+    width: 100%;
+    position: relative;
     padding: 10px 20px;
     font-size: 1.2rem;
     transition: 0.5s;
-    top: 1000px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 10px;
     display: grid;
 }
 
