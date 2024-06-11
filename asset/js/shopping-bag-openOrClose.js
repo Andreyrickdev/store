@@ -7,7 +7,7 @@ function shoppingBag () {
     buttonOpenAndClose.addEventListener('click', openOrClose);
     buttonClose.addEventListener('click', openOrClose);
 
-    const searchBox = document.getElementById('search-now');
+    const searchBox = document.getElementById('search-now-box');
     const userBox = document.getElementById('user-box');
 
     function openOrClose () {
