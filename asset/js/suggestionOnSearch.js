@@ -25,7 +25,7 @@
         }
         const productFound = getProductFound();
 
-        
+
         function getAInProductFound () {
             let suggestionBox = document.getElementById('suggestion');
             return suggestionBox;
@@ -93,12 +93,12 @@
             if (filteredAllSuggestions.length > 0) {
                 suggestionBox.innerHTML = filteredAllSuggestions[0];
                 console.log(suggestionBox);
-                getAInProductFound.setAttribute('href', `#${product}`);
+                suggestionBox.setAttribute('href', `#${product}`);
                 productFound.classList.add('found');
                 productFound.classList.remove('not-found');
             } else {
                 suggestionBox.innerHTML = "No suggestions found.";
-                getAInProductFound.removeAttribute('href');
+                suggestionBox.removeAttribute('href');
                 productFound.classList.remove('found');
                 productFound.classList.add('not-found');
             }
