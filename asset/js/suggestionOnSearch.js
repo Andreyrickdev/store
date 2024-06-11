@@ -25,7 +25,14 @@
         }
         let suggestionBox = getAInProductFound();
 
-        const productFound = document.getElementById('product-found');
+        
+        function getProductFound () {
+            const productFound = document.getElementById('product-found');
+            return productFound;
+        }
+        const productFound = getProductFound();
+
+        
         const getAInProductFound = productFound.getElementsByTagName('a')[0];
         suggestionBox.innerHTML = "";
 
