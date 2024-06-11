@@ -26,11 +26,11 @@
         const productFound = getProductFound();
 
 
-        function getAInProductFound () {
+        function getSuggestionsBox () {
             let suggestionBox = document.getElementById('suggestion');
             return suggestionBox;
         }
-        let suggestionBox = getAInProductFound();
+        let suggestionBox = getSuggestionsBox();
 
         suggestionBox.innerHTML = "";
 
@@ -92,7 +92,6 @@
         function yourSuggestion (product) {
             if (filteredAllSuggestions.length > 0) {
                 suggestionBox.innerHTML = filteredAllSuggestions[0];
-                console.log(suggestionBox);
                 suggestionBox.setAttribute('href', `#${product}`);
                 productFound.classList.add('found');
                 productFound.classList.remove('not-found');
