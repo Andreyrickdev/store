@@ -18,7 +18,13 @@
 
 
     function showSuggestions (value) {
-        let suggestionBox = document.getElementById('suggestion');
+
+        function getAInProductFound () {
+            let suggestionBox = document.getElementById('suggestion');
+            return suggestionBox;
+        }
+        let suggestion = getAInProductFound();
+
         const productFound = document.getElementById('product-found');
         const getAInProductFound = productFound.getElementsByTagName('a')[0];
         suggestionBox.innerHTML = "";
