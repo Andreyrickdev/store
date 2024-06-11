@@ -32,8 +32,6 @@
         }
         const productFound = getProductFound();
 
-        
-        const getAInProductFound = productFound.getElementsByTagName('a')[0];
         suggestionBox.innerHTML = "";
 
         if(value.length === 0) {
