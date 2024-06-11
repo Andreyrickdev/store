@@ -64,7 +64,6 @@
     width: 90%;
     transform: translateX(-50%);
     margin: 0 10px;
-    cursor: pointer;
     user-select: none;
     transition: 0.5s;
 }
@@ -75,14 +74,30 @@
 
 #footer #product-found {
     display: flex;
+    height: 60px;
     align-items: center;
     place-content: space-between;
     padding: 10px;
+    font-size: 0.9rem;
     border: 1px solid rgb(139, 139, 139);
 }
 
-#footer #product-found:hover {
-    background-color: #cccccc ;
+#footer #product-found #suggestion{
+    font-size: 2rem;
+}
+
+#footer #product-found.found #suggestion{
+    cursor: pointer;
+    color: #000;
+}
+
+#footer #product-found.not-found #suggestion{
+    color: gray;
+    cursor: default;
+}
+
+#footer #product-found.found:hover #suggestion{
+    color: #FF214F;
 }
 
 #footer #product-found .favorite-box {
