@@ -334,14 +334,11 @@
                         <div>
                             <ul>
                                 <li id="product-found">
-                                    <h1>Classic Beef Burger</h1>
-                                    <ul class="favorite-box">
-                                        <li class="favorite"></li>
-                                    </ul>
+                                    <a id="suggestion"></a>
                                 </li>
                             </ul>
                         </div>
-                        <input type="text" placeholder="Pesquise aqui..." id="search-now" class="boxs" name="search-now">
+                        <input type="text" placeholder="Pesquise aqui..." id="search-now" class="boxs" name="search-now" onkeyup="showSuggestions(this.value)">
                     </div>
                     
                     <a href="./others-pages/favorites/favorite.html">
@@ -353,6 +350,7 @@
         </div>
 
         <script src="./asset/js/search.js"></script>
+        <script src="./asset/js/suggestionOnSearch.js"></script>
         <script src="./asset/js/user-box.js"></script>
         <script src="./asset/js/scroll.js"></script>
         <script src="./asset/js/shopping-bag-openOrClose.js"></script>
