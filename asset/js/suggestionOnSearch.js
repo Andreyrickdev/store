@@ -23,7 +23,7 @@
             let suggestionBox = document.getElementById('suggestion');
             return suggestionBox;
         }
-        let suggestion = getAInProductFound();
+        let suggestionBox = getAInProductFound();
 
         const productFound = document.getElementById('product-found');
         const getAInProductFound = productFound.getElementsByTagName('a')[0];
