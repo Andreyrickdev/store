@@ -18,19 +18,19 @@
 
 
     function showSuggestions (value) {
-
-        function getAInProductFound () {
-            let suggestionBox = document.getElementById('suggestion');
-            return suggestionBox;
-        }
-        let suggestionBox = getAInProductFound();
-
         
         function getProductFound () {
             const productFound = document.getElementById('product-found');
             return productFound;
         }
         const productFound = getProductFound();
+
+        
+        function getAInProductFound () {
+            let suggestionBox = document.getElementById('suggestion');
+            return suggestionBox;
+        }
+        let suggestionBox = getAInProductFound();
 
         suggestionBox.innerHTML = "";
 
