@@ -32,6 +32,8 @@
         }
         let suggestionBox = getSuggestionsBox();
 
+        const getAInProductFound = productFound.getElementsByTagName('a')[0];
+
         suggestionBox.innerHTML = "";
 
         if(value.length === 0) {
@@ -42,6 +44,8 @@
         const filteredAllSuggestions = suggestion.filter(suggestion =>
             suggestion.toLowerCase().startsWith(value.toLowerCase())
         );
+
+        console.log(filteredAllSuggestions);
 
         function hrefForYourSearch () {
         
@@ -83,7 +87,7 @@
                     yourSuggestion('product11');
                     break;
                 default:
-                    'none';
+                    yourSuggestion("No suggestions found.");
             }
     
         }
@@ -92,12 +96,12 @@
         function yourSuggestion (product) {
             if (filteredAllSuggestions.length > 0) {
                 suggestionBox.innerHTML = filteredAllSuggestions[0];
-                suggestionBox.setAttribute('href', `#${product}`);
+                getAInProductFound.setAttribute('href', `#${product}`);
                 productFound.classList.add('found');
                 productFound.classList.remove('not-found');
             } else {
-                suggestionBox.innerHTML = "No suggestions found.";
-                suggestionBox.removeAttribute('href');
+                suggestionBox.innerHTML = product;
+                getAInProductFound.removeAttribute('href');
                 productFound.classList.remove('found');
                 productFound.classList.add('not-found');
             }
