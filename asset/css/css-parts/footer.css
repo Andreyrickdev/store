@@ -61,20 +61,19 @@
     background-color: #fff;
     top: 1000px;
     left: 50%;
-    width: 90%;
+    width: 100%;
     transform: translateX(-50%);
-    margin: 0 10px;
     user-select: none;
     transition: 0.5s;
 }
 
 #footer #search-now-box.active {
-    top: -100px;
+    top: -120px;
 }
 
 #footer #product-found {
     display: flex;
-    height: 60px;
+    height: 80px;
     align-items: center;
     place-content: space-between;
     padding: 10px;
