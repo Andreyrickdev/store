@@ -45,7 +45,6 @@
             suggestion.toLowerCase().startsWith(value.toLowerCase())
         );
 
-        console.log(filteredAllSuggestions);
 
         function hrefForYourSearch () {
         
