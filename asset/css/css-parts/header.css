@@ -147,6 +147,12 @@ header #shopping-bag-box div {
     position: relative;
 }
 
+@media (max-width: 500px) {
+    header #shopping-bag-box div {
+        display: grid;
+    }
+}
+
 header #shopping-bag-box #close-button {
     /* background-color: #FF214F; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -178,6 +184,13 @@ header #shopping-bag-box ul li .add-or-remove-item {
     right: 0;
     font-size: 1.2rem;
     align-items: center;
+}
+
+@media (max-width: 500px) {
+    header #shopping-bag-box ul li .add-or-remove-item {
+        position: relative;
+        grid-row: 3;
+    }
 }
 
 header #shopping-bag-box ul li .add-or-remove-item p{
