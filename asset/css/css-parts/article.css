@@ -16,6 +16,12 @@
 
 }
 
+@media (max-width: 430px) {
+    #food-items, #dessert-items, #drinks-items {
+        display: block;
+    }
+}
+
 #food-items .item-food, #dessert-items .item-food, #drinks-items .item-food {
     margin: 10px;
     padding: 20px;
