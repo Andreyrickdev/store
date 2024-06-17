@@ -17,7 +17,6 @@
             switch (product) {
                 case 'product0':
                     div.classList.add('hamburger0');
-                    console.log(div);
                     mix(div);
                 break;
                 case 'product1':
