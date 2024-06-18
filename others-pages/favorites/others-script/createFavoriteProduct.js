@@ -139,11 +139,6 @@
             const buttonH = document.getElementsByClassName('favorite-product');
             return buttonH;
         }
-        
-        function hearts () {
-            const heart = document.getElementsByClassName('favorite');
-            return heart;
-        }
 
         function whenPageLoadPutActiveOnHeart () {
             document.addEventListener('DOMContentLoaded', () => {
@@ -182,7 +177,7 @@
             if(favoritesInLocalStorage) {
                 stringToObject = JSON.parse(favoritesInLocalStorage);
             }
-            
+
 
             function getLastClass (element) {
                 const className = element.className;

@@ -33,7 +33,7 @@ function whenPageLoadPutActiveOnHeart () {
 
     document.addEventListener('DOMContentLoaded', () => {
 
-        addActiveClassToFavorite();
+        addActiveClassToFavorite(); 
 
     });
 
