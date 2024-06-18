@@ -175,7 +175,6 @@
         function eventOnHeart () {
 
             const buttonH = buttonHeart();
-            const heart = hearts();
 
             const favoritesInLocalStorage = localStorage.getItem('favoriteProducts');
 
