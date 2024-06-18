@@ -33,10 +33,6 @@
     background-color: #FF214F;
 }
 
-.favorite-product:active .favorite-box .favorite {
-    background-color: rgb(139, 139, 139);
-}
-
 .product .img-product {
     width: 100px;
     height: 100px;
