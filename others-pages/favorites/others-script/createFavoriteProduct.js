@@ -182,8 +182,7 @@
             if(favoritesInLocalStorage) {
                 stringToObject = JSON.parse(favoritesInLocalStorage);
             }
-
-            console.log(buttonH);
+            
 
             function getLastClass (element) {
                 const className = element.className;
