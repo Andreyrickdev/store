@@ -8,7 +8,6 @@
             createProduct(product)
         }
     }
-    getFavoritesInLocalStorage();
 
 
     function createProduct (product) {
@@ -110,6 +109,7 @@
         function createFavoriteLi () {
             const li = createLi();
             li.classList.add('favorite');
+            li.classList.add('active');
             return li;
         }
 
@@ -133,4 +133,86 @@
     }
     createProduct();
 
+    function unFavoriteProduct () {
+
+        function buttonHeart () {
+            const buttonH = document.getElementsByClassName('favorite-product');
+            return buttonH;
+        }
+        
+        function hearts () {
+            const heart = document.getElementsByClassName('favorite');
+            return heart;
+        }
+
+        function whenPageLoadPutActiveOnHeart () {
+            document.addEventListener('DOMContentLoaded', () => {
+                
+                const favoritesInLocalStorage = getFavoritesInLocalStorage();
+        
+                let stringToObject = [];
+                if(favoritesInLocalStorage) {
+                    stringToObject = JSON.parse(favoritesInLocalStorage);
+                }
+        
+                if(Array.isArray(stringToObject)) {
+                    for(product of stringToObject) {
+                        if(product == undefined) continue;
+            
+                        const getProduct = document.getElementsByClassName(product)[0];
+                        if(!getProduct) continue;
+            
+                        const getFavorite = getProduct.getElementsByClassName('favorite')[0];
+                        getFavorite.classList.add('active');
+                    }
+                }
+
+            })
+
+        }
+        whenPageLoadPutActiveOnHeart();
+
+        function eventOnHeart () {
+
+            const buttonH = buttonHeart();
+            const heart = hearts();
+
+            const favoritesInLocalStorage = localStorage.getItem('favoriteProducts');
+
+            let stringToObject = [];
+            if(favoritesInLocalStorage) {
+                stringToObject = JSON.parse(favoritesInLocalStorage);
+            }
+
+            console.log(buttonH);
+
+            function getLastClass (element) {
+                const className = element.className;
+                const classes = className.split(' ');
+                return classes[1];
+            }
+
+            if(Array.isArray(stringToObject)) {
+                for (let fav of buttonH) {
+                    fav.addEventListener('click', () => {
+                        fav.classList.remove('active');
+                        const product = fav.parentNode;
+                        const gettingTheLastOne = getLastClass(product);
+                        const itemForRemove = stringToObject.indexOf(gettingTheLastOne);
+                        stringToObject.splice(itemForRemove, 1);
+                        product.remove();
+                        
+            
+                        const arrayToString = JSON.stringify(stringToObject);
+                        localStorage.setItem("favoriteProducts", arrayToString);
+                    });
+                }
+            }
+
+        }
+        document.addEventListener('DOMContentLoaded', eventOnHeart);
+        
+
+    }
+    unFavoriteProduct();
 })();
