@@ -3,7 +3,7 @@ function hearts () {
     return heart;
 }
 
-function whenPageLoadPutActiveOnHeart () {
+function addActiveClassToFavorite () {
     document.addEventListener('DOMContentLoaded', () => {
 
         const getFavoritesInLocalStorage = localStorage.getItem('favoriteProducts');
@@ -27,7 +27,23 @@ function whenPageLoadPutActiveOnHeart () {
 
     }) ;
 }
-whenPageLoadPutActiveOnHeart();
+addActiveClassToFavorite();
+
+function whenPageLoadPutActiveOnHeart () {
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        addActiveClassToFavorite();
+
+    });
+
+    window.addEventListener('pageshow', () => {
+
+        addActiveClassToFavorite();
+        
+    });
+
+}
 
 function eventOnHeart () {
 
