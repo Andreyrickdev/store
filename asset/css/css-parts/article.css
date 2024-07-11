@@ -70,7 +70,7 @@
     background-color: rgba(255, 0, 0,0.5);
 }
 
-#food-items .item-food p, #dessert-items .item-food p, #drinks-items .item-food p {
+#food-items .item-food p:not(.qtdStock), #dessert-items .item-food p:not(.qtdStock), #drinks-items .item-food p:not(.qtdStock) {
     height: 90px;
 }
 
