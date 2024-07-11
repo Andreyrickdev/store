@@ -22,6 +22,11 @@
     }
 }
 
+#food-items .item-food figure, #dessert-items .item-food figure, #drinks-items .item-food figure{
+    display: grid;
+    justify-items: center;
+}
+
 #food-items .item-food, #dessert-items .item-food, #drinks-items .item-food {
     margin: 10px;
     padding: 20px;
