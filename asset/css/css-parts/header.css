@@ -61,10 +61,12 @@ header #user-box {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     transition: 0.5s;
+    visibility: hidden;
 }
 
 header #user-box.active {
     left: 10px;
+    visibility: visible;
 }
 
 header #user-box #img-user-box {
