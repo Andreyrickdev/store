@@ -166,6 +166,10 @@ header #shopping-bag-box div {
     }
 }
 
+header #header-close-button {
+    display: grid;
+}
+
 header #shopping-bag-box #close-button {
     /* background-color: #FF214F; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
