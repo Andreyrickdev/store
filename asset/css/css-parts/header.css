@@ -29,7 +29,7 @@
     transition: 0.5s opacity;
 }
 
-header {
+#header {
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
@@ -42,7 +42,9 @@ header {
     padding: 0px 20px;
     position: fixed;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 header #user {
