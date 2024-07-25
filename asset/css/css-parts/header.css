@@ -30,7 +30,8 @@
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -39,7 +40,9 @@ header {
     height: 60px;
     width: 100%;
     padding: 0px 20px;
-    position: relative;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header #user {
@@ -47,6 +50,7 @@ header #user {
     background-color: rgb(219, 219, 219);
     border-radius: 50%;
     cursor: pointer;
+    justify-self: start;
 }
 
 header #user-box {
@@ -102,6 +106,7 @@ header #shopping-bag {
     gap: 10px;
     user-select: none;
     position: relative;
+    justify-self: end;
 }
 
 header #shopping-bag #num-items-in-your-bag {
