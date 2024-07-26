@@ -9,7 +9,7 @@ function userBox () {
     ariaExpanded = !ariaExpanded;
 
     button.addEventListener('click', () => {
-        ariaExpanded === false ? ariaExpanded = true: ariaExpanded = false;
+        ariaExpanded = !ariaExpanded;
         button.setAttribute("aria-expanded", ariaExpanded);
         searchBox.classList.remove('active');
         shoppingBagBox.classList.remove('active');
