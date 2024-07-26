@@ -9,8 +9,12 @@ function shoppingBag () {
 
     const searchBox = document.getElementById('search-now-box');
     const userBox = document.getElementById('user-box');
+    let ariaExpanded = buttonOpenAndClose.getAttribute('aria-expanded');
+    ariaExpanded = !ariaExpanded;
 
     function openOrClose () {
+        ariaExpanded = !ariaExpanded;
+        buttonOpenAndClose.setAttribute('aria-expanded', ariaExpanded);
         searchBox.classList.remove('active');
         userBox.classList.remove('active');
         box.classList.toggle('active');
