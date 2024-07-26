@@ -5,6 +5,7 @@ function userBox () {
 
     const searchBox = document.getElementById('search-now-box');
     const shoppingBagBox = document.getElementById('shopping-bag-box');
+    const bagButton = document.getElementById('shopping-bag');
     let ariaExpanded = button.getAttribute('aria-expanded');
     ariaExpanded = !ariaExpanded;
 
@@ -13,6 +14,7 @@ function userBox () {
         button.setAttribute("aria-expanded", ariaExpanded);
         
         searchBox.classList.remove('active');
+        bagButton.setAttribute('aria-expanded', false);
         shoppingBagBox.classList.remove('active');
         box.classList.toggle('active');
     });
