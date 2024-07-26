@@ -5,8 +5,12 @@ function userBox () {
 
     const searchBox = document.getElementById('search-now-box');
     const shoppingBagBox = document.getElementById('shopping-bag-box');
+    let ariaExpanded = button.getAttribute('aria-expanded');
+    ariaExpanded = !ariaExpanded;
 
     button.addEventListener('click', () => {
+        ariaExpanded === false ? ariaExpanded = true: ariaExpanded = false;
+        button.setAttribute("aria-expanded", ariaExpanded);
         searchBox.classList.remove('active');
         shoppingBagBox.classList.remove('active');
         box.classList.toggle('active');
