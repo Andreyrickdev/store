@@ -11,6 +11,7 @@ function userBox () {
     button.addEventListener('click', () => {
         ariaExpanded = !ariaExpanded;
         button.setAttribute("aria-expanded", ariaExpanded);
+        
         searchBox.classList.remove('active');
         shoppingBagBox.classList.remove('active');
         box.classList.toggle('active');
