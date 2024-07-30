@@ -71,11 +71,11 @@ function putBag () {
         }
         goToShoppingBag();
 
-        const p = createdPhrase();
-        const pWithId = setAttrOfP(p);
-        const finalP = setTextOfP(pWithId);
+        const li = createdPhrase();
+        const liWithId = setAttrOfP(li);
+        const finalLi = setTextOfP(liWithId);
 
-        return finalP;
+        return finalLi;
     }
 
     function getAllFoodItems () {
