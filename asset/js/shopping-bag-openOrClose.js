@@ -10,12 +10,11 @@ function shoppingBag () {
     const searchBox = document.getElementById('search-now-box');
     const userBox = document.getElementById('user-box');
     const userButton = document.getElementById('user');
-    let ariaExpanded = buttonOpenAndClose.getAttribute('aria-expanded');
-    ariaExpanded = !ariaExpanded;
-
+    
     function openOrClose () {
-        ariaExpanded = !ariaExpanded;
-        buttonOpenAndClose.setAttribute('aria-expanded', ariaExpanded);
+        let ariaExpanded = buttonOpenAndClose.getAttribute('aria-expanded') === 'true';
+        buttonOpenAndClose.setAttribute('aria-expanded', !ariaExpanded);
+        
         searchBox.classList.remove('active');
         userButton.setAttribute('aria-expanded', false);
         userBox.classList.remove('active');
