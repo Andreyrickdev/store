@@ -51,12 +51,8 @@ header #user {
 
 header #user-box {
     position: absolute;
-    display: grid;
-    grid-template-columns: auto 1fr;
     top: 92px;
     left:-1000px;
-    align-items: center;
-    gap: 20px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #fff;
@@ -66,6 +62,10 @@ header #user-box {
 
 header #user-box summary {
     list-style: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
 header #user-box summary::-webkit-details-marker {
@@ -77,7 +77,7 @@ header #user-box.active {
     visibility: visible;
 }
 
-header #user-box #img-user-box {
+header #user-box summary #img-user-box {
     background-color: rgb(219, 219, 219);
     padding: 20px;
     border-radius: 50%;
