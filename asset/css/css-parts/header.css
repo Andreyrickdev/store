@@ -62,6 +62,9 @@ header #user-box {
     background-color: #fff;
     transition: 0.5s;
     visibility: hidden;
+}
+
+header #user-box summary {
     list-style: none;
 }
 
