@@ -133,6 +133,14 @@ header #shopping-bag-box {
     gap: 10px;
 }
 
+header details > summary {
+    list-style: none;
+}
+
+header details > summary::-webkit-details-marker {
+    display: none;
+}
+
 header #shopping-bag-box h1 {
     font-size: 1.7rem;
 }
