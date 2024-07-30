@@ -50,18 +50,18 @@ function putBag () {
     function createPhraseEmpty () {
 
         function createdPhrase () {
-            let p = createP();
-            return p;
+            let li = createLi();
+            return li;
         }
 
-        function setAttrOfP (p){
-            p.setAttribute("id","bag-empty");
-            return p;
+        function setAttrOfP (li){
+            li.setAttribute("id","bag-empty");
+            return li;
         }
 
-        function setTextOfP (p) {
-            p.innerText = 'Your bag is empty';
-            return p;
+        function setTextOfP (li) {
+            li.innerText = 'Your bag is empty';
+            return li;
         }
 
         function goToShoppingBag () {
