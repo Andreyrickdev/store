@@ -129,6 +129,9 @@ header #shopping-bag-box {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
     visibility: hidden;
+}
+
+header #shopping-bag-box summary {
     display: grid;
     gap: 10px;
 }
