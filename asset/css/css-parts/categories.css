@@ -22,7 +22,7 @@
     justify-content: center;
 }
 
-#categories li {
+#categories li button {
     display: flex;
     align-items: center;
     background-color: #FF214F;
@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-#categories li a {
+#categories li button {
     display: flex;
     padding: 5px 10px;
     gap: 10px;
@@ -43,11 +43,11 @@
         gap: 10px;
     }
 
-    #categories li a {
+    #categories li button {
         padding: 5px 30px;
     }
 
-    #categories li a p {
+    #categories li button p {
         display: none;
     }
 }
