@@ -139,13 +139,10 @@ header #shopping-bag-box {
 header #shopping-bag-box summary {
     display: grid;
     gap: 10px;
-}
-
-header details > summary {
     list-style: none;
 }
 
-header details > summary::-webkit-details-marker {
+header #shopping-bag-box > summary::-webkit-details-marker {
     display: none;
 }
 
