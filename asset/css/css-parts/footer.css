@@ -13,6 +13,7 @@
     left: 0;
     height: 90px;
     z-index: 2;
+    overflow-y: hidden;
 }
 
 #footer #others {
