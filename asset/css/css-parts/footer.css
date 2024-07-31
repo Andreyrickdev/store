@@ -63,6 +63,12 @@
     position: fixed;
 }
 
+@media (max-width: 800px ) {
+    #footer #search-now-box {
+        width: 100%;
+    }
+}
+
 #footer #search-now-box.active {
     bottom: 100px;
 }
