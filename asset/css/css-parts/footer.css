@@ -13,7 +13,6 @@
     left: 0;
     height: 90px;
     z-index: 2;
-    overflow-y: hidden;
 }
 
 #footer #others {
@@ -54,16 +53,18 @@
 #footer #search-now-box {
     position: absolute;
     background-color: #fff;
-    top: 1000px;
+    bottom: -1000px;
     left: 50%;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     transform: translateX(-50%);
     user-select: none;
     transition: 0.5s;
+    position: fixed;
 }
 
 #footer #search-now-box.active {
-    top: -120px;
+    bottom: 100px;
 }
 
 #footer #product-found {
