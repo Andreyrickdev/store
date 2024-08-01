@@ -63,6 +63,14 @@
     position: fixed;
 }
 
+#footer #search-now-box summary {
+    list-style: none;
+}
+
+#footer #search-now-box summary::-webkit-details-marker {
+    display: none;
+}
+
 @media (max-width: 800px ) {
     #footer #search-now-box {
         width: 100%;
