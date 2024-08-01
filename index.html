@@ -401,22 +401,24 @@
 
             <a href="#" id="others" aria-label="Go my social media"></a>
             
-            <button id="search">
+            <button id="search" aria-label="Show search bar" aria-controls="search-now-box" aria-expanded="false">
                 <div id="search-img">
                     <img src="./asset/imgs/search.svg" alt="search" width="30" height="30">
                 </div>
             </button>
             
-            <div id="search-now-box">
-                <div>
-                    <ul>
-                        <li id="product-found">
-                            <a id="suggestion"></a>
-                        </li>
-                    </ul>
-                </div>
-                <input type="text" placeholder="Pesquise aqui..." id="search-now" class="boxs" name="search-now" onkeyup="showSuggestions(this.value)">
-            </div>
+            <details id="search-now-box">
+                <summary>
+                    <div>
+                        <ul>
+                            <li id="product-found">
+                                <a id="suggestion"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="Pesquise aqui..." id="search-now" class="boxs" name="search-now" onkeyup="showSuggestions(this.value)">
+                </summary>
+            </details>
             
             <a href="./others-pages/favorites/favorite.html">
                 <div id="favorites"></div>
