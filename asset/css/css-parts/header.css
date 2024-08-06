@@ -81,6 +81,29 @@ header #user-box summary #img-user-box {
     background-color: rgb(219, 219, 219);
     padding: 20px;
     border-radius: 50%;
+    display: none;
+}
+
+header #user-box summary #infs #name-user,
+header #user-box summary #infs #location-user,
+header #user-box summary #infs #cep-user,
+header #user-box summary #infs #config-button,
+header #user-box summary #infs #exit-button{ 
+    display: none; 
+} 
+
+header #user-box.connected summary #img-user-box,
+header #user-box.connected summary #infs #name-user,
+header #user-box.connected summary #infs #location-user,
+header #user-box.connected summary #infs #cep-user,
+header #user-box.connected summary #infs #config-button,
+header #user-box.connected summary #infs #exit-button {
+    display: block;
+}
+
+header #user-box.connected summary #infs #login-button,
+header #user-box.connected summary #infs #SignUp-button {
+    display: none;
 }
 
 header #user-box #infs #buttons {
@@ -99,7 +122,7 @@ header #user-box #infs .user-buttons {
     border-radius: 2px;
 }
 
-header #user-box #infs #exit-button, header #user-box #infs #login-button {
+header #user-box #infs #config-button, header #user-box #infs #SignUp-button {
     background-color: #FF214F;
     color: #fff;
 }
