@@ -10,6 +10,7 @@ function shoppingBag () {
     const searchBox = document.getElementById('search-now-box');
     const userBox = document.getElementById('user-box');
     const userButton = document.getElementById('user');
+    const search = document.getElementById('search');
     
     function openOrClose () {
         let ariaExpanded = buttonOpenAndClose.getAttribute('aria-expanded') === 'true';

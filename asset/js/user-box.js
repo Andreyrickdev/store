@@ -6,6 +6,7 @@ function userBox () {
     const searchBox = document.getElementById('search-now-box');
     const shoppingBagBox = document.getElementById('shopping-bag-box');
     const bagButton = document.getElementById('shopping-bag');
+    const search = document.getElementById('search');
     
     button.addEventListener('click', () => {
         let ariaExpanded = button.getAttribute('aria-expanded') === 'true';
