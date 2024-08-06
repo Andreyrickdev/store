@@ -89,6 +89,10 @@ header #user-box #infs #buttons {
     justify-content: end;
 }
 
+header #user-box #infs h1 {
+    width: 23ch;
+}
+
 header #user-box #infs .user-buttons {
     padding: 10px;
     cursor: pointer;
