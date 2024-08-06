@@ -18,6 +18,7 @@ function shoppingBag () {
         
         searchBox.classList.remove('active');
         userButton.setAttribute('aria-expanded', false);
+        search.setAttribute('aria-expanded', false);
         userBox.classList.remove('active');
         box.classList.toggle('active');
     }

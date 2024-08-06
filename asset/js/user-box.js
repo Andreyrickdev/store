@@ -14,6 +14,7 @@ function userBox () {
         
         searchBox.classList.remove('active');
         bagButton.setAttribute('aria-expanded', false);
+        search.setAttribute('aria-expanded', false);
         shoppingBagBox.classList.remove('active');
         box.classList.toggle('active');
     });
